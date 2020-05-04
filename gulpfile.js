@@ -22,8 +22,9 @@ gulp.task("browser-sync", () => {
 
 // minify css
 gulp.task("minify-css", () => {
-return gulp.src("./src/style/*.css")
+return gulp
+  .src("./src/style/*.css")
   .pipe(cleanCSS())
-  .pipe(rename('style.min.css'))
-  .pipe(gulp.dest("dist"));
+  .pipe(rename({ suffix: ".min" }))
+  .pipe(gulp.dest("dist/style"));
 });
