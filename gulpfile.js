@@ -3,6 +3,16 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
+const rename = require("gulp-rename");
+
+let path = {
+  build: {
+    css: "./dist"
+  }, 
+  src: {
+    css: "./src/style.css"
+  }
+};
 
 gulp.task("hello", function (done) {
   console.log("Привет, Мир!");
@@ -10,7 +20,7 @@ gulp.task("hello", function (done) {
 });
 
 // Static server
-gulp.task("browser-sync", function () {
+gulp.task("browser-sync", () => {
   browserSync.init({
     server: {
       baseDir: "./src",
@@ -23,6 +33,6 @@ gulp.task("browser-sync", function () {
 gulp.task("minify-css", () => {
 return gulp.src("./src/style/*.css")
   .pipe(cleanCSS())
+  .pipe(rename('style.min.css'))
   .pipe(gulp.dest("dist"));
 });
-
