@@ -5,15 +5,6 @@ const browserSync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
 
-let path = {
-  build: {
-    css: "./dist"
-  }, 
-  src: {
-    css: "./src/style.css"
-  }
-};
-
 gulp.task("hello", function (done) {
   console.log("Привет, Мир!");
   done();
@@ -26,7 +17,7 @@ gulp.task("browser-sync", () => {
       baseDir: "./src",
     },
   });
-  gulp.watch("./src*.html").on("change", browserSync.reload);
+  gulp.watch("./src/*.html").on("change", browserSync.reload);
 });
 
 // minify css
