@@ -364,6 +364,31 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  left: 0;
+  top: 0;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff; }
+  .hero__instagram {
+    position: absolute;
+    max-width: 80px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e3b873;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0; }
+
 body {
   font-family: "Futura Book", sans-serif;
   font-size: 14px; }
