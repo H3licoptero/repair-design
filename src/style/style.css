@@ -340,6 +340,11 @@ template {
   animation-name: show; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -365,13 +370,15 @@ template {
   margin-right: 45px; }
 
 .hero {
-  left: 0;
-  top: 0;
+  position: relative;
+  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
   .hero__instagram {
     position: absolute;
+    left: 0;
+    top: 0;
     max-width: 80px;
     height: 100%; }
 
@@ -388,6 +395,9 @@ template {
 
 .title {
   margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: "Futura Book", sans-serif;
