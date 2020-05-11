@@ -322,22 +322,23 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase;
-  outline: none; }
+  text-transform: uppercase; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
     background-color: #e3b873;
     box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
     color: #ffffff;
-    transition: box-shadow 0.3s; }
+    transition: box-shadow 0.3s;
+    outline-color: #e3b873; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
-    transition: box-shadow 0.2s; }
+    transition: box-shadow 0.2s;
+    outline-color: #ffffff; }
     .button--outline:hover {
       background-color: rgba(255, 255, 255, 0.3);
       box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); }
