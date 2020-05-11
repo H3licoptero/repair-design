@@ -6,22 +6,30 @@
   height: 100vh
   color: $light
   &::before
-   content: ''
-   position: absolute
-   top: 0
-   left: 0
-   width: 100%
-   height: 100%
-   background-color: rgba($dark, 0.7) 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7) 
   &__content
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
+  &__title
+    padding-bottom: 1rem  
   &__text
+    font-family: "Futura Book", sans-serif
+    font-weight: normal
     font-size: 1.57rem
     max-width: 500px  
+    line-height: 131%
+    margin: 0
+    margin-bottom: 3.1rem
   &__button
     margin-right: 20px  
+    padding: 20px 27px
   &__instagram
     position: absolute
     left: 0
@@ -53,6 +61,10 @@
       margin-left: 12px
     &:hover
       color: $primary
+.button
+  &--outline
+    padding: 19px 45px
+
 
 .instagram 
   display: flex
@@ -62,6 +74,8 @@
   &__link
     display: flex
     align-items: center
+    font-family: "Futura Demi", sans-serif
+    font-size: 1.1rem
     text-transform: uppercase
     text-decoration: none
     line-height: 0.8
@@ -83,5 +97,6 @@
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
   font-size: 2.857rem
+  line-height: 1.4
   &--primary
     color: $primary
