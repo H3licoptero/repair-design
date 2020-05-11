@@ -322,7 +322,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -335,7 +336,11 @@ template {
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: box-shadow 0.2s; }
+    .button--outline:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -381,18 +386,32 @@ body {
 .logo {
   color: #e3b873;
   text-transform: uppercase; }
+  .logo__link {
+    color: #e3b873;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+    outline-color: #e3b873; }
+    .logo__link:hover {
+      color: #ffffff; }
 
 .nav__item {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   margin-right: 40px;
-  transition: color 0.2s; }
+  transition: color 0.2s;
+  outline-color: #e3b873; }
   .nav__item:hover {
     color: #e3b873; }
 
 .phone {
-  color: #e3b873; }
+  color: #e3b873;
+  transition: color 0.2s;
+  outline-color: #e3b873; }
+  .phone:hover {
+    color: #ffffff;
+    text-decoration: none; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -438,7 +457,9 @@ body {
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff; }
+    color: #ffffff;
+    outline-color: #e3b873;
+    transition: color 0.2s; }
     .hero__scroll-down:after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -447,6 +468,8 @@ body {
       border: 2px solid #e3b873;
       border-radius: 50%;
       margin-left: 12px; }
+    .hero__scroll-down:hover {
+      color: #e3b873; }
 
 .instagram {
   display: flex;
@@ -460,7 +483,11 @@ body {
     text-decoration: none;
     line-height: 0.8;
     color: #e3b873;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    outline-color: #e3b873;
+    transition: color 0.2s; }
+    .instagram__link:hover {
+      color: #ffffff; }
     .instagram__link:after {
       content: '';
       width: 50px;
