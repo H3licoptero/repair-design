@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -330,7 +337,7 @@ template {
     background-color: #e3b873;
     box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
     color: #ffffff;
-    transition: box-shadow 0.3s;
+    transition: 0.3s linear;
     outline-color: #e3b873; }
     .button--primary:hover {
       box-shadow: none; }
@@ -338,7 +345,7 @@ template {
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
-    transition: box-shadow 0.2s;
+    transition: 0.2s linear;
     outline-color: #ffffff; }
     .button--outline:hover {
       background-color: rgba(255, 255, 255, 0.3);
@@ -352,12 +359,15 @@ html {
 
 body {
   font-family: "Futura Book", sans-serif;
+  font-family: "Futura Demi", sans-serif;
+  font-weight: normal;
   font-size: 1rem; }
 
 .section-title {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Yeseva One", cursive; }
+  font-family: "Yeseva One", cursive;
+  font-weight: normal; }
   .section-title__image {
     display: flex;
     justify-content: center;
@@ -390,7 +400,7 @@ body {
 
 .logo {
   font-family: "Futura Demi", sans-serif;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 1.075rem;
   color: #e3b873;
   text-transform: uppercase; }
@@ -404,10 +414,12 @@ body {
       color: #ffffff; }
 
 .nav__item {
+  font-family: "Futura Book", sans-serif;
+  font-weight: normal;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 1.2rem;
   transition: color 0.2s;
   outline-color: #e3b873; }
   .nav__item:hover {
@@ -423,6 +435,16 @@ body {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.contacts__button {
+  font-family: "Futura Demi", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 15px;
+  transition: transform 0.3s; }
+  .contacts__button:hover {
+    transform: scale(1.1); }
 
 .hero {
   position: relative;
@@ -444,7 +466,7 @@ body {
     max-width: 47.85rem;
     margin-left: 4.28rem; }
   .hero__title {
-    padding-bottom: 1rem; }
+    padding-bottom: 16px; }
   .hero__text {
     font-family: "Futura Book", sans-serif;
     font-weight: normal;
@@ -454,8 +476,12 @@ body {
     margin: 0;
     margin-bottom: 3.1rem; }
   .hero__button {
+    width: 207px;
     margin-right: 20px;
-    padding: 20px 27px; }
+    padding: 19px 26px;
+    font-family: "Futura Demi", sans-serif;
+    font-weight: normal;
+    font-size: 0.9rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -471,25 +497,27 @@ body {
     bottom: 0;
     min-width: 17.6rem;
     min-height: 6.92rem;
+    font-family: "Yeseva One", cursive;
+    font-weight: normal;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     outline-color: #e3b873;
     transition: color 0.2s; }
-    .hero__scroll-down:after {
+    .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
       height: 30px;
       width: 30px;
       border: 2px solid #e3b873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 12px;
+      transition: border 0.2s; }
     .hero__scroll-down:hover {
       color: #e3b873; }
-
-.button--outline {
-  padding: 19px 45px; }
+    .hero__scroll-down:hover::after {
+      border: 2px solid #ffffff; }
 
 .instagram {
   display: flex;
@@ -500,6 +528,7 @@ body {
     display: flex;
     align-items: center;
     font-family: "Futura Demi", sans-serif;
+    font-weight: normal;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -510,25 +539,34 @@ body {
     transition: color 0.2s; }
     .instagram__link:hover {
       color: #ffffff; }
-    .instagram__link:after {
+    .instagram__link::after {
       content: '';
       width: 50px;
       height: 1px;
       margin-left: 8px;
       background-color: #e3b873; }
+    .instagram__link:hover::after {
+      background-color: #ffffff; }
 
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 2.857rem;
   line-height: 1.4; }
   .title--primary {
     color: #e3b873; }
 
-@media screen and (max-width: 1440px) {
-  .nav__item {
-    margin-right: 1.2rem; } }
+.count--button {
+  transition: 0.3s linear; }
+  .count--button:hover {
+    box-shadow: 207px 0 0 0 rgba(255, 255, 255, 0.3) inset; }
+
+@media screen and (max-width: 1438px) {
+  .container {
+    width: 90%;
+    max-width: 1256px; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -537,7 +575,7 @@ body {
     margin-right: 1rem;
     font-size: 0.9rem; }
   .menu__logo {
-    margin-right: 4.5rem; }
+    margin-right: 2.5rem; }
   .hero__text {
     max-width: 450px; } }
 
@@ -551,7 +589,7 @@ body {
   .menu__logo {
     margin-right: 0; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 576px) {
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
@@ -561,7 +599,8 @@ body {
   .title {
     font-size: 1.64rem; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 22.86rem;
+    margin: auto; }
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
@@ -572,6 +611,34 @@ body {
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-height: 560px) {
+@media screen and (max-height: 610px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 375px) {
+  .header {
+    position: relative; }
+  .logo__link {
+    color: #e3b873; }
+  .phone {
+    color: #ffffff;
+    outline-color: #ffffff; }
+  .hero {
+    padding-top: 85px;
+    display: block;
+    height: 476px;
+    background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover; }
+    .hero__container {
+      width: 93%; }
+    .hero__title {
+      margin-bottom: 16px;
+      padding-bottom: 0; }
+    .hero__button {
+      margin-bottom: 26px;
+      margin-right: 0;
+      width: 338px; }
+    .hero__content {
+      margin: 0;
+      width: inherit; }
+    .hero .button--outline {
+      margin-bottom: 0; } }
