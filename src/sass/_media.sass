@@ -2,6 +2,11 @@
   .container
     width: 90%
     max-width: 1256px
+@media screen and ( max-width: 1250px )
+  .nav
+    &__item
+      margin-right: 2rem
+      font-size: 0.9rem 
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -35,10 +40,10 @@
     &__button
       display: none
   .title
-    font-size: 1.64rem
+    font-size: 2rem
   .hero
     &__content
-      max-width: 22.86rem
+      max-width: 30rem
       margin: auto
     &__text
       font-size: 1.29rem
@@ -64,29 +69,34 @@
     outline-color: $light
   .hero
     padding-top: 85px
-    display: block
     height: 476px
     background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
     &__container
       width: 93%
+      max-width: 350px
     &__title
       margin-bottom: 16px
       padding-bottom: 0   
     &__content
       display: flex
       flex-direction: column
-      align-items: center
       justify-content: center
-      width: 350px
-      margin: 0
-    &__button
       width: 95%
+      margin: auto
+    &__text
+      width: 95% 
+      max-width: 321px 
+    &__button
+      width: 100%
       max-width: 338px
       margin-bottom: 26px
-      margin-right: 0
+      margin-right: 
     .button
       &--outline
         margin-bottom: 0
+    .button-box
+      width: 100%
+      margin-bottom: 61px
   
 // for types
 @media screen and ( max-width: 768px )

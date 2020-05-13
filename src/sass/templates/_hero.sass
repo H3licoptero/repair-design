@@ -17,8 +17,6 @@
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
-  &__title
-    padding-bottom: 16px  
   &__text
     font-family: "Futura Book", sans-serif
     font-weight: normal
@@ -30,10 +28,12 @@
   &__button
     width: 207px
     margin-right: 20px  
-    padding: 19px 26px
+    padding: 17px 24px
     font-family: "Futura Demi", sans-serif
     font-weight: normal
-    font-size: 0.9rem
+    font-style: italic
+    font-size: 0.93rem
+    line-height: 15px
   &__instagram
     position: absolute
     left: 0
@@ -81,7 +81,7 @@
     align-items: center
     font-family: "Futura Demi", sans-serif
     font-weight: normal
-    font-size: 1.1rem
+    font-size: 1rem
     text-transform: uppercase
     text-decoration: none
     line-height: 0.8
@@ -102,6 +102,7 @@
 
 .title
   margin: 0
+  margin-bottom: 16px
   font-family: 'Yeseva One', cursive
   font-weight: normal
   text-transform: uppercase
@@ -112,6 +113,7 @@
 
 .count
   &--button
+    border: 1px solid $primary
     transition: 0.3s linear
     &:hover
       box-shadow: 207px 0 0 0 rgba($light, 0.3) inset
