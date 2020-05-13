@@ -736,59 +736,94 @@ img {
 @media screen and (max-width: 1250px) {
   .nav__item {
     margin-right: 2rem;
-    font-size: 0.9rem; } }
+    font-size: 1rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem;
-    font-size: 0.9rem; }
+    margin-right: 0.6rem;
+    font-size: 1.16rem; }
+  .logo__link {
+    font-size: 1.16rem; }
+  .contacts__phone {
+    font-size: 1.16rem; }
   .menu__logo {
-    margin-right: 2.5rem; }
+    margin-right: 1rem; }
+  .hero__instagram {
+    font-size: 1.16rem; }
+  .hero__title {
+    font-size: 3.33rem; }
   .hero__text {
-    max-width: 450px; } }
+    max-width: 500px;
+    font-size: 1.83rem;
+    font-weight: normal; }
+  .hero__button {
+    font-size: 1.083rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
+  .logo__link {
+    font-size: 1.16rem; }
+  .contacts__phone {
+    font-size: 1.16rem; }
   .hero__instagram {
     display: none; }
-    .hero__instagram__content {
-      margin-left: 0; }
+  .hero__title {
+    font-size: 3.33rem; }
+  .hero__content {
+    margin-left: 0; }
+  .hero__text {
+    font-size: 1.83rem;
+    font-weight: normal; }
+  .hero__button {
+    font-size: 1.083rem; }
   .menu__logo {
     margin-right: 0; } }
 
 @media screen and (max-width: 768px) {
+  .contacts__phone {
+    font-size: 1.16rem; }
   .row {
     flex-direction: column;
     align-items: center; }
   .types__card {
-    margin-bottom: 5.64rem; } }
+    margin-bottom: 5.64rem; }
+  .hero__title {
+    font-size: 3.33rem; }
+  .hero__text {
+    font-size: 1.83rem; }
+  .hero__button {
+    font-size: 1.083rem; } }
 
 @media screen and (max-width: 576px) {
+  .logo__link {
+    font-size: 1.16rem; }
   .contacts__phone {
     margin-right: 0;
+    font-size: 1rem;
     color: #ffffff;
     text-decoration: none; }
   .contacts__button {
     display: none; }
   .title {
-    font-size: 2rem; }
+    font-size: 1.91rem; }
   .hero__content {
     max-width: 30rem;
-    width: 280px;
+    width: 325px;
     margin: auto; }
   .hero__text {
-    font-size: 1.29rem;
+    font-size: 1.5rem;
     margin-bottom: 2.28rem;
-    max-width: 95%; }
+    width: 98%;
+    max-width: 321px; }
   .hero__scroll-down {
     display: none; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
+    margin-bottom: 2.16rem; }
   .card__text {
     position: relative;
     margin-left: 0; } }
@@ -801,8 +836,10 @@ img {
   .header {
     position: relative; }
   .logo__link {
+    font-size: 1rem;
     color: #e3b873; }
   .phone {
+    font-size: 1rem;
     color: #ffffff;
     outline-color: #ffffff; }
   .hero {
@@ -813,6 +850,7 @@ img {
       width: 93%;
       max-width: 350px; }
     .hero__title {
+      font-size: 1.91rem;
       margin-bottom: 16px;
       padding-bottom: 0; }
     .hero__content {
@@ -822,12 +860,14 @@ img {
       width: 95%;
       margin: auto; }
     .hero__text {
-      width: 95%;
-      max-width: 321px; }
+      width: 97%;
+      max-width: 321px;
+      font-size: 1.5rem; }
     .hero__button {
       width: 100%;
       max-width: 338px;
-      margin-bottom: 26px; }
+      margin-bottom: 26px;
+      font-size: 1.083rem; }
     .hero .button--outline {
       margin-bottom: 0; }
     .hero .button-box {

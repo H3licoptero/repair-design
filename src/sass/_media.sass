@@ -2,64 +2,106 @@
   .nav
     &__item
       margin-right: 2rem
-      font-size: 0.9rem 
+      font-size: 1rem 
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
   .nav
     &__item
-      margin-right: 1rem
-      font-size: 0.9rem 
+      margin-right: 0.6rem
+      font-size: 1.16rem 
+  .logo
+    &__link
+      font-size: 1.16rem
+  .contacts
+    &__phone
+      font-size: 1.16rem
   .menu
     &__logo
-      margin-right: 2.5rem
+      margin-right: 1rem
   .hero
+    &__instagram
+      font-size: 1.16rem
+    &__title
+      font-size: 3.33rem
     &__text
-      max-width: 450px
+      max-width: 500px
+      font-size: 1.83rem 
+      font-weight: normal
+    &__button
+      font-size: 1.083rem
 @media screen and ( max-width: 992px )
   .nav
     display: none
+  .logo
+    &__link
+      font-size: 1.16rem
+  .contacts
+    &__phone
+      font-size: 1.16rem
   .hero
     &__instagram
       display: none
-      &__content
-        margin-left: 0
+    &__title
+      font-size: 3.33rem
+    &__content
+      margin-left: 0
+    &__text
+      font-size: 1.83rem 
+      font-weight: normal
+    &__button
+      font-size: 1.083rem
   .menu
     &__logo
       margin-right: 0
 @media screen and ( max-width: 768px )
   // for types & design
+  .contacts
+    &__phone
+      font-size: 1.16rem
   .row
     flex-direction: column
     align-items: center
   .types
     &__card
-      margin-bottom: 5.64rem      
+      margin-bottom: 5.64rem    
+  .hero
+    &__title
+      font-size: 3.33rem
+    &__text
+      font-size: 1.83rem  
+    &__button
+      font-size: 1.083rem
 @media screen and ( max-width: 576px )
+  .logo
+    &__link
+      font-size: 1.16rem
   .contacts
     &__phone
       margin-right: 0
+      font-size: 1rem
       color: $light
       text-decoration: none
     &__button
       display: none
   .title
-    font-size: 2rem
+    font-size: 1.91rem
   .hero
     &__content
       max-width: 30rem
-      width: 280px
+      width: 325px
       margin: auto
     &__text
-      font-size: 1.29rem
+      font-size: 1.5rem
       margin-bottom: 2.28rem
-      max-width: 95% 
+      width: 98%
+      max-width: 321px 
     &__scroll-down
       display: none
     &__button
       display: block
       min-width: 22.86rem
-      margin-bottom: 1.85rem
+      margin-bottom: 2.16rem
   .card
     &__text
       position: relative
@@ -73,8 +115,10 @@
     position: relative
   .logo
     &__link
+      font-size: 1rem
       color: $primary
   .phone
+    font-size: 1rem
     color: $light
     outline-color: $light
   .hero
@@ -85,6 +129,7 @@
       width: 93%
       max-width: 350px
     &__title
+      font-size: 1.91rem
       margin-bottom: 16px
       padding-bottom: 0   
     &__content
@@ -94,13 +139,14 @@
       width: 95%
       margin: auto
     &__text
-      width: 95% 
+      width: 97% 
       max-width: 321px 
+      font-size: 1.5rem
     &__button
       width: 100%
       max-width: 338px
       margin-bottom: 26px
-      margin-right: 
+      font-size: 1.083rem
     .button
       &--outline
         margin-bottom: 0
