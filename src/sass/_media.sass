@@ -1,7 +1,3 @@
-@media screen and ( max-width: 1438px )
-  .container
-    width: 90%
-    max-width: 1256px
 @media screen and ( max-width: 1250px )
   .nav
     &__item
@@ -31,6 +27,14 @@
   .menu
     &__logo
       margin-right: 0
+@media screen and ( max-width: 768px )
+  // for types & design
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5.64rem      
 @media screen and ( max-width: 576px )
   .contacts
     &__phone
@@ -44,16 +48,22 @@
   .hero
     &__content
       max-width: 30rem
+      width: 280px
       margin: auto
     &__text
       font-size: 1.29rem
       margin-bottom: 2.28rem
+      max-width: 95% 
     &__scroll-down
       display: none
     &__button
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+  .card
+    &__text
+      position: relative
+      margin-left: 0
 @media screen and ( max-height: 610px )
   .hero
     &__scroll-down
@@ -98,16 +108,4 @@
       width: 100%
       margin-bottom: 61px
   
-// for types & design
-@media screen and ( max-width: 768px )
-  .row
-    flex-direction: column
-    align-items: center
-  .types
-    &__card
-      margin-bottom: 5.64rem
-@media screen and ( max-width: 576px )
-  .card
-    &__text
-      position: relative
-      margin-left: 0
+  

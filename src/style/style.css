@@ -428,7 +428,7 @@ img {
     background-color: #e3b873; }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1256px;
   margin: auto; }
 
@@ -440,10 +440,6 @@ img {
   z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
-
-.container {
-  width: 90%;
-  max-width: 1256px; }
 
 .menu {
   display: flex;
@@ -693,6 +689,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(19, 19, 19, 0.6);
@@ -733,12 +730,8 @@ img {
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
-
-@media screen and (max-width: 1438px) {
-  .container {
-    width: 90%;
-    max-width: 1256px; } }
+    align-self: flex-end;
+    outline-color: #e3b873; }
 
 @media screen and (max-width: 1250px) {
   .nav__item {
@@ -766,6 +759,13 @@ img {
   .menu__logo {
     margin-right: 0; } }
 
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5.64rem; } }
+
 @media screen and (max-width: 576px) {
   .contacts__phone {
     margin-right: 0;
@@ -777,16 +777,21 @@ img {
     font-size: 2rem; }
   .hero__content {
     max-width: 30rem;
+    width: 280px;
     margin: auto; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    max-width: 95%; }
   .hero__scroll-down {
     display: none; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .card__text {
+    position: relative;
+    margin-left: 0; } }
 
 @media screen and (max-height: 610px) {
   .hero__scroll-down {
@@ -828,15 +833,3 @@ img {
     .hero .button-box {
       width: 100%;
       margin-bottom: 61px; } }
-
-@media screen and (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5.64rem; } }
-
-@media screen and (max-width: 576px) {
-  .card__text {
-    position: relative;
-    margin-left: 0; } }
