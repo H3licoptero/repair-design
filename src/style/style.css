@@ -746,15 +746,15 @@ img {
     font-size: 12px; }
   .nav__item {
     margin-right: 0.6rem;
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .logo__link {
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .contacts__phone {
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .menu__logo {
-    margin-right: 1rem; }
+    margin-right: 0.8rem; }
   .hero__instagram {
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .hero__title {
     font-size: 3.33rem; }
   .hero__text {
@@ -762,15 +762,15 @@ img {
     font-size: 1.83rem;
     font-weight: normal; }
   .hero__button {
-    font-size: 1.083rem; } }
+    font-size: 1.084rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
   .logo__link {
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .contacts__phone {
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .hero__instagram {
     display: none; }
   .hero__title {
@@ -781,13 +781,15 @@ img {
     font-size: 1.83rem;
     font-weight: normal; }
   .hero__button {
-    font-size: 1.083rem; }
+    font-size: 1.084rem; }
   .menu__logo {
     margin-right: 0; } }
 
 @media screen and (max-width: 768px) {
+  .logo__link {
+    font-size: 1.17rem; }
   .contacts__phone {
-    font-size: 1.16rem; }
+    font-size: 1.17rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -798,11 +800,11 @@ img {
   .hero__text {
     font-size: 1.84rem; }
   .hero__button {
-    font-size: 1.083rem; } }
+    font-size: 1.084rem; } }
 
 @media screen and (max-width: 576px) {
   .logo__link {
-    font-size: 1.16rem; }
+    font-size: 1rem; }
   .contacts__phone {
     margin-right: 0;
     font-size: 1rem;
@@ -830,7 +832,7 @@ img {
     max-width: 338px;
     min-width: 22.86rem;
     margin-bottom: 2.16rem;
-    font-size: 1.085rem; }
+    font-size: 1.084rem; }
   .card__text {
     position: relative;
     margin-left: 0; } }
@@ -874,7 +876,7 @@ img {
       width: 100%;
       max-width: 338px;
       margin-bottom: 26px;
-      font-size: 1.085rem; }
+      font-size: 1.084rem; }
     .hero .button--outline {
       margin-bottom: 0; }
     .hero .button-box {
