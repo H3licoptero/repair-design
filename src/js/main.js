@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   "use strict";
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle="modal"]'); 
-  const closeBtn = document.querySelector('.modal__close');
   const switchModal = () => {
     modal.classList.toggle("modal--visible");
   };
@@ -10,7 +9,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   modalBtn.forEach((elem) => {
     elem.addEventListener('click', switchModal);
   });
-  
-  closeBtn.addEventListener('click', switchModal);
-  
+
+  modal.addEventListener('click', (event) => {
+    let target = event.target;
+    if(target.matches('.modal--visible') || target.matches('.modal__close')) {
+       modal.classList.toggle("modal--visible");
+    }
+  });
 });

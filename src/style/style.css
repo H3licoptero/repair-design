@@ -796,7 +796,7 @@ img {
   .hero__title {
     font-size: 3.33rem; }
   .hero__text {
-    font-size: 1.83rem; }
+    font-size: 1.84rem; }
   .hero__button {
     font-size: 1.083rem; } }
 
@@ -811,22 +811,26 @@ img {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.91rem; }
+    font-size: 1.92rem; }
   .hero__content {
     max-width: 30rem;
     width: 325px;
     margin: auto; }
   .hero__text {
-    font-size: 1.5rem;
     margin-bottom: 2.28rem;
     width: 98%;
-    max-width: 26.75rem; }
+    max-width: 321px;
+    font-size: 1.5rem;
+    line-height: 135%; }
   .hero__scroll-down {
     display: none; }
   .hero__button {
     display: block;
+    width: 100%;
+    max-width: 338px;
     min-width: 22.86rem;
-    margin-bottom: 2.16rem; }
+    margin-bottom: 2.16rem;
+    font-size: 1.085rem; }
   .card__text {
     position: relative;
     margin-left: 0; } }
@@ -853,7 +857,7 @@ img {
       width: 93%;
       max-width: 350px; }
     .hero__title {
-      font-size: 1.91rem;
+      font-size: 1.92rem;
       margin-bottom: 16px;
       padding-bottom: 0; }
     .hero__content {
@@ -870,7 +874,7 @@ img {
       width: 100%;
       max-width: 338px;
       margin-bottom: 26px;
-      font-size: 1.083rem; }
+      font-size: 1.085rem; }
     .hero .button--outline {
       margin-bottom: 0; }
     .hero .button-box {
