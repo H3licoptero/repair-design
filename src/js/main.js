@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function(event) {
   "use strict";
   const modal = document.querySelector('.modal');
@@ -14,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let target = event.target;
     if(target.matches('.modal--visible') || target.matches('.modal__close')) {
        modal.classList.toggle("modal--visible");
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if(event.keyCode === 27) {
+      modal.classList.toggle("modal--visible");
     }
   });
 });
