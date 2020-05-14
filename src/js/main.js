@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   "use strict";
   const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('[data-toggle="modal"]'); 
+  const modalBtn = document.querySelectorAll('[data-toggle="modal"]');  
   const switchModal = () => {
     modal.classList.toggle("modal--visible");
   };
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   document.addEventListener('keydown', (event) => {
-    if(event.keyCode === 27) {
+    if(event.keyCode === 27 && modal.matches('.modal--visible')) {
       modal.classList.toggle("modal--visible");
     }
   });
