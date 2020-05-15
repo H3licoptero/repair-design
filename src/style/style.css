@@ -608,20 +608,20 @@ img {
   .title--primary {
     color: #e3b873; }
 
-.count--button {
+.count-button {
   border: 1px solid #e3b873;
   transition: 0.3s linear; }
-  .count--button:hover {
+  .count-button:hover {
     box-shadow: 207px 0 0 0 rgba(255, 255, 255, 0.3) inset; }
 
 .types {
   margin-top: 280px; }
   .types__section-title {
-    margin-bottom: 2.6rem; }
+    margin-bottom: 2.22rem; }
 
 .section-title__heading {
-  margin-bottom: 1.1rem;
-  font-size: 1.70rem;
+  margin-bottom: 0.93rem;
+  font-size: 1.45rem;
   line-height: 28px; }
 
 .row {
@@ -632,9 +632,7 @@ img {
   margin-bottom: 100px; }
 
 .col {
-  flex-basis: 32%; }
-
-.card__image-box {
+  flex-basis: 32%;
   max-width: 392px;
   width: 100%; }
 
@@ -692,11 +690,17 @@ img {
   color: #363636; }
 
 .design-text {
+  margin-top: 1.65rem;
+  margin-bottom: 2.8rem;
   font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 27px; }
+
+.design-pricetag {
+  text-align: left;
+  padding-left: 2.357rem; }
 
 .modal {
   position: fixed;
