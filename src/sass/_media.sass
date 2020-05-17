@@ -239,13 +239,26 @@
   .row
     flex-direction: column
     align-items: center
+  .col
+    max-width: 340px
+    width: 100%
+  .card__image
+    width: 100%
   .card
+    max-width: 340px
+    width: 100%
+    margin: auto
+    &__text
+      max-width: 270px
+      width: 100%
     &__title
       font-size: 1.25rem
-    &__list
+    &__item
       font-size: 1.083333rem
       line-height: 169.8%;
     &__pricetag
+      max-width: 190px
+      width: 100%
       font-size: 1.25rem
   .types
     &__card
@@ -258,3 +271,8 @@
       font-size: 1.25rem
     &__card
       margin-bottom: 6.6583rem
+      max-width: 340px
+      width: 100%
+    &-card
+      &__image
+        background:
