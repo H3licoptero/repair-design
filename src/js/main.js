@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", function(event) {
   "use strict";
   const modal = document.querySelector('.modal');
@@ -23,4 +23,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
       modal.classList.toggle("modal--visible");
     }
   });
+});
+*/
+
+$(document).ready(function() {
+  "use strict";
+  let modal = $('.modal'),
+    modalBtn = $('[data-toggle="modal"]'),
+    closeBtn = $('.modal__close');
+
+    modalBtn.on('click', function() {
+      modal.toggleClass('modal--visible');
+    });
+
+    closeBtn.on('click', function() {
+      modal.toggleClass('modal--visible');
+    });
+
 });

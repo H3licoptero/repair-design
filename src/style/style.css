@@ -355,7 +355,7 @@ template {
   font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.07rem;
+  font-size: 1.25rem;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5); }
 
@@ -364,9 +364,9 @@ template {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
   outline-color: #ffffff;
-  font-size: 1.285rem;
+  font-size: 1.5rem;
   color: #ffffff;
-  padding: 0.5rem 0; }
+  padding: 0.583rem 0; }
   .input::-webkit-input-placeholder {
     color: #ffffff; }
   .input::-moz-placeholder {
@@ -386,7 +386,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.333333rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -723,9 +724,10 @@ img {
     visibility: visible; }
   .modal__dialog {
     position: relative;
-    max-width: 36.36rem;
+    max-width: 42.41666rem;
+    width: 100%;
     background: #131313 url("../img/bg-line.svg") no-repeat center;
-    padding: 2.357rem 3.5rem 1.928rem;
+    padding: 2.75rem 4.08333rem 2.25rem;
     color: #ffffff; }
   .modal__close {
     position: absolute;
@@ -739,25 +741,29 @@ img {
     cursor: pointer;
     outline-color: #ffffff; }
   .modal__title {
+    margin: 0;
+    margin-bottom: 2.85rem;
     font-family: "Yeseva One", sans-serif;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.357rem;
     line-height: 26px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 2.428rem; }
+    text-align: center; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 4rem; }
     .modal__input:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end;
+    padding: 1.58333rem 0;
+    font-size: 1.08333rem;
+    width: 100%;
+    max-width: 17.75rem;
     outline-color: #e3b873; }
 
 @media screen and (max-width: 1250px) {
