@@ -685,25 +685,34 @@ img {
   padding: 1.1rem 0;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
-.design__section-text {
-  max-width: 741px;
-  margin: auto;
+.text {
+  max-width: 61.75rem;
   text-align: center;
   color: #363636; }
 
-.design-text {
+.design__text {
+  margin: auto;
   margin-top: 1.3rem;
   margin-bottom: 3.35rem;
   font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.428571rem;
   line-height: 27px; }
 
-.design-pricetag {
+.design__pricetag {
   bottom: -1.34rem;
   text-align: left;
   padding-left: 2.358rem; }
+
+.card__design-image {
+  position: relative; }
+  .card__design-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.4); }
 
 .modal {
   position: fixed;
@@ -780,7 +789,8 @@ img {
   .logo__link {
     font-size: 1.17rem; }
   .contacts__phone {
-    font-size: 1.17rem; }
+    font-size: 1.17rem;
+    margin-right: 3.65rem; }
   .menu__logo {
     margin-right: 0.8rem; }
   .hero__instagram {
@@ -792,7 +802,12 @@ img {
     font-size: 1.84rem;
     font-weight: normal; }
   .hero__button {
-    font-size: 1.084rem; } }
+    font-size: 1.084rem; }
+  .design__section-title {
+    margin-bottom: 3.25rem; }
+  .design__text {
+    font-size: 1.6666666rem;
+    width: 100%; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -825,11 +840,19 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
-  .design-text {
-    margin-top: 1.916666rem;
+  .design__section-title {
     margin-bottom: 3.25rem; }
+  .design__text {
+    max-width: 47.66666rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.916666rem;
+    font-size: 1.66666rem; }
   .design__card {
+    margin: auto;
     margin-bottom: 8.64rem; }
+    .design__card::before {
+      background-color: transparent; }
   .menu__logo {
     margin-right: 0; }
   .card__title {
@@ -837,13 +860,9 @@ img {
   .card__item {
     font-size: 1.25rem; }
   .card__pricetag {
-    font-size: 1.5rem; } }
-
-@media screen and (max-width: 810px) {
-  .design-text {
-    max-width: 562px;
-    margin: auto;
-    margin-top: 1.916666rem; } }
+    font-size: 1.5rem; }
+  .card__design-image::before {
+    background-color: transparent; } }
 
 @media screen and (max-width: 768px) {
   .logo__link {
@@ -858,8 +877,18 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
+  .design__section-title {
+    margin-bottom: 3.25rem; }
+  .design__text {
+    width: 100%;
+    max-width: 31.66666rem;
+    margin: auto;
+    margin-top: 1.916666rem;
+    font-size: 1.66666rem; }
   .design__card {
     margin-bottom: 6.6583rem; }
+  .card__design-image::before {
+    background-color: transparent; }
   .hero__title {
     font-size: 3.34rem; }
   .hero__text {
@@ -908,6 +937,8 @@ img {
     line-height: 169.8%; }
   .card__pricetag {
     font-size: 1.5rem; }
+  .card__design-image::before {
+    background-color: transparent; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -918,16 +949,16 @@ img {
     .section-title__heading {
       margin-bottom: 1.417rem;
       font-size: 1.666666rem; }
-  .design__section-title {
-    margin-bottom: 1.333333; }
+  .design__section {
+    margin-bottom: 3.25rem; }
   .design__card {
     margin-bottom: 6.6583rem; }
-  .design-text {
+  .design__text {
+    max-width: 26.66666rem;
     width: 100%;
-    max-width: 380px;
     margin: auto;
     margin-top: 1.916666rem;
-    font-size: 1.66666rem; } }
+    font-size: 1.4rem; } }
 
 @media screen and (max-height: 610px) {
   .hero__scroll-down {
@@ -966,9 +997,10 @@ img {
       font-size: 1.5rem; }
     .hero__button {
       width: 100%;
-      max-width: 338px;
+      max-width: 28.166666rem;
       margin-bottom: 26px;
-      font-size: 1.084rem; }
+      font-size: 1.084rem;
+      line-height: 1.25rem; }
   .button--outline {
     margin-bottom: 0; }
   .button-box {
@@ -976,7 +1008,7 @@ img {
     margin-bottom: 61px; }
   .section-title__heading {
     font-size: 1.833333rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.4rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -991,24 +1023,37 @@ img {
     margin: auto; }
     .card__text {
       max-width: 270px;
-      width: 100%; }
+      width: 100%;
+      margin-top: -11.9rem;
+      padding: 1.6rem 2.4rem;
+      line-height: 169.8%; }
     .card__title {
       font-size: 1.25rem; }
     .card__item {
       font-size: 1.083333rem;
-      line-height: 169.8%; }
+      line-height: 175.8%; }
     .card__pricetag {
-      max-width: 190px;
+      bottom: -0.7rem;
+      max-width: 15.83333rem;
       width: 100%;
-      font-size: 1.25rem; }
+      padding: 1rem 0rem;
+      font-size: 1.25rem;
+      line-height: 1.583333rem; }
   .types__card {
     margin-bottom: 6.6583rem; }
-  .design-text {
+  .design__section-title {
+    margin-bottom: 3.25rem; }
+  .design__text {
     width: 100%;
     max-width: 306px;
-    margin-top: 1.916666rem;
-    font-size: 1.25rem; }
+    margin-top: 1.44rem;
+    font-size: 1.25rem;
+    line-height: 135.84%; }
   .design__card {
     margin-bottom: 6.6583rem;
-    max-width: 340px;
-    width: 100%; } }
+    max-width: 28.3333333rem;
+    width: 100%; }
+    .design__card::before {
+      background-color: transparent; }
+  .design__pricetag {
+    text-align: center; } }

@@ -16,6 +16,7 @@
   .contacts
     &__phone
       font-size: 1.17rem
+      margin-right: 3.65rem
   .menu
     &__logo
       margin-right: 0.8rem
@@ -30,6 +31,13 @@
       font-weight: normal
     &__button
       font-size: 1.084rem  
+  .design
+    &__section
+      &-title
+        margin-bottom: 3.25rem
+    &__text
+      font-size: 1.6666666rem
+      width: 100%
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -67,11 +75,19 @@
     flex-direction: column
     align-items: center
   .design
-    &-text
-      margin-top: 1.916666rem
+    &__section-title
       margin-bottom: 3.25rem
+    &__text
+      max-width: 47.66666rem
+      width: 100%
+      margin: auto
+      margin-top: 1.916666rem
+      font-size: 1.66666rem
     &__card
-      margin-bottom: 8.64rem     
+      margin: auto
+      margin-bottom: 8.64rem
+      &::before
+        background-color: transparent     
   .menu
     &__logo
       margin-right: 0
@@ -82,12 +98,10 @@
       font-size: 1.25rem
     &__pricetag
       font-size: 1.5rem
-@media screen and ( max-width: 810px )
-  .design
-    &-text
-      max-width: 562px   
-      margin: auto
-      margin-top: 1.916666rem
+    &__design
+      &-image
+        &::before
+         background-color: transparent
 @media screen and ( max-width: 768px )
   // for types & design
   .logo
@@ -106,8 +120,21 @@
     flex-direction: column
     align-items: center
   .design
+    &__section-title
+      margin-bottom: 3.25rem
+    &__text
+      width: 100%
+      max-width: 31.66666rem
+      margin: auto
+      margin-top: 1.916666rem
+      font-size: 1.66666rem
     &__card
       margin-bottom: 6.6583rem
+  .card    
+    &__design
+      &-image
+        &::before
+         background-color: transparent
   .hero
     &__title
       font-size: 3.34rem
@@ -160,6 +187,10 @@
       line-height: 169.8%;
     &__pricetag
       font-size: 1.5rem
+    &__design
+      &-image
+        &::before
+         background-color: transparent 
   .row
     flex-direction: column
     align-items: center
@@ -175,15 +206,15 @@
   .design
     &__section
       &-title
-        margin-bottom: 1.333333
+      margin-bottom: 3.25rem
     &__card
       margin-bottom: 6.6583rem
-    &-text
+    &__text
+      max-width: 26.66666rem
       width: 100%
-      max-width: 380px
       margin: auto
       margin-top: 1.916666rem
-      font-size: 1.66666rem
+      font-size: 1.4rem
 @media screen and ( max-height: 610px )
   .hero
     &__scroll-down
@@ -222,9 +253,10 @@
       font-size: 1.5rem
     &__button
       width: 100%
-      max-width: 338px
+      max-width: 28.166666rem
       margin-bottom: 26px
       font-size: 1.084rem
+      line-height: 1.25rem
   .button
     &--outline
       margin-bottom: 0
@@ -235,7 +267,7 @@
     &-title
       &__heading
         font-size: 1.833333rem
-        margin-bottom: 1.5rem
+        margin-bottom: 1.4rem
   .row
     flex-direction: column
     align-items: center
@@ -251,26 +283,39 @@
     &__text
       max-width: 270px
       width: 100%
+      margin-top: -11.9rem;
+      padding: 1.6rem 2.4rem
+      line-height: 169.8%; 
     &__title
       font-size: 1.25rem
     &__item
       font-size: 1.083333rem
-      line-height: 169.8%;
+      line-height: 175.8%
     &__pricetag
-      max-width: 190px
+      bottom: -0.7rem
+      max-width: 15.83333rem
       width: 100%
+      padding: 1rem 0rem
       font-size: 1.25rem
+      line-height: 1.583333rem
   .types
     &__card
       margin-bottom: 6.6583rem
   .design
-    &-text
+    &__section-title
+      margin-bottom: 3.25rem
+    &__text
       width: 100%
       max-width: 306px
-      margin-top: 1.916666rem
+      margin-top: 1.44rem
       font-size: 1.25rem
+      line-height: 135.84%;
     &__card
       margin-bottom: 6.6583rem
-      max-width: 340px
+      max-width: 28.3333333rem
       width: 100%
+      &::before
+        background-color: transparent
+    &__pricetag
+      text-align: center
     

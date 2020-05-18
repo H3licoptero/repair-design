@@ -1,18 +1,28 @@
+.text
+  max-width: 61.75rem
+  text-align: center
+  color: $dark-grey
 .design
-  &__section-text
-    max-width: 741px
+  &__text
     margin: auto
-    text-align: center
-    color: $dark-grey
-.design-text
-  margin-top: 1.3rem;
-  margin-bottom: 3.35rem
-  font-family: "Futura Book", sans-serif
-  font-style: normal
-  font-weight: normal
-  font-size: 20px
-  line-height: 27px    
-.design-pricetag
-  bottom: -1.34rem
-  text-align: left
-  padding-left: 2.358rem
+    margin-top: 1.3rem;
+    margin-bottom: 3.35rem
+    font-family: "Futura Book", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1.428571rem
+    line-height: 27px    
+  &__pricetag
+    bottom: -1.34rem
+    text-align: left
+    padding-left: 2.358rem
+.card
+  &__design
+    &-image
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 100% 
+        height: 100% 
+        background: rgba($dark, 0.4)
