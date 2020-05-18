@@ -26,34 +26,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 */
 
-$(document).ready(function() {
+$(document).ready(function () {
   "use strict";
-  let modal = $('.modal'),
+  let modal = $(".modal"),
     modalBtn = $('[data-toggle="modal"]'),
-    closeBtn = $('.modal__close');
+    closeBtn = $(".modal__close");
 
-    modalBtn.on('click', function() {
-      modal.toggleClass('modal--visible');
-    });
+  modalBtn.on("click", function () {
+    modal.toggleClass("modal--visible");
+  });
 
-    closeBtn.on('click', function() {
-      modal.toggleClass('modal--visible');
-    });
+  closeBtn.on("click", function () {
+    modal.toggleClass("modal--visible");
+  });
 
-});
+  let mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+  });
 
-let mySwiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  loop: true,
+  let next = $(".swiper-button-next");
+  let prev = $(".swiper-button-prev");
+  let bullets = $(".swiper-pagination");
 
-  // If we need pagination
-  // pagination: {
-  //   el: ".swiper-pagination",
-  // },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  next.css("left", prev.width() + 10 + bullets.width() + 10);
+  bullets.css("left", prev.width() + 10);
 });
