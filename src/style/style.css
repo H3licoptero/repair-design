@@ -672,6 +672,9 @@ img {
 .projects {
   background-image: url("../../img/background-line.svg"); }
 
+.container__projects {
+  margin-top: 11rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
@@ -717,7 +720,7 @@ img {
   -o-object-position: center;
   object-position: center;
   padding-top: 20px;
-  padding-left: 20px; }
+  padding-left: 8.28571rem; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
