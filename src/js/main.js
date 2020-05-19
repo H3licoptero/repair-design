@@ -36,8 +36,16 @@ $(document).ready(function () {
     modal.toggleClass("modal--visible");
   });
 
-  closeBtn.on("click", function () {
-    modal.toggleClass("modal--visible");
+  modal.on("click", function(e) {
+    if(modal.has(e.target).length === 0 || closeBtn.is(e.target)) {
+      modal.toggleClass("modal--visible");
+    }
+  });
+
+  $(document).keydown(function(e) {
+    if(e.keyCode === 27 && modal.closest(".modal--visible").length) {
+      modal.toggleClass("modal--visible");
+    }
   });
 
   let mySwiper = new Swiper(".swiper-container", {
