@@ -22,7 +22,7 @@
       color: $primary
       text-transform: uppercase
     &-value
-      font-size: 1.07142rem
+      font-size: 1.07242rem
       line-height: 1.42857rem
   &-pagination
     &-bullet
@@ -37,7 +37,7 @@
     &-prev, &-next
       buttom: 0
       top: auto
-      background-size: 42px
+      background-size: 3rem
       width: 3rem
       height: 0.92857rem
       outline-color: $light
@@ -47,15 +47,29 @@
       left: 0
       background: url("../../img/arrow-prev.svg") no-repeat center
     &-next  
+      margin-left: 21px
       background: url("../../img/arrow-next.svg") no-repeat center
   &__image
     // max-width: 48.5rem
-    // width: 100%
-    max-height: 34.428571rem
-    object-fit: cover
-    object-position: center
+    width: 100%
+    // max-height: 35.828571rem
+    height: 100%
     padding-top: 20px
-    padding-left: 8.28571rem
+    padding-left: 3.48571rem
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: 0.6rem
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0px 9px
+.buttons
+  &-box
+    position: relative
+    width: 100%
+    margin-top: 5.342857rem
+.swiper-text-box
+  margin-right: 2.85714rem
+.slide
+  &__square
+    margin-bottom: 20px
+.swiper-pagination-bullet
+  margin-right: 1.28571rem
