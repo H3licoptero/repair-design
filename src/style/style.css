@@ -674,7 +674,7 @@ img {
     box-shadow: 207px 0 0 0 rgba(255, 255, 255, 0.3) inset; }
 
 .projects {
-  background-image: url("../../img/background-line.svg"); }
+  background-image: url("../img/background-line.svg"); }
 
 .container__projects {
   margin-top: 11rem; }
@@ -720,11 +720,11 @@ img {
 
 .swiper-button-prev {
   left: 0;
-  background: url("../../img/arrow-prev.svg") no-repeat center; }
+  background: url("../img/arrow-prev.svg") no-repeat center; }
 
 .swiper-button-next {
   margin-left: 21px;
-  background: url("../../img/arrow-next.svg") no-repeat center; }
+  background: url("../img/arrow-next.svg") no-repeat center; }
 
 .swiper__image {
   width: 100%;
