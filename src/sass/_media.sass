@@ -16,7 +16,7 @@
   .contacts
     &__phone
       font-size: 1.17rem
-      margin-right: 3.65rem
+      margin-right: 2.65rem
   .menu
     &__logo
       margin-right: 0.8rem
@@ -37,7 +37,31 @@
         margin-bottom: 3.25rem
     &__text
       font-size: 1.6666666rem
+      max-width: 36.833333rem
       width: 100%
+  .col
+    &-40
+      width: 50%
+    &-60  
+      width: 50%
+  .section
+    &-title
+      &__heading
+        &--primary
+          font-size: 2.25rem
+          line-height: 2.642857rem 
+      &__text
+        max-width: 36.833333rem
+        width: 100%
+        font-size: 1.5rem
+  .swiper
+    &-slide
+      &__heading
+        font-size: 1.5rem
+      &-value
+       font-size: 1.25rem
+    &__image
+      padding-left: 0
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -59,6 +83,14 @@
       font-weight: normal
     &__button
       font-size: 1.084rem
+  .container
+    &__projects
+      max-width: 660px
+  .col
+    &-40
+      width: 80%
+    &-60
+      width: 80%
   .row
     flex-direction: column
     align-items: center
@@ -71,9 +103,11 @@
       &__heading
         font-size: 1.666666rem
         margin-bottom: 1.08333rem
-  .row
-    flex-direction: column
-    align-items: center
+        &--primary
+          font-size: 2.25rem
+          line-height: 2.642857rem  
+      &__text
+        font-size: 1.5rem
   .design
     &__section-title
       margin-bottom: 3.25rem
@@ -116,15 +150,12 @@
   .types
     &__card
       margin-bottom: 6.6583rem
-  // .row
-  //   flex-direction: column
-  //   align-items: center
   .design
     &__section-title
       margin-bottom: 3.25rem
     &__text
-      width: 100%
       max-width: 31.66666rem
+      width: 100%
       margin: auto
       margin-top: 1.916666rem
       font-size: 1.66666rem
@@ -142,6 +173,25 @@
       font-size: 1.84rem 
     &__button
       font-size: 1.084rem
+  .section
+    &-title
+      margin-bottom: 2.58333rem
+      &__heading
+        font-size: 1.666666rem
+        margin-bottom: 1.08333rem
+        &--primary
+          font-size: 2.25rem
+          line-height: 2.642857rem  
+      &__text
+        max-width: 30.416666rem
+        width: 100%
+        font-size: 1.5rem
+  .container
+    &__projects
+      margin: auto
+  // .swiper
+  //   &-slide
+  //     width: 380px
 @media screen and ( max-width: 576px )
   .logo
     &__link
@@ -194,15 +244,16 @@
   .row
     flex-direction: column
     align-items: center
+  .col
+    &-60
+      max-width: 33.33333rem
+      width: 100%
   .types
     &__card
       margin-bottom: 6.6583rem    
-  .section
-    &-title
-      margin-bottom: 3.33333rem
-      &__heading
-        margin-bottom: 1.417rem
-        font-size: 1.666666rem
+    &-text
+      max-width: 25.416666rem
+      width: 100%
   .design
     &__section
       &-title
@@ -215,6 +266,71 @@
       margin: auto
       margin-top: 1.916666rem
       font-size: 1.4rem
+  .swiper
+    &-container
+      margin-bottom: 2.002rem
+    &__image
+      max-width: 28.33333rem
+      width: 100%
+      height: 16.75rem
+      margin-top: 2.75rem
+      padding: 0
+      &::after
+        background: url("../img/mobile-slider.jpg")
+    &-slide
+      margin-top: 0
+      max-width: 100%
+      // width: 100%
+      &__heading
+        margin-bottom: 0.6988rem
+        font-size: 1.166666rem
+      &-value
+        font-size: 1.166666rem
+        line-height: 135.84%
+    &-bullet
+      width: 0.74285rem
+      height: 0.74285rem
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+        width: 0.74285rem
+        height: 0.74285rem
+  .swiper-text-box
+    margin-right: 3.56rem
+  .slide
+    &__square
+      margin-bottom: 1.385714rem
+  .buttons
+    &-box
+      margin-top: 2.67rem
+  .button
+    &-prev
+      margin-left: 50px 
+  .slider
+    &-image
+      max-width: 28.33333rem
+      width: 100%
+      height: 16.75rem
+  .section
+    &__slider
+        padding: 0.25rem 0
+    &-title
+      &__text
+        margin-top: 2.1rem
+        max-width: 25.4166666rem
+        font-size: 1.166666rem
+        line-height: 158.48%
+      &__heading
+        &--primary
+          margin-top: 0
+      &__word
+        &::after
+          display: none 
+      &__projects
+        margin-bottom: 3rem
+  .swiper-pagination-bullet
+    margin-right: 1.58571rem  
+    margin-top: 0.366rem
 @media screen and ( max-height: 610px )
   .hero
     &__scroll-down
@@ -268,6 +384,9 @@
       &__heading
         font-size: 1.833333rem
         margin-bottom: 1.4rem
+      &__text
+        max-width: 25.41666rem
+        font-size: 1.166666rem
   .row
     flex-direction: column
     align-items: center
@@ -318,4 +437,74 @@
         background-color: transparent
     &__pricetag
       text-align: center
-    
+  .col
+    &-40
+      width: 100%
+    &-60
+      width: 100%
+  .projects
+    background-image: none
+  .container
+    &__projects
+      margin-top: 0
+  .swiper
+    &-container
+      margin-bottom: 2.002rem
+    &__image
+      max-width: 28.33333rem
+      width: 100%
+      height: 16.75rem
+      margin-top: 2.75rem
+      padding: 0
+      &::after
+        background: url("../img/mobile-slider.jpg")
+    &-slide
+      margin-top: 0
+      &__heading
+        margin-bottom: 0.6988rem
+        font-size: 1.166666rem
+      &-value
+        font-size: 1.166666rem
+        line-height: 135.84%
+    &-bullet
+      width: 0.74285rem
+      height: 0.74285rem
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+        width: 0.74285rem
+        height: 0.74285rem
+  .swiper-text-box
+    margin-right: 3.56rem
+  .slide
+    &__square
+      margin-bottom: 1.385714rem
+  .buttons
+    &-box
+      margin-top: 2.67rem
+  .button
+    &-prev
+      margin-left: 50px 
+  .slider
+    &-image
+      max-width: 28.33333rem
+      width: 100%
+      height: 16.75rem
+  .section
+    &__slider
+        padding: 0.25rem 0
+    &-title
+      &__text
+        margin-top: 2.1rem
+        line-height: 158.48%
+      &__heading
+        &--primary
+          margin-top: 0
+      &__word
+        &::after
+          display: none 
+      &__projects
+        margin-bottom: 3rem
+  .swiper-pagination-bullet
+    margin-right: 1.58571rem  
+    margin-top: 0.366rem
