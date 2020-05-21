@@ -63,3 +63,26 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+.button
+  &__top
+    display: none
+    position: fixed
+    bottom: 20px
+    right: 20px
+    width: 40px
+    height: 40px
+    background-color: rgba($dark, 0.5)
+    border-radius: 50%
+    border: solid 1px $primary 
+    cursor: pointer
+    box-shadow: 0 0 5px 1px rgba($light, 0.5)
+    transition: all 0.2s ease
+    &:hover
+      background-color: $light
+      box-shadow: 0 0 5px 1px rgba($dark, 0.5)
+.arrow-top
+  position: absolute
+  top: 15px
+  left: 14px
+  transform: rotate(180deg)
+    

@@ -48,6 +48,22 @@ $(document).ready(function () {
     }
   });
 
+  $(function(){
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 300) {
+        $('.top').fadeIn();
+      } else {
+        $('.top').fadeOut();
+      }
+    });
+  
+    $('.top').click(function(){
+      $('html, body').animate({scrollTop: 0}, 1000);
+      return false;
+    });
+  });
+
+
   let mySwiper = new Swiper(".swiper-container", {
     // Optional parameters
     loop: true,
