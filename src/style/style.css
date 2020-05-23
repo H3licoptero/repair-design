@@ -330,6 +330,8 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  font-family: "Futura Demi", sans-serif;
+  font-weight: normal;
   font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
@@ -396,6 +398,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .button__top {
   display: none;
@@ -923,7 +927,7 @@ img {
   margin: auto; }
 
 .types {
-  margin-top: 280px; }
+  height: 1500px; }
   .types__section-title {
     margin-bottom: 2.22rem; }
 
@@ -982,20 +986,25 @@ img {
   text-align: center;
   color: #363636; }
 
-.design__text {
-  margin: auto;
-  margin-top: 1.3rem;
-  margin-bottom: 3.35rem;
-  font-family: "Futura Book", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.428571rem;
-  line-height: 27px; }
-
-.design__pricetag {
-  bottom: -1.34rem;
-  text-align: left;
-  padding-left: 2.358rem; }
+.design {
+  background: #131313 url(../img/background-line.svg) no-repeat center;
+  padding-bottom: 20rem; }
+  .design__container {
+    margin-top: -545px; }
+  .design__text {
+    max-width: 52.75rem;
+    margin: auto;
+    margin-top: 1.3rem;
+    margin-bottom: 3.35rem;
+    font-family: "Futura Book", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428571rem;
+    line-height: 27px; }
+  .design__pricetag {
+    bottom: -1.34rem;
+    text-align: left;
+    padding-left: 2.358rem; }
 
 .card__design-image {
   position: relative; }
@@ -1072,6 +1081,57 @@ img {
     width: 100%;
     max-width: 15.214287rem;
     outline-color: #e3b873; }
+
+.footer {
+  position: relative;
+  background: #131313 url("../img/footer-bg2.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    max-width: 63.071428rem;
+    margin: auto;
+    margin-top: -22rem;
+    padding: 2.5rem 12.928571rem;
+    background-color: #181818;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.42857rem;
+    line-height: 2rem;
+    text-transform: uppercase; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    line-height: 1.214285rem;
+    color: #ffffff; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 44.7%;
+    margin-bottom: 3.428571rem; }
+    .footer__input-group--full-width {
+      flex-basis: 100%;
+      margin-bottom: 2.35rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.85714rem;
+    margin-right: 1.571428rem; }
+  .footer__button {
+    max-width: 14.28571rem;
+    width: 100%;
+    margin: auto;
+    padding: 1.228571rem 3.857142rem;
+    font-size: 1.071428rem; }
+  .footer__menu {
+    padding: 3.43rem 0;
+    background-color: #131313; }
 
 @media screen and (max-width: 1250px) {
   .nav__item {
