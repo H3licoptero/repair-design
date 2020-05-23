@@ -63,7 +63,24 @@
        font-size: 1.25rem
     &__image
       padding-left: 0
-
+  .control
+    &__video
+      max-width: 57.66666rem
+    &__text
+      max-width: 43.5rem
+      font-size: 1.666666rem
+    &__label
+      font-size: 1.25rem
+    &__input
+      &::placeholder
+        font-size: 1.5rem
+    &__policy
+      margin-top: 0.9rem
+      &-label
+        font-size: 1.333333rem
+    &__button
+      font-size: 1.25rem
+      padding: 1.22857rem
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -139,6 +156,14 @@
       &-image
         &::before
          background-color: transparent
+  .control
+    &__input
+       &::placeholder
+        font-size: 1.5rem
+    &__text
+      font-size: 1.666666rem
+    &__button
+      font-size: 1.25rem
 @media screen and ( max-width: 768px )
   // for types & design
   .logo
@@ -204,6 +229,40 @@
       min-height: 20.5rem
       object-fit: contain
       object-position: center
+    &__form
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 28.333333rem
+    &__label
+      margin-bottom: -3px
+      font-size: 1.25rem
+    &__text
+      max-width: 43.5rem
+      font-size: 1.666666rem
+    &__input
+      width: 100%
+      line-height: 2.3rem
+      &::placeholder
+        font-size: 1.5rem
+    &__name
+      margin-right: 0
+      margin-bottom: 2.97rem
+    &__phone
+      margin-right: 0
+      margin-bottom: 2.97rem
+    &__policy
+      margin-top: 0.9rem
+      &-label
+        justify-content: start
+        font-size: 1.333333rem
+    &__button
+      font-size: 1.25rem
+      max-width: 100%
+  .video
+    &-play
+      width: 6.08333rem
+      height: 6.08333rem
 @media screen and ( max-width: 576px )
   .logo
     &__link
@@ -223,7 +282,7 @@
       display: none
     &__content
       max-width: 30rem
-      width: 325px
+      width: 100%
       margin: auto
     &__text
       margin-bottom: 2.28rem
@@ -356,8 +415,41 @@
     background-image: none
   .control
     &__video
-      max-width: 41.416666rem
-      min-height: 20.5rem
+      max-width: 28.33333rem
+      min-height: 17.25rem
+    &__text
+      font-size: 1.16666rem
+      width: 28.333333rem
+    &__form
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 28.333333rem
+    &__label
+      margin-bottom: -3px
+      font-size: 1.25rem
+    &__input
+      width: 100%
+      line-height: 2.3rem
+      &::placeholder
+        font-size: 1.5rem
+    &__name
+      margin-right: 0
+      margin-bottom: 2.97rem
+    &__phone
+      margin-right: 0
+      margin-bottom: 2.97rem
+    &__policy
+      margin-top: 0.9rem
+      &-label
+        justify-content: start
+    &__button
+      font-size: 1.25rem
+      max-width: 100% 
+  .video  
+    &-play
+      width: 4.08333rem
+      height: 4.08333rem
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -377,26 +469,27 @@
     outline-color: $light
   .hero
     padding-top: 6.583333rem
-    height: 476px
+    height: 39.66666rem
     background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
     &__container
-      width: 93%
-      max-width: 350px
+      width: 90%
+      // max-width: 29.16666rem
     &__title
       font-size: 1.92rem
-      margin-bottom: 16px
+      margin-bottom: 1.0833333rem
       padding-bottom: 0   
     &__content
       // display: flex
       // flex-direction: column
       // justify-content: center
       // width: 97%
-      // margin: auto
+      margin: 0
     &__text
       width: 97% 
-      max-width: 321px 
+      max-width: 26.75rem 
       font-size: 1.5rem
       line-height: 135.84%;
+      margin-bottom: 2.6666666rem
     &__button
       width: 100%
       max-width: 28.166666rem
@@ -537,7 +630,7 @@
       &__projects
         margin-bottom: 3rem
   .projects
-    height: 150rem
+    height: 129.7rem
   .swiper-pagination-bullet
     margin-right: 1.58571rem  
     margin-top: 0.366rem
@@ -547,12 +640,12 @@
       min-height: 17.25rem
       margin-bottom: 2.33333rem
     &__section-title
-      margin-top: -95rem 
+      margin-top: -75.7rem 
       margin-bottom: 3.3rem
     &__text
       width: 100%
       margin-bottom: 2.1rem
-      font-size: 1.16666rem
+      font-size: 1.166666rem
       line-height: 178.8%
       color: $light
       &::before
@@ -581,6 +674,7 @@
       margin-right: 0
     &__phone
       margin-right: 0
+      margin-bottom: 0
     &__policy
       margin-top: 0.9rem
       color: $light

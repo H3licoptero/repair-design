@@ -694,7 +694,6 @@ img {
 
 .title {
   margin: 0;
-  margin-bottom: 16px;
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   text-transform: uppercase;
@@ -1125,7 +1124,31 @@ img {
   .swiper-slide-value {
     font-size: 1.25rem; }
   .swiper__image {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .control__video {
+    max-width: 57.66666rem; }
+  .control__text {
+    max-width: 43.5rem;
+    font-size: 1.666666rem; }
+  .control__label {
+    font-size: 1.25rem; }
+  .control__input::-webkit-input-placeholder {
+    font-size: 1.5rem; }
+  .control__input::-moz-placeholder {
+    font-size: 1.5rem; }
+  .control__input:-ms-input-placeholder {
+    font-size: 1.5rem; }
+  .control__input::-ms-input-placeholder {
+    font-size: 1.5rem; }
+  .control__input::placeholder {
+    font-size: 1.5rem; }
+  .control__policy {
+    margin-top: 0.9rem; }
+    .control__policy-label {
+      font-size: 1.333333rem; }
+  .control__button {
+    font-size: 1.25rem;
+    padding: 1.22857rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1189,7 +1212,21 @@ img {
   .card__pricetag {
     font-size: 1.5rem; }
   .card__design-image::before {
-    background-color: transparent; } }
+    background-color: transparent; }
+  .control__input::-webkit-input-placeholder {
+    font-size: 1.5rem; }
+  .control__input::-moz-placeholder {
+    font-size: 1.5rem; }
+  .control__input:-ms-input-placeholder {
+    font-size: 1.5rem; }
+  .control__input::-ms-input-placeholder {
+    font-size: 1.5rem; }
+  .control__input::placeholder {
+    font-size: 1.5rem; }
+  .control__text {
+    font-size: 1.666666rem; }
+  .control__button {
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 768px) {
   .logo__link {
@@ -1243,7 +1280,48 @@ img {
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
-    object-position: center; } }
+    object-position: center; }
+  .control__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 28.333333rem; }
+  .control__label {
+    margin-bottom: -3px;
+    font-size: 1.25rem; }
+  .control__text {
+    max-width: 43.5rem;
+    font-size: 1.666666rem; }
+  .control__input {
+    width: 100%;
+    line-height: 2.3rem; }
+    .control__input::-webkit-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::-moz-placeholder {
+      font-size: 1.5rem; }
+    .control__input:-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::placeholder {
+      font-size: 1.5rem; }
+  .control__name {
+    margin-right: 0;
+    margin-bottom: 2.97rem; }
+  .control__phone {
+    margin-right: 0;
+    margin-bottom: 2.97rem; }
+  .control__policy {
+    margin-top: 0.9rem; }
+    .control__policy-label {
+      justify-content: start;
+      font-size: 1.333333rem; }
+  .control__button {
+    font-size: 1.25rem;
+    max-width: 100%; }
+  .video-play {
+    width: 6.08333rem;
+    height: 6.08333rem; } }
 
 @media screen and (max-width: 576px) {
   .logo__link {
@@ -1261,7 +1339,7 @@ img {
     display: none; }
   .hero__content {
     max-width: 30rem;
-    width: 325px;
+    width: 100%;
     margin: auto; }
   .hero__text {
     margin-bottom: 2.28rem;
@@ -1376,8 +1454,48 @@ img {
   .projects {
     background-image: none; }
   .control__video {
-    max-width: 41.416666rem;
-    min-height: 20.5rem; } }
+    max-width: 28.33333rem;
+    min-height: 17.25rem; }
+  .control__text {
+    font-size: 1.16666rem;
+    width: 28.333333rem; }
+  .control__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 28.333333rem; }
+  .control__label {
+    margin-bottom: -3px;
+    font-size: 1.25rem; }
+  .control__input {
+    width: 100%;
+    line-height: 2.3rem; }
+    .control__input::-webkit-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::-moz-placeholder {
+      font-size: 1.5rem; }
+    .control__input:-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .control__input::placeholder {
+      font-size: 1.5rem; }
+  .control__name {
+    margin-right: 0;
+    margin-bottom: 2.97rem; }
+  .control__phone {
+    margin-right: 0;
+    margin-bottom: 2.97rem; }
+  .control__policy {
+    margin-top: 0.9rem; }
+    .control__policy-label {
+      justify-content: start; }
+  .control__button {
+    font-size: 1.25rem;
+    max-width: 100%; }
+  .video-play {
+    width: 4.08333rem;
+    height: 4.08333rem; } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -1397,20 +1515,22 @@ img {
     outline-color: #ffffff; }
   .hero {
     padding-top: 6.583333rem;
-    height: 476px;
+    height: 39.66666rem;
     background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover; }
     .hero__container {
-      width: 93%;
-      max-width: 350px; }
+      width: 90%; }
     .hero__title {
       font-size: 1.92rem;
-      margin-bottom: 16px;
+      margin-bottom: 1.0833333rem;
       padding-bottom: 0; }
+    .hero__content {
+      margin: 0; }
     .hero__text {
       width: 97%;
-      max-width: 321px;
+      max-width: 26.75rem;
       font-size: 1.5rem;
-      line-height: 135.84%; }
+      line-height: 135.84%;
+      margin-bottom: 2.6666666rem; }
     .hero__button {
       width: 100%;
       max-width: 28.166666rem;
@@ -1536,7 +1656,7 @@ img {
   .section-title__projects {
     margin-bottom: 3rem; }
   .projects {
-    height: 150rem; }
+    height: 129.7rem; }
   .swiper-pagination-bullet {
     margin-right: 1.58571rem;
     margin-top: 0.366rem; }
@@ -1545,12 +1665,12 @@ img {
     min-height: 17.25rem;
     margin-bottom: 2.33333rem; }
   .control__section-title {
-    margin-top: -95rem;
+    margin-top: -75.7rem;
     margin-bottom: 3.3rem; }
   .control__text {
     width: 100%;
     margin-bottom: 2.1rem;
-    font-size: 1.16666rem;
+    font-size: 1.166666rem;
     line-height: 178.8%;
     color: #ffffff; }
     .control__text::before {
@@ -1589,7 +1709,8 @@ img {
     margin-bottom: 4.97rem;
     margin-right: 0; }
   .control__phone {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 0; }
   .control__policy {
     margin-top: 0.9rem;
     color: #ffffff; }
