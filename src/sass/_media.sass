@@ -198,6 +198,12 @@
       &__text
         flex-basis: 45%
         margin-bottom: 2.728571rem
+  .control
+    &__video
+      max-width: 41.416666rem
+      min-height: 20.5rem
+      object-fit: contain
+      object-position: center
 @media screen and ( max-width: 576px )
   .logo
     &__link
@@ -348,6 +354,10 @@
     margin-top: 0.366rem
   .projects
     background-image: none
+  .control
+    &__video
+      max-width: 41.416666rem
+      min-height: 20.5rem
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -377,11 +387,11 @@
       margin-bottom: 16px
       padding-bottom: 0   
     &__content
-      display: flex
-      flex-direction: column
-      justify-content: center
-      width: 97%
-      margin: auto
+      // display: flex
+      // flex-direction: column
+      // justify-content: center
+      // width: 97%
+      // margin: auto
     &__text
       width: 97% 
       max-width: 321px 
@@ -513,6 +523,7 @@
   .section
     &__slider
         padding: 0.25rem 0
+        height: 83.33333rem
     &-title
       &__text
         margin-top: 2.1rem
@@ -525,6 +536,64 @@
           display: none 
       &__projects
         margin-bottom: 3rem
+  .projects
+    height: 150rem
   .swiper-pagination-bullet
     margin-right: 1.58571rem  
     margin-top: 0.366rem
+  .control
+    &__video
+      max-width: 28.33333rem
+      min-height: 17.25rem
+      margin-bottom: 2.33333rem
+    &__section-title
+      margin-top: -95rem 
+      margin-bottom: 3.3rem
+    &__text
+      width: 100%
+      margin-bottom: 2.1rem
+      font-size: 1.16666rem
+      line-height: 178.8%
+      color: $light
+      &::before
+        margin-bottom: 1.3rem
+    &__form
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      // justify-content: none
+      width: 100%
+      min-height: 25.916666rem
+    &__label
+      margin-bottom: -3px
+      font-size: 1.25rem
+      color: rgba($light, 0.5)
+      line-height: 138.72%
+    &__input
+      width: 100%  
+      border-bottom: 1px solid rgba($light, 0.15)
+      line-height: 2.3rem
+      &::placeholder
+        font-size: 1.5rem
+        color: $light
+    &__name
+      margin-bottom: 4.97rem 
+      margin-right: 0
+    &__phone
+      margin-right: 0
+    &__policy
+      margin-top: 0.9rem
+      color: $light
+      &-label
+        justify-content: start
+        margin-bottom: 5.5rem
+        font-size: 1.333333rem
+    &__button
+      order: 1
+      width: 100%
+      max-width: 28.3333rem
+      font-size: 1.25rem
+  .video
+    &-play
+      width: 3.08333rem
+      height: 3.08333rem

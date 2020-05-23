@@ -85,4 +85,6 @@ $(document).ready(function () {
   next.css("left", prev.width() + 20 + bullets.width());
   bullets.css("left", prev.width() + 30);
   bullets.css("top", bullets.height() - 40);
+
+  new WOW().init();
 });
