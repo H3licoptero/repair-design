@@ -69,6 +69,10 @@
     &__text
       max-width: 43.5rem
       font-size: 1.666666rem
+    &__form
+      display: flex
+      flex-wrap: wrap
+      // flex-basis: 50%
     &__label
       font-size: 1.25rem
     &__input
@@ -81,6 +85,23 @@
     &__button
       font-size: 1.25rem
       padding: 1.22857rem
+      width: 100%
+    &__box
+      flex-grow: 1
+  .footer
+    &__title
+      font-size: 1.666666rem
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem
+    &__button
+      font-size: 1.25rem
+  .policy
+    &__label
+      &--center
+        justify-content: start
+        font-size: 1.33333rem
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -115,6 +136,8 @@
     flex-direction: column
     align-items: center
   .types
+    &__wrapper
+      margin-bottom: 30rem
     &__card
       margin-bottom: 6.6rem
   .section
@@ -164,6 +187,22 @@
       font-size: 1.666666rem
     &__button
       font-size: 1.25rem
+  .footer
+    &__form
+      max-width: 30.142rem
+    &__title
+      font-size: 1.666666rem
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem
+    &__button
+      font-size: 1.25rem
+  .policy
+    &__label
+      &--center
+        justify-content: start
+        font-size: 1.33333rem
 @media screen and ( max-width: 768px )
   // for types & design
   .logo
@@ -263,6 +302,40 @@
     &-play
       width: 6.08333rem
       height: 6.08333rem
+  .footer
+    &__wrap
+      width: 100%
+      padding: 2.4rem 4.4rem
+      margin: 0
+      margin-top: -28rem
+      margin-bottom: 3.714rem
+    &__title
+      margin-bottom: 4.25rem
+      font-size: 1.666666rem
+      font-weight: normal
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem
+      line-height: inherit
+      padding: 0 0 0.5rem
+      &-group
+        margin-bottom: 5.1rem
+    &__form
+      flex-direction: column
+    &__input-group--full-width
+      margin-bottom: 7px
+    &__policy
+      margin-bottom: 5.65714rem
+    &__button
+      width: 100%
+      max-width: 16.66666rem
+      font-size: 1.25rem
+  .policy
+    &__label
+      &--center
+        justify-content: start
+        font-size: 1.33333rem
 @media screen and ( max-width: 576px )
   .logo
     &__link
@@ -326,12 +399,15 @@
       max-width: 33.33333rem
       width: 100%
   .types
+    &__wrapper
+      margin-bottom: 30rem
     &__card
       margin-bottom: 6.6583rem    
     &-text
       max-width: 25.416666rem
       width: 100%
   .design
+    background-image: none
     &__section
       &-title
       margin-bottom: 3.25rem
@@ -450,6 +526,42 @@
     &-play
       width: 4.08333rem
       height: 4.08333rem
+  .footer
+    background-image: none
+    &__wrap
+      width: 100%
+      padding: 0
+      margin: 0
+      margin-top: -28rem
+      margin-bottom: 3.714rem
+      background: none
+    &__title
+      margin-bottom: 4.25rem
+      font-size: 1.666666rem
+      font-weight: normal
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem
+      line-height: inherit
+      padding: 0 0 0.5rem
+      &-group
+        margin-bottom: 5.1rem
+    &__form
+      flex-direction: column
+    &__input-group--full-width
+      margin-bottom: 7px
+    &__policy
+      margin-bottom: 5.65714rem
+    &__button
+      width: 100%
+      // max-width: inherit
+      font-size: 1.25rem
+  .policy
+    &__label
+      &--center
+        justify-content: start
+        font-size: 1.33333rem
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -472,8 +584,9 @@
     height: 39.66666rem
     background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
     &__container
-      width: 90%
-      // max-width: 29.16666rem
+      // width: 100%
+      margin: auto
+      max-width: 29.16666rem
     &__title
       font-size: 1.92rem
       margin-bottom: 1.0833333rem
@@ -541,9 +654,16 @@
       font-size: 1.25rem
       line-height: 1.583333rem
   .types
+    &__wrapper
+      margin-bottom: 0
     &__card
       margin-bottom: 6.6583rem
   .design
+    background-image: none
+    &__container
+      margin-top: 0
+    &__heading  
+      color: $light
     &__section-title
       margin-bottom: 3.25rem
     &__text
@@ -552,6 +672,7 @@
       margin-top: 1.44rem
       font-size: 1.25rem
       line-height: 135.84%;
+      color: $light
     &__card
       margin-bottom: 6.6583rem
       max-width: 28.3333333rem
@@ -635,6 +756,9 @@
     margin-right: 1.58571rem  
     margin-top: 0.366rem
   .control
+    &__container
+      width: 100%
+      margin: auto
     &__video
       max-width: 28.33333rem
       min-height: 17.25rem
@@ -648,7 +772,7 @@
       font-size: 1.166666rem
       line-height: 175.84%
       color: $light
-      max-width: 26rem
+      max-width: 29rem
       &::before
         margin-bottom: 1.3rem
     &__form
@@ -686,6 +810,8 @@
         font-size: 1.333333rem
     &__box
       order: 1
+      width: 100%
+      max-width: 28.33333rem
     &__button
       order: 1
       width: 100%
@@ -695,3 +821,39 @@
     &-play
       width: 3.08333rem
       height: 3.08333rem
+  .footer
+    background-image: none
+    &__wrap
+      width: 100%
+      padding: 0
+      margin: 0
+      margin-top: -28rem
+      margin-bottom: 3.714rem
+      background: none
+    &__title
+      margin-bottom: 4.25rem
+      font-size: 1.666666rem
+      font-weight: normal
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem
+      line-height: inherit
+      padding: 0 0 0.5rem
+      &-group
+        margin-bottom: 5.1rem
+    &__form
+      flex-direction: column
+    &__input-group--full-width
+      margin-bottom: 7px
+    &__policy
+      margin-bottom: 5.65714rem
+    &__button
+      width: 100%
+      max-width: inherit
+      font-size: 1.25rem
+  .policy
+    &__label
+      &--center
+        justify-content: start
+        font-size: 1.33333rem
