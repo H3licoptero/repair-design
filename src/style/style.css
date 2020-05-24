@@ -710,7 +710,9 @@ img {
   border: 1px solid #e3b873;
   transition: 0.3s linear; }
   .count-button:hover {
-    box-shadow: 207px 0 0 0 rgba(255, 255, 255, 0.3) inset; }
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); }
 
 .projects {
   background-image: url("../img/background-line.svg"); }
@@ -829,13 +831,13 @@ img {
   max-width: 39.78571rem;
   width: 100%;
   margin: auto;
-  margin-bottom: 4.68rem;
+  margin-bottom: 4.38rem;
   text-align: center;
   font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.42857rem;
-  line-height: 2.42857rem; }
+  line-height: 2.49rem; }
   .control__text::before {
     content: '';
     display: block;
@@ -866,6 +868,7 @@ img {
 
 .control__input-group {
   display: flex;
+  flex-basis: 30%;
   flex-direction: column; }
 
 .control__policy {
@@ -922,14 +925,18 @@ img {
   max-width: 14.2857rem;
   width: 100%; }
 
+.control__invalid {
+  color: #e38073; }
+
 .video-play {
   position: relative;
   margin: auto; }
 
-.types {
-  height: 1500px; }
-  .types__section-title {
-    margin-bottom: 2.22rem; }
+.types__wrapper {
+  min-height: 100rem; }
+
+.types__section-title {
+  margin-bottom: 2.22rem; }
 
 .section-title__heading {
   margin-bottom: 0.93rem; }
@@ -1067,9 +1074,13 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428571rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1px; }
+    color: #ffffff; }
+    .modal__input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.428571rem; }
+      .modal__input-group:last-of-type {
+        margin-bottom: 1px; }
   .modal__policy {
     margin: 0;
     margin-bottom: 2.7rem;
@@ -1081,6 +1092,8 @@ img {
     width: 100%;
     max-width: 15.214287rem;
     outline-color: #e3b873; }
+  .modal__invalid {
+    color: #e38073; }
 
 .footer {
   position: relative;
@@ -1132,6 +1145,8 @@ img {
   .footer__menu {
     padding: 3.43rem 0;
     background-color: #131313; }
+  .footer__invalid {
+    color: #e38073; }
 
 @media screen and (max-width: 1250px) {
   .nav__item {
@@ -1731,8 +1746,9 @@ img {
     width: 100%;
     margin-bottom: 2.1rem;
     font-size: 1.166666rem;
-    line-height: 178.8%;
-    color: #ffffff; }
+    line-height: 175.84%;
+    color: #ffffff;
+    max-width: 26rem; }
     .control__text::before {
       margin-bottom: 1.3rem; }
   .control__form {
@@ -1777,7 +1793,10 @@ img {
     .control__policy-label {
       justify-content: start;
       margin-bottom: 5.5rem;
+      margin-right: 0;
       font-size: 1.333333rem; }
+  .control__box {
+    order: 1; }
   .control__button {
     order: 1;
     width: 100%;
