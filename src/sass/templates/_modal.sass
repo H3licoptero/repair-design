@@ -50,7 +50,9 @@
     flex-direction: column
   &__input
     color: $light
+    outline: none
     &-group
+      position: relative
       display: flex
       flex-direction: column
       margin-bottom: 3.428571rem
@@ -69,3 +71,9 @@
     outline-color: $primary
   &__invalid
     color: $error
+span.modal__invalid
+  position: absolute
+  top: 47px
+  left: 0
+  margin: 0
+  padding: 0

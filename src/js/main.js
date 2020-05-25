@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 */
 
 $(document).ready(function () {
-  ("use strict");
+  "use strict";
   let modal = $(".modal"),
     modalBtn = $('[data-toggle="modal"]'),
     closeBtn = $(".modal__close");
@@ -95,6 +95,7 @@ $(document).ready(function () {
   // валидация формы
   $(".modal__form").validate({
     errorClass: "modal__invalid",
+    errorElement: "span",
     rules: {
       // правило для поля "введите имя"
       userName: {
@@ -103,29 +104,34 @@ $(document).ready(function () {
         maxlength: 15,
       },
       // правило для телефона
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
       // правила для поля "email"
       userEmail: {
         required: true,
         email: true,
       },
+      
     },
     // сообщения при ошибках
     messages: {
       userName: {
-        required: "Это поле обязательно для ввода",
+        required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      userPhone: "Укажите свой номер телефона",
+      userPhone: "Заполните поле",
       userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com",
+        required: "Заполните поле",
+        email: "Введите корректный email",
       },
     },
   });
   $(".footer__form").validate({
     errorClass: "footer__invalid",
+    errorElement: "span",
     rules: {
       footerName: {
         required: true,
@@ -134,6 +140,7 @@ $(document).ready(function () {
       },
       footerPhone: {
         required: true,
+        minlength: 16,
       },
       footerQuestion: {
         required: true,
@@ -142,11 +149,11 @@ $(document).ready(function () {
     // сообщения при ошибках
     messages: {
       footerName: {
-        required: "Это поле обязательно для ввода",
+        required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      footerPhone: "Укажите свой номер телефона",
+      footerPhone: "Заполните поле",
       footerQuestion: {
         required: "Напишите свой вопрос",
       },
@@ -154,6 +161,7 @@ $(document).ready(function () {
   });
   $(".control__form").validate({
     errorClass: "control__invalid",
+    errorElement: "span",
     rules: {
       // правило для поля "введите имя"
       controlName: {
@@ -162,16 +170,19 @@ $(document).ready(function () {
         maxlength: 15,
       },
       // правило для телефона
-      controlPhone: "required",
+      controlPhone: {
+        required: true,
+        minlength: 16,
+      },
     },
     // сообщения при ошибках
     messages: {
       controlName: {
-        required: "Это поле обязательно для ввода",
+        required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      controlPhone: "Укажите свой номер телефона",
+      controlPhone: "Заполните поле",
     },
   });
   // маска для телефона
@@ -182,66 +193,66 @@ $(document).ready(function () {
   // map
   // Функция ymaps.ready() будет вызвана, когда
   // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
- ymaps.ready(function () {
-   var myMap = new ymaps.Map(
-       "map",
-       {
-         center: [55.751574, 37.573856],
-         zoom: 9,
-       },
-       {
-         searchControlProvider: "yandex#search",
-       }
-     ),
-     // Создаём макет содержимого.
-     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-     ),
-     myPlacemark = new ymaps.Placemark(
-       myMap.getCenter(),
-       {
-         hintContent: "Собственный значок метки",
-         balloonContent: "Это красивая метка",
-       },
-       {
-         // Опции.
-         // Необходимо указать данный тип макета.
-         iconLayout: "default#image",
-         // Своё изображение иконки метки.
-         iconImageHref: "img/myIcon.gif",
-         // Размеры метки.
-         iconImageSize: [30, 42],
-         // Смещение левого верхнего угла иконки относительно
-         // её "ножки" (точки привязки).
-         iconImageOffset: [-5, -38],
-       }
-     ),
-     myPlacemarkWithContent = new ymaps.Placemark(
-       [55.672368, 37.582757],
-       {
-         hintContent: "Наш офис",
-         balloonContent: "Вход со стороны проспекта",
-         iconContent: "",
-       },
-       {
-         // Опции.
-         // Необходимо указать данный тип макета.
-         iconLayout: "default#imageWithContent",
-         // Своё изображение иконки метки.
-         iconImageHref: "img/pin.png",
-         // Размеры метки.
-         iconImageSize: [48, 48],
-         // Смещение левого верхнего угла иконки относительно
-         // её "ножки" (точки привязки).
-         iconImageOffset: [-24, -24],
-         // Смещение слоя с содержимым относительно слоя с картинкой.
-         iconContentOffset: [15, 15],
-         // Макет содержимого.
-         iconContentLayout: MyIconContentLayout,
-       }
-     );
+//  ymaps.ready(function () {
+//    var myMap = new ymaps.Map(
+//        "map",
+//        {
+//          center: [55.751574, 37.573856],
+//          zoom: 9,
+//        },
+//        {
+//          searchControlProvider: "yandex#search",
+//        }
+//      ),
+//      // Создаём макет содержимого.
+//      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+//        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+//      ),
+//      myPlacemark = new ymaps.Placemark(
+//        myMap.getCenter(),
+//        {
+//          hintContent: "Собственный значок метки",
+//          balloonContent: "Это красивая метка",
+//        },
+//        {
+//          // Опции.
+//          // Необходимо указать данный тип макета.
+//          iconLayout: "default#image",
+//          // Своё изображение иконки метки.
+//          iconImageHref: "img/myIcon.gif",
+//          // Размеры метки.
+//          iconImageSize: [30, 42],
+//          // Смещение левого верхнего угла иконки относительно
+//          // её "ножки" (точки привязки).
+//          iconImageOffset: [-5, -38],
+//        }
+//      ),
+//      myPlacemarkWithContent = new ymaps.Placemark(
+//        [55.672368, 37.582757],
+//        {
+//          hintContent: "Наш офис",
+//          balloonContent: "Вход со стороны проспекта",
+//          iconContent: "",
+//        },
+//        {
+//          // Опции.
+//          // Необходимо указать данный тип макета.
+//          iconLayout: "default#imageWithContent",
+//          // Своё изображение иконки метки.
+//          iconImageHref: "img/pin.png",
+//          // Размеры метки.
+//          iconImageSize: [48, 48],
+//          // Смещение левого верхнего угла иконки относительно
+//          // её "ножки" (точки привязки).
+//          iconImageOffset: [-24, -24],
+//          // Смещение слоя с содержимым относительно слоя с картинкой.
+//          iconContentOffset: [15, 15],
+//          // Макет содержимого.
+//          iconContentLayout: MyIconContentLayout,
+//        }
+//      );
 
-   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
-   myMap.behaviors.disable('scrollZoom');
- });
+//    myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+//    myMap.behaviors.disable('scrollZoom');
+//  });
 });
