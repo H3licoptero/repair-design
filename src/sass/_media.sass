@@ -97,11 +97,22 @@
       font-size: 1.5rem
     &__button
       font-size: 1.25rem
+    &__map
+      height: 100%
+      width: 100%
   .policy
     &__label
       &--center
         justify-content: start
         font-size: 1.33333rem
+  .info
+    &__box
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-width: 57.5rem
+      width: 100%
+      margin: auto
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -211,13 +222,13 @@
         justify-content: start
         font-size: 1.33333rem
   .info
-  &__box
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    max-width: 57.5rem
-    width: 100%
-    margin: auto
+    &__box
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-width: 57.5rem
+      width: 100%
+      margin: auto
 @media screen and ( max-width: 768px )
   // for types & design
   .logo
@@ -592,8 +603,8 @@
       &--center
         justify-content: start
         font-size: 1.33333rem
-  .menu
-    display: none
+  // .menu
+  //   display: none
   .social
     &__box
       display: flex
@@ -912,9 +923,10 @@
     &__info
       display: flex
     &__map
-      display: flex
+      // display: flex
       max-width: 28.33333rem
-      min-height: 21.25rem
+      min-height: 10.25rem
+      // height: 100%
       margin-bottom: 3.24285rem
     &__phone
       font-size: 1.5rem
@@ -925,8 +937,9 @@
       &--center
         justify-content: start
         font-size: 1.33333rem
-  .menu
-    display: none
+  .bottom
+    &__menu
+      display: none
   .social
     &__box
       display: flex
@@ -948,6 +961,5 @@
       order: 1
       font-size: 1.5rem
       line-height: 141.6%
-  .map
-    &__box
-      width: 100%
+    
+      
