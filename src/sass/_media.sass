@@ -198,11 +198,26 @@
       font-size: 1.5rem
     &__button
       font-size: 1.25rem
+    &__map
+      display: flex
+      max-width: 57.5rem
+      width: 100%
+      min-height: 25.25rem
+      margin: auto
+      margin-bottom: 3.24285rem
   .policy
     &__label
       &--center
         justify-content: start
         font-size: 1.33333rem
+  .info
+  &__box
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    max-width: 57.5rem
+    width: 100%
+    margin: auto
 @media screen and ( max-width: 768px )
   // for types & design
   .logo
@@ -331,11 +346,19 @@
       width: 100%
       max-width: 16.66666rem
       font-size: 1.25rem
+    &__map
+      display: flex
+      max-width: 43.25rem
+      width: 100%
+      min-height: 21.25rem
+      margin: auto
+      margin-bottom: 3.24285rem
   .policy
     &__label
       &--center
         justify-content: start
         font-size: 1.33333rem
+  
 @media screen and ( max-width: 576px )
   .logo
     &__link
@@ -557,11 +580,44 @@
       width: 100%
       // max-width: inherit
       font-size: 1.25rem
+    &__map
+      display: flex
+      max-width: 28.33333rem
+      width: 100%
+      min-height: 21.25rem
+      margin: auto
+      margin-bottom: 3.24285rem
   .policy
     &__label
       &--center
         justify-content: start
         font-size: 1.33333rem
+  .menu
+    display: none
+  .social
+    &__box
+      display: flex
+      max-width: 8.16666rem
+      width: 100%
+      order: 2
+    &__mail
+      width: 39px
+      height: 39px
+      margin-right: 1.8333333rem
+    &__instagram
+      width: 39px
+      height: 39px
+  .info
+    &__box
+      width: 100%
+    &__title
+      max-width: 28.33333rem
+      order: 1
+      font-size: 1.5rem
+      line-height: 141.6%
+  .map
+    &__box
+      width: 100%
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -852,8 +908,46 @@
       width: 100%
       max-width: inherit
       font-size: 1.25rem
+      margin-bottom: 0.233333rem
+    &__info
+      display: flex
+    &__map
+      display: flex
+      max-width: 28.33333rem
+      min-height: 21.25rem
+      margin-bottom: 3.24285rem
+    &__phone
+      font-size: 1.5rem
+      color: $primary
+      text-decoration: none
   .policy
     &__label
       &--center
         justify-content: start
         font-size: 1.33333rem
+  .menu
+    display: none
+  .social
+    &__box
+      display: flex
+      max-width: 8.16666rem
+      width: 100%
+      order: 2
+    &__mail
+      width: 39px
+      height: 39px
+      margin-right: 1.8333333rem
+    &__instagram
+      width: 39px
+      height: 39px
+  .info
+    &__box
+      width: 100%
+    &__title
+      max-width: 28.33333rem
+      order: 1
+      font-size: 1.5rem
+      line-height: 141.6%
+  .map
+    &__box
+      width: 100%

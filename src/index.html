@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="style/animate.css">
   <link rel="stylesheet" href="style/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<9cf3a889-aeed-4562-95e6-c6a11c655365>&lang=ru_RU"
+    type="text/javascript">
+  </script>
 
   <title>Repair Design Project</title>
 </head>
@@ -60,12 +63,12 @@
         <!-- /.hero-content -->
       </div>
       <!-- /.container -->
-      <a href="#bottom" class="hero__scroll-down">Листайте вниз</a>
+      <a href="#projects" class="hero__scroll-down">Листайте вниз</a>
     </section>
     <!-- /.hero -->
 
-    <section class="section section__slider section--dark projects">
-      <div class="container container__projects">
+    <section class="section section__slider section--dark projects" >
+      <div class="container container__projects" id="projects">
         <div class="row">
           <div class="col-40 wow animate__animated animate__fadeInLeft">
             <div class="section-title section-title--left section-title__projects">
@@ -594,6 +597,29 @@
       </div>
       <!-- /.footer-wrap -->
 
+      <div class="info footer__info">
+        <div class="info__box">
+           <h3 class="info__title">Ростов на дону, Торговый центр Plaza Прямой телефон
+              <a href="tel:+79997683299"
+               class="phone footer__phone">+7 (999) 768-32-99</a></h3>
+           <div class="social social__box">
+              <a href="#" class="social__links">
+                <img src="img/mail.svg" alt="mail-icon" class="social__mail">
+              </a>
+              <a href="#" class="social__links">
+                <img src="img/instagram-icon.svg" alt="instagram-icon" class="social__instagram">
+              </a>
+           </div>
+           <!-- /.social-links -->
+           <div class="map__box">
+              <div class="map footer__map" id="map">
+              </div>
+               <!-- /.map -->
+          </div>
+          <!-- /.map-box -->            
+        </div>
+      </div>
+      <!-- /.footer-info -->
     </div>
     <!-- /.container -->
     <div class="footer__menu">

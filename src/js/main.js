@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 */
 
 $(document).ready(function () {
-  "use strict";
+  ("use strict");
   let modal = $(".modal"),
     modalBtn = $('[data-toggle="modal"]'),
     closeBtn = $(".modal__close");
@@ -36,33 +36,37 @@ $(document).ready(function () {
     modal.toggleClass("modal--visible");
   });
 
-  modal.on("click", function(e) {
-    if(modal.has(e.target).length === 0 || closeBtn.is(e.target)) {
+  modal.on("click", function (e) {
+    if (modal.has(e.target).length === 0 || closeBtn.is(e.target)) {
       modal.toggleClass("modal--visible");
     }
   });
 
-  $(document).keydown(function(e) {
-    if(e.keyCode === 27 && modal.closest(".modal--visible").length) {
+  $(document).keydown(function (e) {
+    if (e.keyCode === 27 && modal.closest(".modal--visible").length) {
       modal.toggleClass("modal--visible");
     }
   });
 
-  $(function(){
-    $(window).scroll(function(){
-      if($(window).scrollTop() > 300) {
-        $('.top').fadeIn();
+  $(function () {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        $(".top").fadeIn();
       } else {
-        $('.top').fadeOut();
+        $(".top").fadeOut();
       }
     });
-  
-    $('.top').click(function(){
-      $('html, body').animate({scrollTop: 0}, 1000);
+
+    $(".top").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, 1000);
+      return false;
+    });
+
+    $(".hero__scroll-down").click(function () {
+      $("html, body").animate({ scrollTop: $("#projects").height() + 150}, 1000);
       return false;
     });
   });
-
 
   let mySwiper = new Swiper(".swiper-container", {
     // Optional parameters
@@ -119,7 +123,7 @@ $(document).ready(function () {
         email: "Введите в формате: name@domain.com",
       },
     },
-  });  
+  });
   $(".footer__form").validate({
     errorClass: "footer__invalid",
     rules: {
@@ -159,7 +163,6 @@ $(document).ready(function () {
       },
       // правило для телефона
       controlPhone: "required",
-
     },
     // сообщения при ошибках
     messages: {
@@ -170,7 +173,75 @@ $(document).ready(function () {
       },
       controlPhone: "Укажите свой номер телефона",
     },
-  }); 
+  });
   // маска для телефона
-  $("[type=tel]").mask("+7(000)000-00-00", {placeholder: "+7(___) ___-__-__"});
+  $("[type=tel]").mask("+7(000)000-00-00", {
+    placeholder: "+7(___) ___-__-__",
+  });
+
+  // map
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ ymaps.ready(function () {
+   var myMap = new ymaps.Map(
+       "map",
+       {
+         center: [55.751574, 37.573856],
+         zoom: 9,
+       },
+       {
+         searchControlProvider: "yandex#search",
+       }
+     ),
+     // Создаём макет содержимого.
+     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+     ),
+     myPlacemark = new ymaps.Placemark(
+       myMap.getCenter(),
+       {
+         hintContent: "Собственный значок метки",
+         balloonContent: "Это красивая метка",
+       },
+       {
+         // Опции.
+         // Необходимо указать данный тип макета.
+         iconLayout: "default#image",
+         // Своё изображение иконки метки.
+         iconImageHref: "images/myIcon.gif",
+         // Размеры метки.
+         iconImageSize: [30, 42],
+         // Смещение левого верхнего угла иконки относительно
+         // её "ножки" (точки привязки).
+         iconImageOffset: [-5, -38],
+       }
+     ),
+     myPlacemarkWithContent = new ymaps.Placemark(
+       [55.672368, 37.582757],
+       {
+         hintContent: "Наш офис",
+         balloonContent: "Вход со стороны проспекта",
+         iconContent: "",
+       },
+       {
+         // Опции.
+         // Необходимо указать данный тип макета.
+         iconLayout: "default#imageWithContent",
+         // Своё изображение иконки метки.
+         iconImageHref: "../img/pin.png",
+         // Размеры метки.
+         iconImageSize: [48, 48],
+         // Смещение левого верхнего угла иконки относительно
+         // её "ножки" (точки привязки).
+         iconImageOffset: [-24, -24],
+         // Смещение слоя с содержимым относительно слоя с картинкой.
+         iconContentOffset: [15, 15],
+         // Макет содержимого.
+         iconContentLayout: MyIconContentLayout,
+       }
+     );
+
+   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+   myMap.behaviors.disable('scrollZoom');
+ });
 });

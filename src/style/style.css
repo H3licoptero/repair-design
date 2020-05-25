@@ -365,7 +365,6 @@ template {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
-  outline-color: #ffffff;
   font-size: 1.285714rem;
   line-height: 1.78571428rem;
   padding: 0.1rem 0 0.2rem; }
@@ -1149,6 +1148,55 @@ img {
     background-color: #131313; }
   .footer__invalid {
     color: #e38073; }
+  .footer__map {
+    min-height: 33.21428rem;
+    margin-bottom: 4.64285rem; }
+  .footer__phone {
+    display: inline-block;
+    font-size: 1.4285714rem;
+    color: #e3b873;
+    text-decoration: none; }
+
+.info__box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 66.071428rem;
+  width: 100%;
+  margin: auto; }
+
+.info__title {
+  max-width: 38.071428rem;
+  margin: auto;
+  margin-bottom: 1.55714rem;
+  font-family: "Yeseva One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4285714rem;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873; }
+
+.social__box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 5.0714285rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2.9rem; }
+
+.social__mail {
+  width: 29px;
+  height: 29px; }
+
+.social__instagram {
+  width: 29px;
+  height: 29px; }
+
+.map {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%); }
 
 @media screen and (max-width: 1250px) {
   .nav__item {
@@ -1333,9 +1381,23 @@ img {
     font-size: 1.5rem; }
   .footer__button {
     font-size: 1.25rem; }
+  .footer__map {
+    display: flex;
+    max-width: 57.5rem;
+    width: 100%;
+    min-height: 25.25rem;
+    margin: auto;
+    margin-bottom: 3.24285rem; }
   .policy__label--center {
     justify-content: start;
-    font-size: 1.33333rem; } }
+    font-size: 1.33333rem; }
+  __box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 57.5rem;
+    width: 100%;
+    margin: auto; } }
 
 @media screen and (max-width: 768px) {
   .logo__link {
@@ -1459,6 +1521,13 @@ img {
     width: 100%;
     max-width: 16.66666rem;
     font-size: 1.25rem; }
+  .footer__map {
+    display: flex;
+    max-width: 43.25rem;
+    width: 100%;
+    min-height: 21.25rem;
+    margin: auto;
+    margin-bottom: 3.24285rem; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; } }
@@ -1670,9 +1739,39 @@ img {
     .footer__button {
       width: 100%;
       font-size: 1.25rem; }
+    .footer__map {
+      display: flex;
+      max-width: 28.33333rem;
+      width: 100%;
+      min-height: 21.25rem;
+      margin: auto;
+      margin-bottom: 3.24285rem; }
   .policy__label--center {
     justify-content: start;
-    font-size: 1.33333rem; } }
+    font-size: 1.33333rem; }
+  .menu {
+    display: none; }
+  .social__box {
+    display: flex;
+    max-width: 8.16666rem;
+    width: 100%;
+    order: 2; }
+  .social__mail {
+    width: 39px;
+    height: 39px;
+    margin-right: 1.8333333rem; }
+  .social__instagram {
+    width: 39px;
+    height: 39px; }
+  .info__box {
+    width: 100%; }
+  .info__title {
+    max-width: 28.33333rem;
+    order: 1;
+    font-size: 1.5rem;
+    line-height: 141.6%; }
+  .map__box {
+    width: 100%; } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -1952,7 +2051,42 @@ img {
     .footer__button {
       width: 100%;
       max-width: inherit;
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      margin-bottom: 0.233333rem; }
+    .footer__info {
+      display: flex; }
+    .footer__map {
+      display: flex;
+      max-width: 28.33333rem;
+      min-height: 21.25rem;
+      margin-bottom: 3.24285rem; }
+    .footer__phone {
+      font-size: 1.5rem;
+      color: #e3b873;
+      text-decoration: none; }
   .policy__label--center {
     justify-content: start;
-    font-size: 1.33333rem; } }
+    font-size: 1.33333rem; }
+  .menu {
+    display: none; }
+  .social__box {
+    display: flex;
+    max-width: 8.16666rem;
+    width: 100%;
+    order: 2; }
+  .social__mail {
+    width: 39px;
+    height: 39px;
+    margin-right: 1.8333333rem; }
+  .social__instagram {
+    width: 39px;
+    height: 39px; }
+  .info__box {
+    width: 100%; }
+  .info__title {
+    max-width: 28.33333rem;
+    order: 1;
+    font-size: 1.5rem;
+    line-height: 141.6%; }
+  .map__box {
+    width: 100%; } }
