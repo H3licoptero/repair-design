@@ -4,9 +4,9 @@ $controlName = $_POST["controlName"];
 $controlPhone = $_POST["controlPhone"];
 
 // Load Composer's autoloader
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require 'PHPmailer/Exception.php';
+require 'PHPmailer/PHPMailer.php';
+require 'PHPmailer/SMTP.php';
 require 'thanks.html';
 
 // Instantiation and passing `true` enables exceptions
@@ -20,8 +20,8 @@ try {
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'furaNeraGrande@gmail.com';                     // SMTP username
     $mail->Password   = 'lineage2Essence';                               // SMTP password
-    $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 465;                                    // TCP port to connect to
+    $mail->SMTPSecure = "ssl";         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom('furaNeraGrande@gmail.com', 'Виталий');
