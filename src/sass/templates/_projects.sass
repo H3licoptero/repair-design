@@ -12,6 +12,8 @@
     display: flex
     flex-wrap: wrap
     margin-top: 0.42857rem
+    object-fit: contain
+    object-position: center
     &__text
       display: flex
       flex-direction: column
@@ -57,8 +59,11 @@
   &__image
     max-width: 48.5rem
     width: 100%
-    // max-height: 35.828571rem
-    height: 100%
+    // min-height: 35.828571rem
+    // height: 100%
+    object-fit: contain
+    object-position: center
+    overflow: hidden
     padding-top: 20px
     // padding-left: 3.48571rem
 .swiper-container-horizontal>.swiper-pagination-bullets
@@ -77,6 +82,14 @@
   margin-right: 1.28571rem
 .image
   &-box
+    // width: 100%
+    // max-width: 48.5rem
+    // height: 100%
+.slider
+  &__image
     width: 100%
-    max-width: 48.5rem
+    // height: 100%
+    object-fit: contain
+    object-position: center
+
   
