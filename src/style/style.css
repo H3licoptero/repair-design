@@ -413,7 +413,8 @@ template {
   cursor: pointer;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease;
-  z-index: 1; }
+  z-index: 1;
+  outline: none; }
   .button__top:hover {
     background-color: #ffffff;
     box-shadow: 0 0 5px 1px rgba(19, 19, 19, 0.5); }
@@ -757,7 +758,6 @@ img {
     height: 0.64285rem; }
 
 .swiper-button-prev, .swiper-button-next {
-  buttom: 0;
   top: auto;
   background-size: 3.455rem;
   width: 3.455rem;
@@ -1107,7 +1107,7 @@ span.control__invalid {
 
 span.modal__invalid {
   position: absolute;
-  top: 47px;
+  top: 50px;
   left: 0;
   margin: 0;
   padding: 0; }
@@ -1696,7 +1696,8 @@ span.footer__invalid {
   .section-title__projects {
     margin-bottom: 3rem; }
   .section .container__projects {
-    width: 28.4166666rem; }
+    max-width: 28.4166666rem;
+    width: 95%; }
   .swiper-pagination-bullet {
     margin-right: 1.58571rem;
     margin-top: 0.366rem; }
@@ -1803,9 +1804,7 @@ span.footer__invalid {
     max-width: 28.33333rem;
     order: 1;
     font-size: 1.5rem;
-    line-height: 141.6%; }
-  .map__box {
-    width: 100%; } }
+    line-height: 141.6%; } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -1923,7 +1922,8 @@ span.footer__invalid {
   .projects {
     background-image: none; }
   .container__projects {
-    margin-top: 0; }
+    margin-top: 0;
+    width: 95%; }
   .swiper-container {
     margin-bottom: 2.002rem; }
   .swiper__image {
@@ -1961,7 +1961,7 @@ span.footer__invalid {
     margin-left: 50px; }
   .slider-image {
     max-width: 28.33333rem;
-    width: 100%;
+    width: 90%;
     height: 16.75rem; }
   .section__slider {
     padding: 0.25rem 0;
@@ -1981,7 +1981,7 @@ span.footer__invalid {
     margin-right: 1.58571rem;
     margin-top: 0.366rem; }
   .control__container {
-    width: 100%;
+    width: 95%;
     margin: auto; }
   .control__video {
     max-width: 28.33333rem;
@@ -2013,7 +2013,8 @@ span.footer__invalid {
   .control__input {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    line-height: 2.3rem; }
+    line-height: 2.3rem;
+    color: #ffffff; }
     .control__input::-webkit-input-placeholder {
       font-size: 1.5rem;
       color: #ffffff; }
@@ -2073,9 +2074,20 @@ span.footer__invalid {
     .footer__input {
       font-size: 1.5rem;
       line-height: inherit;
-      padding: 0 0 0.5rem; }
+      padding: 0 0 0.5rem;
+      color: #ffffff; }
       .footer__input-group {
         margin-bottom: 5.1rem; }
+        .footer__input-group::-webkit-input-placeholder {
+          color: #ffffff; }
+        .footer__input-group::-moz-placeholder {
+          color: #ffffff; }
+        .footer__input-group:-ms-input-placeholder {
+          color: #ffffff; }
+        .footer__input-group::-ms-input-placeholder {
+          color: #ffffff; }
+        .footer__input-group::placeholder {
+          color: #ffffff; }
     .footer__form {
       flex-direction: column; }
     .footer__input-group--full-width {

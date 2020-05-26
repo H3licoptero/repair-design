@@ -517,7 +517,8 @@
         // max-width: 25.416666rem
     .container
       &__projects
-        width: 28.4166666rem
+        max-width: 28.4166666rem
+        width: 95%
   .swiper-pagination-bullet
     margin-right: 1.58571rem  
     margin-top: 0.366rem
@@ -603,8 +604,6 @@
       &--center
         justify-content: start
         font-size: 1.33333rem
-  // .menu
-  //   display: none
   .social
     &__box
       display: flex
@@ -626,9 +625,6 @@
       order: 1
       font-size: 1.5rem
       line-height: 141.6%
-  .map
-    &__box
-      width: 100%
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -758,6 +754,7 @@
   .container
     &__projects
       margin-top: 0
+      width: 95%
   .swiper
     &-container
       margin-bottom: 2.002rem
@@ -799,7 +796,7 @@
   .slider
     &-image
       max-width: 28.33333rem
-      width: 100%
+      width: 90%
       height: 16.75rem
   .section
     &__slider
@@ -824,7 +821,7 @@
     margin-top: 0.366rem
   .control
     &__container
-      width: 100%
+      width: 95%
       margin: auto
     &__video
       max-width: 28.33333rem
@@ -858,6 +855,7 @@
       width: 100%  
       border-bottom: 1px solid rgba($light, 0.15)
       line-height: 2.3rem
+      color: $light
       &::placeholder
         font-size: 1.5rem
         color: $light
@@ -907,8 +905,11 @@
       font-size: 1.5rem
       line-height: inherit
       padding: 0 0 0.5rem
+      color: $light
       &-group
         margin-bottom: 5.1rem
+        &::placeholder
+          color: $light
     &__form
       flex-direction: column
     &__input-group--full-width

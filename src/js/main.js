@@ -96,6 +96,7 @@ $(document).ready(function () {
   $(".modal__form").validate({
     errorClass: "modal__invalid",
     errorElement: "span",
+    // onfocusout: true,
     rules: {
       // правило для поля "введите имя"
       userName: {
