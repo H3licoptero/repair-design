@@ -7,7 +7,6 @@ $controlPhone = $_POST["controlPhone"];
 require 'PHPmailer/Exception.php';
 require 'PHPmailer/PHPMailer.php';
 require 'PHPmailer/SMTP.php';
-require 'thanks.html';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -32,8 +31,12 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body = 'Имя пользователя:' . $controlName . ' Его телефон: ' . $controlPhone;
 
-    $mail->send();
-    header('Location: thanks.html');
+    if ($mail->send()) {
+        echo "Ok";
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

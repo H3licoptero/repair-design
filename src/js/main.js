@@ -93,6 +93,7 @@ $(document).ready(function () {
   new WOW().init();
 
   // валидация формы
+  // modal form
   $(".modal__form").validate({
     errorClass: "modal__invalid",
     errorElement: "span",
@@ -114,7 +115,6 @@ $(document).ready(function () {
         required: true,
         email: true,
       },
-      
     },
     // сообщения при ошибках
     messages: {
@@ -129,7 +129,22 @@ $(document).ready(function () {
         email: "Введите корректный email",
       },
     },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // console.log("Сработало!" + response);
+          alert("Форма отправлена!");
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+        },
+      });
+    },
   });
+
+  // footer form
   $(".footer__form").validate({
     errorClass: "footer__invalid",
     errorElement: "span",
@@ -159,7 +174,20 @@ $(document).ready(function () {
         required: "Напишите свой вопрос",
       },
     },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send-3.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // console.log("Сработало!" + response);
+          alert("Форма отправлена!");
+          $(form)[0].reset();
+        },
+      });
+    },
   });
+  // control form
   $(".control__form").validate({
     errorClass: "control__invalid",
     errorElement: "span",
@@ -185,10 +213,23 @@ $(document).ready(function () {
       },
       controlPhone: "Заполните поле",
     },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send-2.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // console.log("Сработало!" + response);
+          alert("Форма отправлена!");
+          $(form)[0].reset();
+        },
+      });
+    },
   });
+  
   // маска для телефона
   $("[type=tel]").mask("+7(000)000-00-00", {
-    placeholder: "+7(___) ___-__-__",
+    placeholder: "Ваш номер телефона:",
   });
 
   // map
