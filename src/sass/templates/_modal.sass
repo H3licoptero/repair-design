@@ -71,6 +71,33 @@
     outline-color: $primary
   &__invalid
     color: $error
+  &__alert
+    opacity: 0
+    visibility: hidden
+.alert
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  visibility: hidden
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.6)
+  opacity: 0
+  z-index: 199
+  &__dialog
+    position: relative
+    max-width: 36.142857rem
+    width: 100%
+    padding: 2.357142rem 3.5rem 1.92857rem
+    color: $light
+  &--visible
+    opacity: 1
+    visibility: visible
 span.modal__invalid
   position: absolute
   top: 50px

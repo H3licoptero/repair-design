@@ -30,10 +30,18 @@ $(document).ready(function () {
   "use strict";
   let modal = $(".modal"),
     modalBtn = $('[data-toggle="modal"]'),
-    closeBtn = $(".modal__close");
+    closeBtn = $(".modal__close"),
+    alertClose = $(".alert__close"),
+    alert = $(".alert");
 
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
+  });
+
+  alert.on("click", function(e) {
+    if(alert.has(e.target).length === 0 || alertClose.is(e.target)) {
+      alert.toggleClass("alert--visible");
+    }
   });
 
   modal.on("click", function (e) {
@@ -45,6 +53,8 @@ $(document).ready(function () {
   $(document).keydown(function (e) {
     if (e.keyCode === 27 && modal.closest(".modal--visible").length) {
       modal.toggleClass("modal--visible");
+    } else if (e.keyCode === 27 && alert.closest(".alert--visible").length) {
+      alert.toggleClass("alert--visible");
     }
   });
 
@@ -136,7 +146,7 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
-          alert("Форма отправлена!");
+          alert.toggleClass("alert--visible");
           $(form)[0].reset();
           modal.removeClass("modal--visible");
         },
@@ -181,7 +191,7 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
-          alert("Форма отправлена!");
+          alert.toggleClass("alert--visible");
           $(form)[0].reset();
         },
       });
@@ -220,7 +230,7 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
-          alert("Форма отправлена!");
+          alert.toggleClass("alert--visible");
           $(form)[0].reset();
         },
       });

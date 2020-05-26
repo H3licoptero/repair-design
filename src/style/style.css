@@ -1138,6 +1138,34 @@ span.control__invalid {
     outline-color: #e3b873; }
   .modal__invalid {
     color: #02d0f5; }
+  .modal__alert {
+    opacity: 0;
+    visibility: hidden; }
+
+.alert {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  opacity: 0;
+  z-index: 199; }
+  .alert__dialog {
+    position: relative;
+    max-width: 36.142857rem;
+    width: 100%;
+    padding: 2.357142rem 3.5rem 1.92857rem;
+    color: #ffffff; }
+  .alert--visible {
+    opacity: 1;
+    visibility: visible; }
 
 span.modal__invalid {
   position: absolute;
