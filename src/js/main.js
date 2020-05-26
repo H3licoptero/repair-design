@@ -135,7 +135,7 @@ $(document).ready(function () {
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          // console.log("Сработало!" + response);
+          console.log("Сработало!" + response);
           alert("Форма отправлена!");
           $(form)[0].reset();
           modal.removeClass("modal--visible");
@@ -180,7 +180,7 @@ $(document).ready(function () {
         url: "send-3.php",
         data: $(form).serialize(),
         success: function (response) {
-          // console.log("Сработало!" + response);
+          console.log("Сработало!" + response);
           alert("Форма отправлена!");
           $(form)[0].reset();
         },
@@ -219,7 +219,7 @@ $(document).ready(function () {
         url: "send-2.php",
         data: $(form).serialize(),
         success: function (response) {
-          // console.log("Сработало!" + response);
+          console.log("Сработало!" + response);
           alert("Форма отправлена!");
           $(form)[0].reset();
         },
