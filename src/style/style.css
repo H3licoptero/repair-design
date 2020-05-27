@@ -354,6 +354,7 @@ template {
       box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); }
 
 .label--light {
+  margin-bottom: 0.7rem;
   font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -368,16 +369,18 @@ template {
   font-size: 1.285714rem;
   line-height: 1.78571428rem;
   padding: 0.1rem 0 0.2rem; }
-  .input--light::-webkit-input-placeholder {
+  .input--light {
     color: #ffffff; }
-  .input--light::-moz-placeholder {
-    color: #ffffff; }
-  .input--light:-ms-input-placeholder {
-    color: #ffffff; }
-  .input--light::-ms-input-placeholder {
-    color: #ffffff; }
-  .input--light::placeholder {
-    color: #ffffff; }
+    .input--light::-webkit-input-placeholder {
+      color: #ffffff; }
+    .input--light::-moz-placeholder {
+      color: #ffffff; }
+    .input--light:-ms-input-placeholder {
+      color: #ffffff; }
+    .input--light::-ms-input-placeholder {
+      color: #ffffff; }
+    .input--light::placeholder {
+      color: #ffffff; }
 
 .policy__checkbox {
   opacity: 0;
@@ -668,7 +671,6 @@ img {
     text-decoration: none;
     color: #ffffff;
     outline-color: #e3b873;
-    transition: color 0.2s;
     z-index: 2; }
     .hero__scroll-down::after {
       content: '';
@@ -1300,8 +1302,7 @@ span.footer__invalid {
   .logo__link {
     font-size: 1.17rem; }
   .contacts__phone {
-    font-size: 1.17rem;
-    margin-right: 2.65rem; }
+    font-size: 1.17rem; }
   .menu__logo {
     margin-right: 0.8rem; }
   .hero__instagram {
@@ -2214,4 +2215,31 @@ span.footer__invalid {
   span.control__invalid {
     top: 50px; }
   .thanks__text {
-    max-width: 20.166666rem; } }
+    max-width: 20.166666rem; }
+  .button {
+    transition: none; }
+    .button:hover {
+      cursor: pointer; }
+    .button--primary {
+      transition: none; }
+      .button--primary:hover {
+        background-color: #e3b873;
+        border: 1px solid #e3b873; }
+    .button--outline {
+      transition: none; }
+      .button--outline:hover {
+        background-color: transparent;
+        box-shadow: none; }
+  .logo__link {
+    transition: none; }
+    .logo__link:hover {
+      color: #e3b873;
+      cursor: pointer; }
+  .control__button {
+    transition: none; }
+    .control__button:hover {
+      border: none;
+      box-shadow: none; }
+  .alert__dialog {
+    background: none;
+    background-color: #363636; } }
