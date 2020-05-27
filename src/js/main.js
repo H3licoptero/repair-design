@@ -102,6 +102,32 @@ $(document).ready(function () {
 
   new WOW().init();
 
+
+  $("#control-checkbox").click(function() {
+    if($(this).is(":checked")) {
+      $(".control__button").removeAttr("disabled");
+    } else {
+      $(".control__button").attr("disabled", "disabled");
+    }
+  });
+
+  $("#policy-checkbox").click(function () {
+    if ($(this).is(":checked")) {
+      $(".modal__button").removeAttr("disabled");
+    } else {
+      $(".modal__button").attr("disabled", "disabled");
+    }
+  });
+
+  $("#footer-checkbox").click(function () {
+    if ($(this).is(":checked")) {
+      $(".footer__button").removeAttr("disabled");
+    } else {
+      $(".footer__button").attr("disabled", "disabled");
+    }
+  });
+  
+
   // валидация формы
   // modal form
   $(".modal__form").validate({
@@ -241,6 +267,7 @@ $(document).ready(function () {
   $("[type=tel]").mask("+7(000)000-00-00", {
     placeholder: "Ваш номер телефона:",
   });
+
 
   // map
   // Функция ymaps.ready() будет вызвана, когда
