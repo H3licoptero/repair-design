@@ -91,9 +91,25 @@ function buildFonts(done) {
 }
 
 function buildImg(done) {
+  src("./src/img/**/*.{png,jpg,jpeg}")
+    .pipe(
+      tinypng({
+        key: "dJt6mmMrMy7RJPlNCzcWk2DgBfWvlsrv",
+      })
+    )
+    .pipe(dest("dist/img"));
+  src("./src/img/**.svg")
+  .pipe(dest("dist/img"));
   done();
 }
 
 
 exports.serve = bs;
-exports.build = series(buildCSS, buildJS, buildHTML, buildPHP, buildFonts);
+exports.build = series(
+  buildCSS,
+  buildJS,
+  buildHTML,
+  buildPHP,
+  buildFonts,
+  buildImg
+);
