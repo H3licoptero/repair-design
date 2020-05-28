@@ -99,7 +99,6 @@ $(document).ready(function () {
       $(".footer__button").attr("disabled", "disabled");
     }
   });
-  
 
   // валидация формы
   // modal form
@@ -241,6 +240,24 @@ $(document).ready(function () {
     placeholder: "Ваш номер телефона:",
   });
 
+  // youtube video  
+  let player;
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
+  $(".video-play").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player", {
+      height: "360",
+      width: "100%",
+      videoId: "jO_8f9r5s9U",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  
 
   // map
   // Функция ymaps.ready() будет вызвана, когда

@@ -967,7 +967,8 @@ img {
 
 .video-play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  cursor: pointer; }
 
 span.control__invalid {
   position: absolute;
