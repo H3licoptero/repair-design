@@ -291,7 +291,7 @@ $(document).ready(function () {
          // Необходимо указать данный тип макета.
          iconLayout: "default#imageWithContent",
          // Своё изображение иконки метки.
-         iconImageHref: "img/pin.png",
+         iconImageHref: "dist/img/pin.png",
          // Размеры метки.
          iconImageSize: [48, 48],
          // Смещение левого верхнего угла иконки относительно
