@@ -1171,7 +1171,7 @@ span.control__invalid {
 
 span.modal__invalid {
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 0;
   margin: 0;
   padding: 0; }
@@ -1283,7 +1283,7 @@ span.modal__invalid {
 
 span.footer__invalid {
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 0;
   margin: 0;
   padding: 0; }
@@ -2243,4 +2243,16 @@ span.footer__invalid {
       box-shadow: none; }
   .alert__dialog {
     background: none;
-    background-color: #363636; } }
+    background-color: #363636; }
+  span.footer__invalid {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    margin: 0;
+    padding: 0; }
+  span.modal__invalid {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    margin: 0;
+    padding: 0; } }
