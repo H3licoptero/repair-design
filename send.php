@@ -3,17 +3,12 @@
   $userName = $_POST["userName"];
   $userEmail = $_POST["userEmail"];
   $userPhone = $_POST["userPhone"];
- 
-  // Import PHPMailer classes into the global namespace
-// These must be at the top of your script, not inside a function
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
-// use PHPMailer\PHPMailer\Exception;
+
 
 // Load Composer's autoloader
-require 'dist/PHPmailer/Exception.php';
-require 'dist/PHPmailer/PHPMailer.php';
-require 'dist/PHPmailer/SMTP.php';
+require 'src/PHPmailer/Exception.php';
+require 'src/PHPmailer/PHPMailer.php';
+require 'src/PHPmailer/SMTP.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();

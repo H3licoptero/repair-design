@@ -38,10 +38,10 @@ function bs() {
   // minCss();
   browserSync.init({
     server: {
-      baseDir: "./src",
+      baseDir: "./",
     },
   });
-  watch("./src/*.html").on("change", browserSync.reload);
+  watch("*.html").on("change", browserSync.reload);
   watch("./src/sass/**/*.sass", serveSass);
   watch("./src/sass/**/*.scss", serveSass);
   watch("./js/*.js");
@@ -70,7 +70,7 @@ function buildJS(done) {
 }
 
 function buildHTML(done) {
-  src("./src/**.html")
+  src("**.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("dist/"));
   src("./src/**.html")
@@ -79,7 +79,7 @@ function buildHTML(done) {
 }
 
 function buildPHP(done) {
-  src("./src/**.php")
+  src("**.php")
     .pipe(dest("dist"));
   src("./src/PHPmailer/**.php")
     .pipe(dest("dist/PHPmailer"));

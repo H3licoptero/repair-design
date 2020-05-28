@@ -4,9 +4,9 @@ $controlName = $_POST["controlName"];
 $controlPhone = $_POST["controlPhone"];
 
 // Load Composer's autoloader
-require 'dist/PHPmailer/Exception.php';
-require 'dist/PHPmailer/PHPMailer.php';
-require 'dist/PHPmailer/SMTP.php';
+require 'src/PHPmailer/Exception.php';
+require 'src/PHPmailer/PHPMailer.php';
+require 'src/PHPmailer/SMTP.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();

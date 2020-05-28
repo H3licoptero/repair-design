@@ -141,7 +141,7 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send.php",
+        url: "../../send.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
@@ -186,7 +186,7 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send-3.php",
+        url: "../../send-3.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
@@ -225,7 +225,7 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send-2.php",
+        url: "../../send-2.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
