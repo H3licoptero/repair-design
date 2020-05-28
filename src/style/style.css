@@ -1302,7 +1302,8 @@ span.footer__invalid {
   .logo__link {
     font-size: 1.17rem; }
   .contacts__phone {
-    font-size: 1.17rem; }
+    font-size: 1.17rem;
+    margin-right: 2rem; }
   .menu__logo {
     margin-right: 0.8rem; }
   .hero__instagram {

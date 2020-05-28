@@ -73,6 +73,8 @@ function buildHTML(done) {
   src("./src/**.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("dist/"));
+  src("./src/**.html")
+    .pipe(dest("./"));
   done();
 }
 
