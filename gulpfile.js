@@ -73,8 +73,6 @@ function buildHTML(done) {
   src("./src/**.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("dist/"));
-  // src("./src/**.html")
-  //   .pipe(dest("./dist"));
   done();
 }
 
@@ -101,7 +99,7 @@ function buildImg(done) {
     )
     .pipe(dest("dist/img"));
   src("./src/img/**.svg")
-  .pipe(dest("dist/img"));
+    .pipe(dest("dist/img"));
   done();
 }
 
