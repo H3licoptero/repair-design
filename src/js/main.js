@@ -46,7 +46,7 @@ $(document).ready(function () {
     });
 
     $(".hero__scroll-down").click(function () {
-      $("html, body").animate({ scrollTop: $("#projects").height() + 150}, 1000);
+      $("html, body").animate({ scrollTop: $("#projects").height()}, 1000);
       return false;
     });
 
@@ -155,7 +155,12 @@ $(document).ready(function () {
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
           modal.removeClass("modal--visible");
+          ym(64422688, "reachGoal", "request");
+          return true;
         },
+        error: function(response) {
+          console.log("Ошибка отправки.");
+        }
       });
     },
   });

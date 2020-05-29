@@ -925,7 +925,7 @@ img {
 .control__input {
   width: 16.5rem;
   border: none;
-  border-bottom: 1px solid rgba(19, 19, 19, 0.15);
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-family: "Futura Book", sans-serif;
   font-weight: normal;
   font-size: 1.285714rem;
@@ -1195,7 +1195,8 @@ span.modal__invalid {
     margin-top: -20.6rem;
     padding: 2.5rem 12.928571rem;
     background-color: #181818;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.714rem;
+    background-image: url("../img/background-question.svg"); }
   .footer__title {
     margin-bottom: 3rem;
     text-align: center;
@@ -1212,9 +1213,9 @@ span.modal__invalid {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input {
+    padding: 0.1rem 0 0.4rem;
     line-height: 1.414285rem;
     color: #ffffff;
-    padding: 0.1rem 0 0.4rem;
     outline: none; }
   .footer__input-group {
     position: relative;
@@ -1811,7 +1812,8 @@ span.footer__invalid {
     font-size: 1.25rem; }
   .control__input {
     width: 100%;
-    line-height: 2.3rem; }
+    line-height: 2.3rem;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
     .control__input::-webkit-input-placeholder {
       font-size: 1.5rem; }
     .control__input::-moz-placeholder {
@@ -1856,7 +1858,8 @@ span.footer__invalid {
     .footer__input {
       font-size: 1.5rem;
       line-height: inherit;
-      padding: 0 0 0.5rem; }
+      padding: 0 0 0.5rem;
+      border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
       .footer__input-group {
         margin-bottom: 5.1rem; }
     .footer__form {
@@ -2108,7 +2111,7 @@ span.footer__invalid {
     line-height: 138.72%; }
   .control__input {
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     line-height: 2.3rem;
     color: #ffffff; }
     .control__input::-webkit-input-placeholder {
@@ -2171,7 +2174,8 @@ span.footer__invalid {
       font-size: 1.5rem;
       line-height: inherit;
       padding: 0 0 0.5rem;
-      color: #ffffff; }
+      color: #ffffff;
+      border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
       .footer__input-group {
         margin-bottom: 5.1rem; }
         .footer__input-group::-webkit-input-placeholder {
