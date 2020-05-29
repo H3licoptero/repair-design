@@ -84,35 +84,17 @@ $(document).ready(function () {
 
   new WOW().init();
  
-  $("#control-checkbox").click(function() {
-    if($(this).is(":checked")) {
-      $(".control__button").removeAttr("disabled");
-    } else {
-      $(".control__button").attr("disabled", "disabled");
-    }
-  });
-
-  $("#policy-checkbox").click(function () {
-    if ($(this).is(":checked")) {
-      $(".modal__button").removeAttr("disabled");
-    } else {
-      $(".modal__button").attr("disabled", "disabled");
-    }
-  });
-
-  $("#footer-checkbox").click(function () {
-    if ($(this).is(":checked")) {
-      $(".footer__button").removeAttr("disabled");
-    } else {
-      $(".footer__button").attr("disabled", "disabled");
-    }
-  });
-
   // валидация формы
   // modal form
   $(".modal__form").validate({
     errorClass: "modal__invalid",
     errorElement: "span",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") === "checkbox") {
+        return element.next("label").append(error);
+      }
+      error.insertAfter($(element));
+    },
     // onfocusout: true,
     rules: {
       // правило для поля "введите имя"
@@ -131,6 +113,9 @@ $(document).ready(function () {
         required: true,
         email: true,
       },
+      policyCheckbox: {
+        required: true,
+      },
     },
     // сообщения при ошибках
     messages: {
@@ -143,6 +128,9 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email",
+      },
+      policyCheckbox: {
+        required: "Необходимо согласие пользователя",
       },
     },
     submitHandler: function (form) {
@@ -158,9 +146,9 @@ $(document).ready(function () {
           ym(64422688, "reachGoal", "request");
           return true;
         },
-        error: function(response) {
+        error: function (response) {
           console.log("Ошибка отправки.");
-        }
+        },
       });
     },
   });
@@ -169,6 +157,12 @@ $(document).ready(function () {
   $(".footer__form").validate({
     errorClass: "footer__invalid",
     errorElement: "span",
+    errorPlacement: function (error, element) {
+    if (element.attr("type") === "checkbox") {
+        return element.next('label').append(error);
+    }
+     error.insertAfter($(element));
+    },
     rules: {
       footerName: {
         required: true,
@@ -180,6 +174,9 @@ $(document).ready(function () {
         minlength: 16,
       },
       footerQuestion: {
+        required: true,
+      },
+      footerCheckbox: {
         required: true,
       },
     },
@@ -194,6 +191,9 @@ $(document).ready(function () {
       footerQuestion: {
         required: "Напишите свой вопрос",
       },
+      footerCheckbox: {
+        required: "Необходимо согласие пользователя",
+      }
     },
     submitHandler: function (form) {
       $.ajax({
@@ -215,6 +215,12 @@ $(document).ready(function () {
   $(".control__form").validate({
     errorClass: "control__invalid",
     errorElement: "span",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") === "checkbox") {
+        return element.next("label").append(error);
+      }
+      error.insertAfter($(element));
+    },
     rules: {
       // правило для поля "введите имя"
       controlName: {
@@ -227,6 +233,9 @@ $(document).ready(function () {
         required: true,
         minlength: 16,
       },
+      controlCheckbox: {
+        required: true,
+      },
     },
     // сообщения при ошибках
     messages: {
@@ -236,6 +245,9 @@ $(document).ready(function () {
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
       controlPhone: "Заполните поле",
+      controlCheckbox: {
+        required: "Необходимо согласие пользователя",
+      },
     },
     submitHandler: function (form) {
       $.ajax({
