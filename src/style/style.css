@@ -354,7 +354,6 @@ template {
       box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); }
 
 .label--light {
-  margin-bottom: 0.7rem;
   font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1096,7 +1095,7 @@ span.control__invalid {
     position: relative;
     max-width: 36.142857rem;
     width: 100%;
-    background: #131313 url("../img/bg-line.svg") no-repeat center;
+    background: #131313 url("../img/bg-line.svg") center no-repeat;
     padding: 2.357142rem 3.5rem 1.92857rem;
     color: #ffffff; }
   .modal__close {
@@ -1177,7 +1176,7 @@ span.control__invalid {
 
 span.modal__invalid {
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 0;
   margin: 0;
   padding: 0; }
@@ -1198,7 +1197,7 @@ span.modal__invalid {
     padding: 2.5rem 12.928571rem;
     background-color: #181818;
     margin-bottom: 3.714rem;
-    background-image: url("../img/background-question.svg"); }
+    background: #131313 url("../img/background-footer.svg") no-repeat center bottom; }
   .footer__title {
     margin-bottom: 3rem;
     text-align: center;
@@ -1283,17 +1282,14 @@ span.modal__invalid {
   margin-bottom: 2.9rem; }
 
 .social__mail {
-  width: 29px;
-  height: 29px;
-  transition: all; }
+  max-width: 30px;
+  margin-right: 15px; }
   .social__mail:hover {
     border-radius: 50%;
     box-shadow: 0 0 5px 1px #ffffff; }
 
 .social__instagram {
-  width: 29px;
-  height: 29px;
-  transition: all; }
+  max-width: 30px; }
   .social__instagram:hover {
     border-radius: 50%;
     box-shadow: 0 0 5px 1px #ffffff; }
@@ -1304,7 +1300,7 @@ span.modal__invalid {
 
 span.footer__invalid {
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 0;
   margin: 0;
   padding: 0; }
@@ -1422,8 +1418,10 @@ span.footer__invalid {
     margin-bottom: 1.083333rem; }
   .thanks__text {
     margin-bottom: 3.66666rem; }
+  #policyCheckbox-error {
+    top: 35px; }
   #footerCheckbox-error {
-    top: 40px;
+    top: 35px;
     left: 0;
     font-size: 1rem; }
   #controlCheckbox-error {
@@ -1432,7 +1430,7 @@ span.footer__invalid {
     font-size: 1rem; }
   span.modal__invalid {
     position: absolute;
-    top: 55px;
+    top: 45px;
     left: 0;
     margin: 0;
     padding: 0; } }
@@ -1472,6 +1470,8 @@ span.footer__invalid {
     text-decoration: none; }
   .logo__link:hover {
     color: #e3b873; }
+  .modal__button:hover {
+    border: none; }
   .nav {
     display: none; }
   .logo__link {
@@ -1583,15 +1583,31 @@ span.footer__invalid {
   .thanks__text {
     margin-bottom: 3.66666rem; }
   #footerCheckbox-error {
-    top: 40px;
+    top: 35px;
     left: 0;
     font-size: 1rem; }
+  #policyCheckbox-error {
+    top: 35px; }
+  #controlCheckbox-error {
+    top: 35px; }
   span.modal__invalid {
     position: absolute;
-    top: 55px;
+    top: 45px;
     left: 0;
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  span.control__invalid {
+    top: 40px; }
+  span.footer__invalid {
+    top: 50px; }
+  .social-box {
+    max-width: 72px; }
+  .social__mail:hover {
+    box-shadow: none;
+    border: none; }
+  .social__instagram:hover {
+    box-shadow: none;
+    border: none; } }
 
 @media screen and (max-width: 768px) {
   .button__top {
@@ -1628,6 +1644,8 @@ span.footer__invalid {
     text-decoration: none; }
   .logo__link:hover {
     color: #e3b873; }
+  .modal__button:hover {
+    border: none; }
   .logo__link {
     font-size: 1.17rem; }
   .contacts__phone {
@@ -1687,14 +1705,15 @@ span.footer__invalid {
     width: 100%;
     max-width: 28.333333rem; }
   .control__label {
-    margin-bottom: -3px;
+    margin-bottom: 3px;
     font-size: 1.25rem; }
   .control__text {
     max-width: 43.5rem;
     font-size: 1.666666rem; }
   .control__input {
     width: 100%;
-    line-height: 2.3rem; }
+    line-height: 2rem;
+    padding: 0; }
     .control__input::-moz-placeholder {
       font-size: 1.5rem; }
     .control__input:-ms-input-placeholder {
@@ -1731,11 +1750,12 @@ span.footer__invalid {
     font-size: 1.666666rem;
     font-weight: normal; }
   .footer__label {
+    margin-bottom: 3px;
     font-size: 1.25rem; }
   .footer__input {
     font-size: 1.5rem;
     line-height: inherit;
-    padding: 0 0 0.5rem; }
+    padding: 0 0 0.2rem; }
     .footer__input-group {
       margin-bottom: 5.1rem; }
   .footer__form {
@@ -1762,8 +1782,10 @@ span.footer__invalid {
     margin-bottom: 1.083333rem; }
   .thanks__text {
     margin-bottom: 3.66666rem; }
+  .social-box {
+    max-width: 72px; }
   #controlCheckbox-error {
-    top: 40px;
+    top: 35px;
     left: 0;
     font-size: 1rem; }
   span.modal__invalid {
@@ -1771,7 +1793,27 @@ span.footer__invalid {
     top: 55px;
     left: 0;
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  #footerCheckbox-error {
+    top: 35px;
+    left: 0;
+    font-size: 1rem; }
+  #policyCheckbox-error {
+    top: 35px; }
+  span.modal__invalid {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    margin: 0;
+    padding: 0; }
+  span.control__invalid {
+    top: 45px; }
+  span.footer__invalid {
+    top: 50px; }
+  .social__mail:hover {
+    box-shadow: none; }
+  .social__instagram:hover {
+    box-shadow: none; } }
 
 @media screen and (max-width: 576px) {
   .button__top {
@@ -1808,6 +1850,8 @@ span.footer__invalid {
     text-decoration: none; }
   .logo__link:hover {
     color: #e3b873; }
+  .modal__button:hover {
+    border: none; }
   .logo__link {
     font-size: 1rem; }
   .contacts__phone {
@@ -1954,8 +1998,9 @@ span.footer__invalid {
     width: 100%;
     max-width: 28.333333rem; }
   .control__label {
-    margin-bottom: -3px;
-    font-size: 1.25rem; }
+    margin-bottom: 3px;
+    font-size: 1.25rem;
+    padding: 0; }
   .control__input {
     width: 100%;
     line-height: 2.3rem;
@@ -2031,11 +2076,11 @@ span.footer__invalid {
     width: 100%;
     order: 2; }
   .social__mail {
-    width: 39px;
+    max-width: 39px;
     height: 39px;
     margin-right: 1.8333333rem; }
   .social__instagram {
-    width: 39px;
+    max-width: 39px;
     height: 39px; }
   .info__box {
     width: 100%; }
@@ -2054,8 +2099,37 @@ span.footer__invalid {
     left: 0;
     margin: 0;
     padding: 0; }
+  #controlCheckbox-error {
+    top: 35px;
+    left: 0;
+    font-size: 1rem; }
+  span.modal__invalid {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    margin: 0;
+    padding: 0; }
+  #footerCheckbox-error {
+    top: 35px;
+    left: 0;
+    font-size: 1rem; }
+  #policyCheckbox-error {
+    top: 35px; }
+  span.control__invalid {
+    top: 45px; }
+  span.footer__invalid {
+    top: 50px; }
   .modal {
-    overflow: scroll; } }
+    overflow: scroll; }
+  .social__mail:hover {
+    box-shadow: none; }
+  .social__instagram:hover {
+    box-shadow: none; }
+  .alert__dialog {
+    max-width: 30.166666rem;
+    width: 100%;
+    background-color: #131313;
+    background-image: none; } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -2099,6 +2173,8 @@ span.footer__invalid {
     text-decoration: none; }
   .logo__link:hover {
     color: #e3b873; }
+  .modal__button:hover {
+    border: none; }
   .header {
     position: relative; }
   .logo__link {
@@ -2292,7 +2368,7 @@ span.footer__invalid {
     width: 100%;
     min-height: 25.916666rem; }
   .control__label {
-    margin-bottom: -3px;
+    margin-bottom: 1px;
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.5);
     line-height: 138.72%; }
@@ -2353,6 +2429,7 @@ span.footer__invalid {
       font-size: 1.666666rem;
       font-weight: normal; }
     .footer__label {
+      margin-bottom: 1px;
       font-size: 1.25rem; }
     .footer__input {
       font-size: 1.5rem;
@@ -2402,11 +2479,11 @@ span.footer__invalid {
     width: 100%;
     order: 2; }
   .social__mail {
-    width: 39px;
+    max-width: 39px;
     height: 39px;
     margin-right: 1.8333333rem; }
   .social__instagram {
-    width: 39px;
+    max-width: 39px;
     height: 39px; }
   .info__box {
     width: 100%; }
@@ -2423,16 +2500,28 @@ span.footer__invalid {
     background: none;
     background-color: #363636; }
   span.footer__invalid {
-    position: absolute;
-    top: 55px;
+    top: 47px; }
+  #controlCheckbox-error {
+    top: 35px;
     left: 0;
-    margin: 0;
-    padding: 0; }
+    font-size: 1rem; }
+  #footerCheckbox-error {
+    top: 35px;
+    left: 0;
+    font-size: 1rem; }
+  #policyCheckbox-error {
+    top: 35px; }
   span.modal__invalid {
-    position: absolute;
-    top: 55px;
-    left: 0;
-    margin: 0;
-    padding: 0; }
+    top: 45px; }
+  span.control__invalid {
+    top: 50px; }
   .modal {
-    overflow: scroll; } }
+    overflow: scroll; }
+  .social__mail:hover {
+    box-shadow: none; }
+  .social__instagram:hover {
+    box-shadow: none; }
+  .alert__dialog {
+    max-width: 26.66666rem;
+    width: 100%;
+    background-color: #131313; } }

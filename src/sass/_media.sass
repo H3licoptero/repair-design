@@ -123,8 +123,12 @@
       margin-bottom: 1.083333rem
     &__text
       margin-bottom: 3.66666rem
+  // .mail-box
+  //   margin-right: 1.25rem
+  #policyCheckbox-error
+    top: 35px
   #footerCheckbox-error
-    top: 40px
+    top: 35px
     left: 0
     font-size: 1rem
   #controlCheckbox-error
@@ -133,7 +137,7 @@
     font-size: 1rem
   span.modal__invalid
     position: absolute
-    top: 55px
+    top: 45px
     left: 0
     margin: 0
     padding: 0
@@ -184,6 +188,10 @@
     &__link
       &:hover
        color: $primary
+  .modal
+    &__button
+      &:hover
+        border: none
   .nav
     display: none
   .logo
@@ -308,15 +316,35 @@
     &__text
       margin-bottom: 3.66666rem
   #footerCheckbox-error
-    top: 40px
+    top: 35px
     left: 0
     font-size: 1rem
+  #policyCheckbox-error
+    top: 35px
+  #controlCheckbox-error
+    top: 35px
   span.modal__invalid
     position: absolute
-    top: 55px
+    top: 45px
     left: 0
     margin: 0
     padding: 0
+  span.control__invalid
+    top: 40px
+  span.footer__invalid
+   top: 50px
+  .social
+    &-box
+      max-width: 72px
+  .social 
+    &__mail
+      &:hover
+        box-shadow: none
+        border: none
+    &__instagram
+      &:hover
+        box-shadow: none
+        border: none
 @media screen and ( max-width: 768px )
   .button
     &__top
@@ -364,6 +392,10 @@
     &__link
       &:hover
        color: $primary
+  .modal
+    &__button
+      &:hover
+        border: none
   .logo
     &__link
       font-size: 1.17rem 
@@ -434,14 +466,15 @@
       width: 100%
       max-width: 28.333333rem
     &__label
-      margin-bottom: -3px
+      margin-bottom: 3px
       font-size: 1.25rem
     &__text
       max-width: 43.5rem
       font-size: 1.666666rem
     &__input
       width: 100%
-      line-height: 2.3rem
+      line-height: 2rem
+      padding: 0
       &::placeholder
         font-size: 1.5rem
     &__name
@@ -474,11 +507,12 @@
       font-size: 1.666666rem
       font-weight: normal
     &__label
+      margin-bottom: 3px
       font-size: 1.25rem
     &__input
       font-size: 1.5rem
       line-height: inherit
-      padding: 0 0 0.5rem
+      padding: 0 0 0.2rem
       &-group
         margin-bottom: 5.1rem
     &__form
@@ -508,8 +542,11 @@
       margin-bottom: 1.083333rem
     &__text
       margin-bottom: 3.66666rem
+  .social
+    &-box
+      max-width: 72px
   #controlCheckbox-error
-    top: 40px
+    top: 35px
     left: 0
     font-size: 1rem
   span.modal__invalid
@@ -518,6 +555,29 @@
     left: 0
     margin: 0
     padding: 0
+  #footerCheckbox-error
+    top: 35px
+    left: 0
+    font-size: 1rem
+  #policyCheckbox-error
+    top: 35px
+  span.modal__invalid
+    position: absolute
+    top: 45px
+    left: 0
+    margin: 0
+    padding: 0
+  span.control__invalid
+    top: 45px
+  span.footer__invalid
+   top: 50px
+  .social 
+    &__mail
+      &:hover
+        box-shadow: none
+    &__instagram
+      &:hover
+        box-shadow: none
 @media screen and ( max-width: 576px )
   .button
     &__top
@@ -565,6 +625,10 @@
     &__link
       &:hover
        color: $primary
+  .modal
+    &__button
+      &:hover
+        border: none
   .logo
     &__link
       font-size: 1rem
@@ -730,8 +794,9 @@
       width: 100%
       max-width: 28.333333rem
     &__label
-      margin-bottom: -3px
+      margin-bottom: 3px
       font-size: 1.25rem
+      padding: 0
     &__input
       width: 100%
       line-height: 2.3rem
@@ -806,11 +871,11 @@
       width: 100%
       order: 2
     &__mail
-      width: 39px
+      max-width: 39px
       height: 39px
       margin-right: 1.8333333rem
     &__instagram
-      width: 39px
+      max-width: 39px
       height: 39px
   .info
     &__box
@@ -831,8 +896,41 @@
     left: 0
     margin: 0
     padding: 0
+  #controlCheckbox-error
+    top: 35px
+    left: 0
+    font-size: 1rem
+  span.modal__invalid
+    position: absolute
+    top: 45px
+    left: 0
+    margin: 0
+    padding: 0
+  #footerCheckbox-error
+    top: 35px
+    left: 0
+    font-size: 1rem
+  #policyCheckbox-error
+    top: 35px
+  span.control__invalid
+    top: 45px
+  span.footer__invalid
+   top: 50px
   .modal
     overflow: scroll
+  .social 
+    &__mail
+      &:hover
+        box-shadow: none
+    &__instagram
+      &:hover
+        box-shadow: none
+  .alert
+    &__dialog
+      max-width: 30.166666rem
+      width: 100%
+      background-color: $dark
+      background-image: none
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -887,6 +985,10 @@
     &__link
       &:hover
        color: $primary
+  .modal
+    &__button
+      &:hover
+        border: none
   .header
     position: relative
   .logo
@@ -1102,7 +1204,7 @@
       width: 100%
       min-height: 25.916666rem
     &__label
-      margin-bottom: -3px
+      margin-bottom: 1px
       font-size: 1.25rem
       color: rgba($light, 0.5)
       line-height: 138.72%
@@ -1155,6 +1257,7 @@
       font-size: 1.666666rem
       font-weight: normal
     &__label
+      margin-bottom: 1px
       font-size: 1.25rem
     &__input
       font-size: 1.5rem
@@ -1204,11 +1307,11 @@
       width: 100%
       order: 2
     &__mail
-      width: 39px
+      max-width: 39px
       height: 39px
       margin-right: 1.8333333rem
     &__instagram
-      width: 39px
+      max-width: 39px
       height: 39px
   .info
     &__box
@@ -1228,18 +1331,32 @@
       background: none
       background-color: $dark-grey
   span.footer__invalid
-    position: absolute
-    top: 55px
+    top: 47px
+  #controlCheckbox-error
+    top: 35px
     left: 0
-    margin: 0
-    padding: 0
+    font-size: 1rem
+  #footerCheckbox-error
+    top: 35px
+    left: 0
+    font-size: 1rem
+  #policyCheckbox-error
+    top: 35px
   span.modal__invalid
-    position: absolute
-    top: 55px
-    left: 0
-    margin: 0
-    padding: 0
+    top: 45px
+  span.control__invalid
+    top: 50px
   .modal
     overflow: scroll
-    // &__dialog
-    //   overflow-y: visible
+  .social 
+    &__mail
+      &:hover
+        box-shadow: none
+    &__instagram
+      &:hover
+        box-shadow: none
+  .alert
+    &__dialog
+      max-width: 26.66666rem
+      width: 100%
+      background-color: $dark
