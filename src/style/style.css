@@ -371,8 +371,6 @@ template {
   padding: 0.1rem 0 0.2rem; }
   .input--light {
     color: #ffffff; }
-    .input--light::-webkit-input-placeholder {
-      color: #ffffff; }
     .input--light::-moz-placeholder {
       color: #ffffff; }
     .input--light:-ms-input-placeholder {
@@ -931,12 +929,6 @@ img {
   font-size: 1.285714rem;
   line-height: 1.71428rem;
   outline: none; }
-  .control__input::-webkit-input-placeholder {
-    color: #131313;
-    font-family: "Futura Book", sans-serif;
-    font-weight: normal;
-    font-size: 1.285714rem;
-    line-height: 1.71428rem; }
   .control__input::-moz-placeholder {
     color: #131313;
     font-family: "Futura Book", sans-serif;
@@ -1363,8 +1355,6 @@ span.footer__invalid {
     flex-wrap: wrap; }
   .control__label {
     font-size: 1.25rem; }
-  .control__input::-webkit-input-placeholder {
-    font-size: 1.5rem; }
   .control__input::-moz-placeholder {
     font-size: 1.5rem; }
   .control__input:-ms-input-placeholder {
@@ -1477,8 +1467,6 @@ span.footer__invalid {
     font-size: 1.5rem; }
   .card__design-image::before {
     background-color: transparent; }
-  .control__input::-webkit-input-placeholder {
-    font-size: 1.5rem; }
   .control__input::-moz-placeholder {
     font-size: 1.5rem; }
   .control__input:-ms-input-placeholder {
@@ -1591,8 +1579,6 @@ span.footer__invalid {
   .control__input {
     width: 100%;
     line-height: 2.3rem; }
-    .control__input::-webkit-input-placeholder {
-      font-size: 1.5rem; }
     .control__input::-moz-placeholder {
       font-size: 1.5rem; }
     .control__input:-ms-input-placeholder {
@@ -1814,8 +1800,6 @@ span.footer__invalid {
     width: 100%;
     line-height: 2.3rem;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
-    .control__input::-webkit-input-placeholder {
-      font-size: 1.5rem; }
     .control__input::-moz-placeholder {
       font-size: 1.5rem; }
     .control__input:-ms-input-placeholder {
@@ -2114,9 +2098,6 @@ span.footer__invalid {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     line-height: 2.3rem;
     color: #ffffff; }
-    .control__input::-webkit-input-placeholder {
-      font-size: 1.5rem;
-      color: #ffffff; }
     .control__input::-moz-placeholder {
       font-size: 1.5rem;
       color: #ffffff; }
@@ -2178,8 +2159,6 @@ span.footer__invalid {
       border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
       .footer__input-group {
         margin-bottom: 5.1rem; }
-        .footer__input-group::-webkit-input-placeholder {
-          color: #ffffff; }
         .footer__input-group::-moz-placeholder {
           color: #ffffff; }
         .footer__input-group:-ms-input-placeholder {

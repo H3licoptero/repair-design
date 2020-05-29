@@ -205,6 +205,9 @@ $(document).ready(function () {
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
         },
+        error: function (response) {
+          console.log("Ошибка отправки.");
+        },
       });
     },
   });
@@ -243,6 +246,9 @@ $(document).ready(function () {
           console.log("Сработало!" + response);
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
+        },
+        error: function (response) {
+          console.log("Ошибка отправки.");
         },
       });
     },

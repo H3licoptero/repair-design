@@ -13,15 +13,15 @@ const tinypng = require("gulp-tinypng-compress");
 
 // Compile sass into CSS & auto-inject into browsers
  function serveSass() {
-    return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
-      .pipe(sass())
-      .pipe(
-        autoprefixer({
-          cascade: false,
-        })
-      )
-      .pipe(dest("./src/style"))
-      .pipe(browserSync.stream());
+  return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
+    .pipe(sass())
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(dest("./src/style"))
+    .pipe(browserSync.stream());
 }
 
 // minify css
