@@ -100,6 +100,103 @@ $(document).ready(function () {
     }
   });
 
+  $(".form").validate({
+    errorClass: "invalid",
+    errorElement: "span",
+    rules: {
+      // правило для поля "введите имя"
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      // правило для телефона
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+      // правила для поля "email"
+      userEmail: {
+        required: true,
+        email: true,
+      },
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя должно содержать не менее 2-х символов",
+        maxlength: "Имя должно содержать не более 15-ти символов",
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("Сработало!" + response);
+          alert.toggleClass("alert--visible");
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+        },
+      });
+    },
+  });
+
+  $("from").validate({
+    errorClass: "modal__invalid",
+    errorElement: "span",
+    // onfocusout: true,
+    rules: {
+      // правило для поля "введите имя"
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      // правило для телефона
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+      // правила для поля "email"
+      userEmail: {
+        required: true,
+        email: true,
+      },
+    },
+    // сообщения при ошибках
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя должно содержать не менее 2-х символов",
+        maxlength: "Имя должно содержать не более 15-ти символов",
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("Сработало!" + response);
+          alert.toggleClass("alert--visible");
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+        },
+      });
+    },
+  });
   // валидация формы
   // modal form
   $(".modal__form").validate({

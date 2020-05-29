@@ -442,7 +442,8 @@ template {
     border: solid 1px #ffffff; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: none; }
 
 html {
   font-size: 14px; }
@@ -560,6 +561,7 @@ img {
   color: #e3b873;
   text-transform: uppercase; }
   .logo__link {
+    margin-right: 1.84285rem;
     color: #e3b873;
     text-transform: uppercase;
     text-decoration: none;
@@ -574,7 +576,7 @@ img {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.858rem;
+  margin-right: 2.658rem;
   transition: color 0.2s;
   outline-color: #e3b873; }
   .nav__item:hover {
@@ -589,12 +591,13 @@ img {
     text-decoration: none; }
 
 .contacts__phone {
-  margin-right: 45px;
+  margin-right: 3.0714285rem;
   font-family: "Futura Demi", sans-serif; }
 
 .contacts__button {
+  padding: 0.8285714rem 1.42857rem;
   font-family: "Futura Demi", sans-serif;
-  font-size: 13px;
+  font-size: 0.9285714rem;
   font-style: italic;
   font-weight: normal;
   line-height: 15px;
@@ -627,6 +630,8 @@ img {
     width: 100%;
     height: 3.46rem;
     background-color: #131313; }
+  .hero__title {
+    line-height: 53px; }
   .hero__content {
     position: relative;
     max-width: 47.85rem;
@@ -635,19 +640,21 @@ img {
     font-family: "Futura Book", sans-serif;
     font-weight: normal;
     font-size: 1.58rem;
-    max-width: 500px;
-    line-height: 131%;
+    max-width: 35.71428rem;
+    line-height: 2.142857rem;
     margin: 0;
-    margin-bottom: 3.1rem; }
+    margin-top: 0.948571rem;
+    margin-bottom: 3.2rem; }
   .hero__button {
-    width: 207px;
-    margin-right: 20px;
-    padding: 17px 24px;
+    max-width: 14.78571rem;
+    width: 100%;
+    margin-right: 18px;
+    padding: 1.21428rem 1.714285rem;
     font-family: "Futura Demi", sans-serif;
     font-weight: normal;
     font-style: italic;
     font-size: 0.93rem;
-    line-height: 15px; }
+    line-height: 1.071428rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -710,7 +717,7 @@ img {
       content: '';
       width: 50px;
       height: 1px;
-      margin-left: 8px;
+      margin-left: 14px;
       background-color: #e3b873; }
     .instagram__link:hover::after {
       background-color: #ffffff; }
@@ -723,7 +730,8 @@ img {
   font-size: 2.86rem;
   line-height: 1.4; }
   .title--primary {
-    color: #e3b873; }
+    color: #e3b873;
+    letter-spacing: -0.02rem; }
 
 .count-button {
   border: 1px solid #e3b873;
@@ -1316,7 +1324,10 @@ span.footer__invalid {
     font-size: 1.84rem;
     font-weight: normal; }
   .hero__button {
-    font-size: 1.084rem; }
+    max-width: 17.25rem;
+    width: 100%;
+    font-size: 1.084rem;
+    line-height: 1.071428rem; }
   .design__section-title {
     margin-bottom: 3.25rem; }
   .design__text {
@@ -1414,7 +1425,10 @@ span.footer__invalid {
     font-size: 1.84rem;
     font-weight: normal; }
   .hero__button {
-    font-size: 1.084rem; }
+    max-width: 17.25rem;
+    width: 100%;
+    font-size: 1.083333rem;
+    line-height: 1.071428rem; }
   .container__projects {
     max-width: 660px; }
   .col-40 {
@@ -1535,7 +1549,8 @@ span.footer__invalid {
   .hero__text {
     font-size: 1.84rem; }
   .hero__button {
-    font-size: 1.084rem; }
+    font-size: 1.084rem;
+    line-height: 1.071428rem; }
   .section-title {
     margin-bottom: 2.58333rem; }
     .section-title__heading {
