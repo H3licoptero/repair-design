@@ -138,6 +138,52 @@
     margin: 0
     padding: 0
 @media screen and ( max-width: 992px )
+  .button
+    &__top
+      background-color: rgba($dark, 0.5)
+      box-shadow: none
+      &:hover
+        background-color: rgba($dark, 0.5)
+        box-shadow: none
+  .button
+    &--primary
+      transition: none
+      &:hover
+        box-shadow: 0 5px 15px rgba($primary, 0.2)
+        background-color: $primary
+        border: 1px solid $primary
+    &--outline
+      transition: none
+      &:hover
+        background-color: transparent
+        box-shadow:  none
+  .contacts
+    &__button
+      transition: none
+      &:hover
+        transform: none
+        border: none
+  .control
+    &__button
+      &:hover
+        border: none
+  .footer
+    &__button
+      &:hover
+        border: none
+  .phone
+    &:hover
+      color: $primary
+      text-decoration: underline
+  .footer
+    &__phone
+      &:hover
+        color: $primary
+        text-decoration: none
+  .logo
+    &__link
+      &:hover
+       color: $primary
   .nav
     display: none
   .logo
@@ -272,6 +318,52 @@
     margin: 0
     padding: 0
 @media screen and ( max-width: 768px )
+  .button
+    &__top
+      background-color: rgba($dark, 0.5)
+      box-shadow: none
+      &:hover
+        background-color: rgba($dark, 0.5)
+        box-shadow: none
+  .button
+    &--primary
+      transition: none
+      &:hover
+        box-shadow: 0 5px 15px rgba($primary, 0.2)
+        background-color: $primary
+        border: 1px solid $primary
+    &--outline
+      transition: none
+      &:hover
+        background-color: transparent
+        box-shadow:  none
+  .contacts
+    &__button
+      transition: none
+      &:hover
+        transform: none
+        border: none
+  .control
+    &__button
+      &:hover
+        border: none
+  .footer
+    &__button
+      &:hover
+        border: none
+  .phone
+    &:hover
+      color: $primary
+      text-decoration: underline
+  .footer
+    &__phone
+      &:hover
+        color: $primary
+        text-decoration: none
+  .logo
+    &__link
+      &:hover
+       color: $primary
   .logo
     &__link
       font-size: 1.17rem 
@@ -427,6 +519,52 @@
     margin: 0
     padding: 0
 @media screen and ( max-width: 576px )
+  .button
+    &__top
+      background-color: rgba($dark, 0.5)
+      box-shadow: none
+      &:hover
+        background-color: rgba($dark, 0.5)
+        box-shadow: none
+  .button
+    &--primary
+      transition: none
+      &:hover
+        box-shadow: 0 5px 15px rgba($primary, 0.2)
+        background-color: $primary
+        border: 1px solid $primary
+    &--outline
+      transition: none
+      &:hover
+        background-color: transparent
+        box-shadow:  none
+  .contacts
+    &__button
+      transition: none
+      &:hover
+        transform: none
+        border: none
+  .control
+    &__button
+      &:hover
+        border: none
+  .footer
+    &__button
+      &:hover
+        border: none
+  .phone
+    &:hover
+      color: $light
+      text-decoration: none
+  .footer
+    &__phone
+      &:hover
+        color: $primary
+        text-decoration: none
+  .logo
+    &__link
+      &:hover
+       color: $primary
   .logo
     &__link
       font-size: 1rem
@@ -693,6 +831,8 @@
     left: 0
     margin: 0
     padding: 0
+  .modal
+    overflow: scroll
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -700,6 +840,53 @@
     &__scroll-down
       display: none
 @media screen and ( max-width: 375px )
+  .button
+    &__top
+      background-color: rgba($dark, 0.5)
+      box-shadow: none
+      &:hover
+        background-color: rgba($dark, 0.5)
+        box-shadow: none
+  .button
+    &--primary
+      transition: none
+      &:hover
+        box-shadow: 0 5px 15px rgba($primary, 0.2)
+        background-color: $primary
+        border: 1px solid $primary
+    &--outline
+      transition: none
+      &:hover
+        background-color: transparent
+        box-shadow:  none
+  .contacts
+    &__button
+      transition: none
+      &:hover
+        transform: none
+        border: none
+  .control
+    &__button
+      &:hover
+        border: none
+        box-shadow: 0 5px 15px rgba($primary, 0.2)
+  .footer
+    &__button
+      &:hover
+        border: none
+  .phone
+    &:hover
+      color: $light
+      text-decoration: none
+  .footer
+    &__phone
+      &:hover
+        color: $primary
+        text-decoration: none
+  .logo
+    &__link
+      &:hover
+       color: $primary
   .header
     position: relative
   .logo
@@ -1036,32 +1223,6 @@
   .thanks
     &__text
       max-width: 20.166666rem
-  .button
-    transition: none
-    &:hover
-      cursor: pointer
-    &--primary
-      transition: none
-      &:hover
-        background-color: $primary
-        border: 1px solid $primary
-    &--outline
-      transition: none
-      &:hover
-        background-color: transparent
-        box-shadow:  none
-  .logo
-    &__link
-      transition: none
-      &:hover
-        color: $primary
-        cursor: pointer
-  .control
-    &__button
-      transition: none
-      &:hover
-        border: none
-        box-shadow: none
   .alert
     &__dialog
       background: none
@@ -1078,3 +1239,7 @@
     left: 0
     margin: 0
     padding: 0
+  .modal
+    overflow: scroll
+    // &__dialog
+    //   overflow-y: visible

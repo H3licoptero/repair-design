@@ -1284,11 +1284,19 @@ span.modal__invalid {
 
 .social__mail {
   width: 29px;
-  height: 29px; }
+  height: 29px;
+  transition: all; }
+  .social__mail:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #ffffff; }
 
 .social__instagram {
   width: 29px;
-  height: 29px; }
+  height: 29px;
+  transition: all; }
+  .social__instagram:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #ffffff; }
 
 .footer__map {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
@@ -1430,6 +1438,40 @@ span.footer__invalid {
     padding: 0; } }
 
 @media screen and (max-width: 992px) {
+  .button__top {
+    background-color: rgba(19, 19, 19, 0.5);
+    box-shadow: none; }
+    .button__top:hover {
+      background-color: rgba(19, 19, 19, 0.5);
+      box-shadow: none; }
+  .button--primary {
+    transition: none; }
+    .button--primary:hover {
+      box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+      background-color: #e3b873;
+      border: 1px solid #e3b873; }
+  .button--outline {
+    transition: none; }
+    .button--outline:hover {
+      background-color: transparent;
+      box-shadow: none; }
+  .contacts__button {
+    transition: none; }
+    .contacts__button:hover {
+      transform: none;
+      border: none; }
+  .control__button:hover {
+    border: none; }
+  .footer__button:hover {
+    border: none; }
+  .phone:hover {
+    color: #e3b873;
+    text-decoration: underline; }
+  .footer__phone:hover {
+    color: #e3b873;
+    text-decoration: none; }
+  .logo__link:hover {
+    color: #e3b873; }
   .nav {
     display: none; }
   .logo__link {
@@ -1552,6 +1594,40 @@ span.footer__invalid {
     padding: 0; } }
 
 @media screen and (max-width: 768px) {
+  .button__top {
+    background-color: rgba(19, 19, 19, 0.5);
+    box-shadow: none; }
+    .button__top:hover {
+      background-color: rgba(19, 19, 19, 0.5);
+      box-shadow: none; }
+  .button--primary {
+    transition: none; }
+    .button--primary:hover {
+      box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+      background-color: #e3b873;
+      border: 1px solid #e3b873; }
+  .button--outline {
+    transition: none; }
+    .button--outline:hover {
+      background-color: transparent;
+      box-shadow: none; }
+  .contacts__button {
+    transition: none; }
+    .contacts__button:hover {
+      transform: none;
+      border: none; }
+  .control__button:hover {
+    border: none; }
+  .footer__button:hover {
+    border: none; }
+  .phone:hover {
+    color: #e3b873;
+    text-decoration: underline; }
+  .footer__phone:hover {
+    color: #e3b873;
+    text-decoration: none; }
+  .logo__link:hover {
+    color: #e3b873; }
   .logo__link {
     font-size: 1.17rem; }
   .contacts__phone {
@@ -1698,6 +1774,40 @@ span.footer__invalid {
     padding: 0; } }
 
 @media screen and (max-width: 576px) {
+  .button__top {
+    background-color: rgba(19, 19, 19, 0.5);
+    box-shadow: none; }
+    .button__top:hover {
+      background-color: rgba(19, 19, 19, 0.5);
+      box-shadow: none; }
+  .button--primary {
+    transition: none; }
+    .button--primary:hover {
+      box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+      background-color: #e3b873;
+      border: 1px solid #e3b873; }
+  .button--outline {
+    transition: none; }
+    .button--outline:hover {
+      background-color: transparent;
+      box-shadow: none; }
+  .contacts__button {
+    transition: none; }
+    .contacts__button:hover {
+      transform: none;
+      border: none; }
+  .control__button:hover {
+    border: none; }
+  .footer__button:hover {
+    border: none; }
+  .phone:hover {
+    color: #ffffff;
+    text-decoration: none; }
+  .footer__phone:hover {
+    color: #e3b873;
+    text-decoration: none; }
+  .logo__link:hover {
+    color: #e3b873; }
   .logo__link {
     font-size: 1rem; }
   .contacts__phone {
@@ -1943,7 +2053,9 @@ span.footer__invalid {
     top: 55px;
     left: 0;
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  .modal {
+    overflow: scroll; } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -1952,6 +2064,41 @@ span.footer__invalid {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  .button__top {
+    background-color: rgba(19, 19, 19, 0.5);
+    box-shadow: none; }
+    .button__top:hover {
+      background-color: rgba(19, 19, 19, 0.5);
+      box-shadow: none; }
+  .button--primary {
+    transition: none; }
+    .button--primary:hover {
+      box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+      background-color: #e3b873;
+      border: 1px solid #e3b873; }
+  .button--outline {
+    transition: none; }
+    .button--outline:hover {
+      background-color: transparent;
+      box-shadow: none; }
+  .contacts__button {
+    transition: none; }
+    .contacts__button:hover {
+      transform: none;
+      border: none; }
+  .control__button:hover {
+    border: none;
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2); }
+  .footer__button:hover {
+    border: none; }
+  .phone:hover {
+    color: #ffffff;
+    text-decoration: none; }
+  .footer__phone:hover {
+    color: #e3b873;
+    text-decoration: none; }
+  .logo__link:hover {
+    color: #e3b873; }
   .header {
     position: relative; }
   .logo__link {
@@ -2272,30 +2419,6 @@ span.footer__invalid {
     top: 50px; }
   .thanks__text {
     max-width: 20.166666rem; }
-  .button {
-    transition: none; }
-    .button:hover {
-      cursor: pointer; }
-    .button--primary {
-      transition: none; }
-      .button--primary:hover {
-        background-color: #e3b873;
-        border: 1px solid #e3b873; }
-    .button--outline {
-      transition: none; }
-      .button--outline:hover {
-        background-color: transparent;
-        box-shadow: none; }
-  .logo__link {
-    transition: none; }
-    .logo__link:hover {
-      color: #e3b873;
-      cursor: pointer; }
-  .control__button {
-    transition: none; }
-    .control__button:hover {
-      border: none;
-      box-shadow: none; }
   .alert__dialog {
     background: none;
     background-color: #363636; }
@@ -2310,4 +2433,6 @@ span.footer__invalid {
     top: 55px;
     left: 0;
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  .modal {
+    overflow: scroll; } }
