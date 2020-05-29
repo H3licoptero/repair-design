@@ -46,7 +46,7 @@ $(document).ready(function () {
     });
 
     $(".hero__scroll-down").click(function () {
-      $("html, body").animate({ scrollTop: $("#projects").height()}, 1000);
+      $("html, body").animate({ scrollTop: $("#projects").top});
       return false;
     });
 

@@ -745,9 +745,6 @@ img {
 .thanks__title {
   color: #e3b873; }
 
-.projects {
-  background-image: url("../img/background-line.svg"); }
-
 .container__projects {
   margin-top: 11rem;
   padding-bottom: 26rem; }
@@ -1039,7 +1036,7 @@ span.control__invalid {
   color: #363636; }
 
 .design {
-  background: #131313 url(../img/background-line.svg) no-repeat center;
+  background: #131313;
   padding-bottom: 20rem; }
   .design__container {
     margin-top: -545px; }

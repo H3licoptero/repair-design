@@ -1,5 +1,13 @@
-<svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="14" cy="14.1943" r="14" fill="#E3B873"/>
-<path d="M8.4 8.99414H19.6C20.37 8.99414 21 9.62414 21 10.3941V18.7941C21 19.5641 20.37 20.1941 19.6 20.1941H8.4C7.63 20.1941 7 19.5641 7 18.7941V10.3941C7 9.62414 7.63 8.99414 8.4 8.99414Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21 10.3945L14 15.2945L7 10.3945" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="28px" height="28px" viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E3B873;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<circle class="st0" cx="14" cy="14" r="14"/>
+<path class="st1" d="M8.4,8.8h11.2c0.8,0,1.4,0.6,1.4,1.4v8.4c0,0.8-0.6,1.4-1.4,1.4H8.4C7.6,20,7,19.4,7,18.6v-8.4
+	C7,9.4,7.6,8.8,8.4,8.8z"/>
+<path class="st1" d="M21,10.2l-7,4.9l-7-4.9"/>
 </svg>
