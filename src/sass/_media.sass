@@ -929,8 +929,7 @@
     &__dialog
       max-width: 30.166666rem
       width: 100%
-      background-color: $dark
-      background-image: none
+      background: $dark url("../img/background-line.svg")
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -986,6 +985,8 @@
       &:hover
        color: $primary
   .modal
+    &__dialog
+    overflow: scroll
     &__button
       &:hover
         border: none
@@ -1326,10 +1327,6 @@
   .thanks
     &__text
       max-width: 20.166666rem
-  .alert
-    &__dialog
-      background: none
-      background-color: $dark-grey
   span.footer__invalid
     top: 47px
   #controlCheckbox-error
@@ -1359,4 +1356,5 @@
     &__dialog
       max-width: 26.66666rem
       width: 100%
-      background-color: $dark
+      background: $dark url("../img/background-line.svg")
+  

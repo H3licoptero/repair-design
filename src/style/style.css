@@ -367,17 +367,25 @@ template {
   background-color: transparent;
   font-size: 1.285714rem;
   line-height: 1.78571428rem;
-  padding: 0.1rem 0 0.2rem; }
+  padding: 0.1rem 0 0.2rem;
+  opacity: 1; }
   .input--light {
     color: #ffffff; }
     .input--light::-moz-placeholder {
-      color: #ffffff; }
+      color: #ffffff;
+      opacity: 1; }
     .input--light:-ms-input-placeholder {
-      color: #ffffff; }
+      color: #ffffff;
+      opacity: 1; }
     .input--light::-ms-input-placeholder {
-      color: #ffffff; }
+      color: #ffffff;
+      opacity: 1; }
     .input--light::placeholder {
-      color: #ffffff; }
+      color: #ffffff;
+      opacity: 1; }
+    .input--light::-moz-placeholder {
+      color: #ffffff;
+      opacity: 1; }
 
 .policy__checkbox {
   opacity: 0;
@@ -951,6 +959,9 @@ img {
     font-weight: normal;
     font-size: 1.285714rem;
     line-height: 1.71428rem; }
+  .control__input::-moz-placeholder {
+    color: #131313;
+    opacity: 1; }
 
 .control__button {
   padding: 1.22857rem 4.2857rem;
@@ -2132,8 +2143,7 @@ span.footer__invalid {
   .alert__dialog {
     max-width: 30.166666rem;
     width: 100%;
-    background-color: #131313;
-    background-image: none; } }
+    background: #131313 url("../img/background-line.svg"); } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -2177,8 +2187,10 @@ span.footer__invalid {
     text-decoration: none; }
   .logo__link:hover {
     color: #e3b873; }
-  .modal__button:hover {
-    border: none; }
+  .modal {
+    overflow: scroll; }
+    .modal__button:hover {
+      border: none; }
   .header {
     position: relative; }
   .logo__link {
@@ -2500,9 +2512,6 @@ span.footer__invalid {
     top: 50px; }
   .thanks__text {
     max-width: 20.166666rem; }
-  .alert__dialog {
-    background: none;
-    background-color: #363636; }
   span.footer__invalid {
     top: 47px; }
   #controlCheckbox-error {
@@ -2528,4 +2537,4 @@ span.footer__invalid {
   .alert__dialog {
     max-width: 26.66666rem;
     width: 100%;
-    background-color: #131313; } }
+    background: #131313 url("../img/background-line.svg"); } }
