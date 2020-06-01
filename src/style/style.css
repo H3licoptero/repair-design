@@ -372,19 +372,14 @@ template {
   .input--light {
     color: #ffffff; }
     .input--light::-moz-placeholder {
-      color: #ffffff;
-      opacity: 1; }
+      color: #ffffff; }
     .input--light:-ms-input-placeholder {
-      color: #ffffff;
-      opacity: 1; }
+      color: #ffffff; }
     .input--light::-ms-input-placeholder {
-      color: #ffffff;
-      opacity: 1; }
+      color: #ffffff; }
     .input--light::placeholder {
-      color: #ffffff;
-      opacity: 1; }
+      color: #ffffff; }
     .input--light::-moz-placeholder {
-      color: #ffffff;
       opacity: 1; }
 
 .policy__checkbox {
@@ -960,7 +955,6 @@ img {
     font-size: 1.285714rem;
     line-height: 1.71428rem; }
   .control__input::-moz-placeholder {
-    color: #131313;
     opacity: 1; }
 
 .control__button {

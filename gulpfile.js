@@ -25,12 +25,12 @@ const tinypng = require("gulp-tinypng-compress");
 }
 
 // minify css
-function minCss() {
-return src("src/style/*.css")
-  .pipe(cleanCSS())
-  .pipe(rename({ suffix: ".min" }))
-  .pipe(dest("dist/style"));
-}
+// function minCss() {
+// return src("src/style/*.css")
+//   .pipe(cleanCSS())
+//   .pipe(rename({ suffix: ".min" }))
+//   .pipe(dest("dist/style"));
+// }
 
 // Static server
 function bs() {
@@ -38,7 +38,7 @@ function bs() {
   // minCss();
   browserSync.init({
     server: {
-      baseDir: "./src",
+      baseDir: "src",
     },
   });
   watch("src/*.html").on("change", browserSync.reload);
@@ -55,15 +55,16 @@ function buildCSS(done) {
 }
 
 function buildJS(done) {
-  src(["src/js/**.js", "!src/js/**.min.js"])
+  src(["src/js/**/**.js", "!src/js/**/**.min.js"])
     .pipe(
       minify({
         ext: {
+          // src: "main.js",
           min: ".js",
         },
       })
     )
-    .pipe(dest("dist/js"));
+    .pipe(dest("dist/js/"));
   src("src/js/**.min.js")
     .pipe(dest("dist/js/"));
   done();
