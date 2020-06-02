@@ -51,7 +51,7 @@ $(document).ready(function () {
     });
 
     let $page = $("html, body");
-    $('a[href*="#"]').click(function () {
+    $('a[href="#main"], a[href="#projects"], a[href="#info"]').click(function () {
       $page.animate(
         {scrollTop: $($.attr(this, "href")).offset().top},
         1000
