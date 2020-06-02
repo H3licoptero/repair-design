@@ -287,10 +287,9 @@ $(document).ready(function () {
       },
     });
   });
+});
 
-  
-
-  // map
+// map
   // Функция ymaps.ready() будет вызвана, когда
   // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
  ymaps.ready(function () {
@@ -355,4 +354,3 @@ $(document).ready(function () {
    myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
    myMap.behaviors.disable('scrollZoom');
  });
-});

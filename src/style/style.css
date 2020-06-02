@@ -2181,10 +2181,8 @@ span.footer__invalid {
     text-decoration: none; }
   .logo__link:hover {
     color: #e3b873; }
-  .modal {
-    overflow: scroll; }
-    .modal__button:hover {
-      border: none; }
+  .modal__button:hover {
+    border: none; }
   .header {
     position: relative; }
   .logo__link {
@@ -2357,7 +2355,7 @@ span.footer__invalid {
     margin: auto; }
   .control__video {
     max-width: 28.33333rem;
-    min-height: 17.25rem;
+    height: 17.25rem;
     margin-bottom: 2.33333rem; }
   .control__section-title {
     margin-top: -75.7rem;
@@ -2522,8 +2520,9 @@ span.footer__invalid {
     top: 45px; }
   span.control__invalid {
     top: 50px; }
-  .modal {
-    overflow: scroll; }
+  .modal__dialog {
+    heigth: 100vh;
+    overflow: auto; }
   .social__mail:hover {
     box-shadow: none; }
   .social__instagram:hover {

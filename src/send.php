@@ -4,7 +4,6 @@
   $userEmail = $_POST["userEmail"];
   $userPhone = $_POST["userPhone"];
 
-
 // Load Composer's autoloader
 require 'PHPmailer/Exception.php';
 require 'PHPmailer/PHPMailer.php';
@@ -28,10 +27,10 @@ try {
     $mail->setFrom('furaNeraGrande@gmail.com', 'Виталий');
     $mail->addAddress('h3licoptero@yandex.ru');     // Add a recipient
 
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body = 'Имя пользователя:' . $userName . ' Его телефон: ' . $userPhone . ' Его почта: ' . $userEmail;
+  // Content
+  $mail->isHTML(true);                                  // Set email format to HTML
+  $mail->Subject = 'Новая заявка с сайта';
+  $mail->Body = 'Имя пользователя:' . $userName . ' Его телефон: ' . $userPhone . ' Его почта: ' . $userEmail;
 
   if ($mail->send()) {
     echo "Ok!";

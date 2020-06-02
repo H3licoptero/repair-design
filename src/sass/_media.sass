@@ -985,8 +985,6 @@
       &:hover
        color: $primary
   .modal
-    &__dialog
-    overflow: scroll
     &__button
       &:hover
         border: none
@@ -1183,7 +1181,7 @@
       margin: auto
     &__video
       max-width: 28.33333rem
-      min-height: 17.25rem
+      height: 17.25rem
       margin-bottom: 2.33333rem
     &__section-title
       margin-top: -75.7rem 
@@ -1344,7 +1342,9 @@
   span.control__invalid
     top: 50px
   .modal
-    overflow: scroll
+    &__dialog
+      heigth: 100vh
+      overflow: auto
   .social 
     &__mail
       &:hover
