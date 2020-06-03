@@ -215,6 +215,11 @@
       width: 100%
       font-size: 1.083333rem  
       line-height: 1.071428rem
+    &__scroll-down
+      &:hover   
+        color: $light
+      &:hover::after
+        border: 2px solid $primary
   .container
     &__projects
       max-width: 660px
@@ -431,7 +436,12 @@
       font-size: 1.84rem 
     &__button
       font-size: 1.084rem
-      line-height: 1.071428rem;
+      line-height: 1.071428rem
+    &__scroll-down
+      &:hover   
+        color: $light
+      &:hover::after
+        border: 2px solid $primary
   .section
     &-title
       margin-bottom: 2.58333rem
@@ -1209,7 +1219,7 @@
       line-height: 138.72%
     &__input
       width: 100%  
-      border-bottom: 1px solid rgba($mobile-input, 0.3)
+      border-bottom: 1px solid rgba($mobile-input, 1)
       line-height: 2.3rem
       color: $light
       &::placeholder
@@ -1263,7 +1273,7 @@
       line-height: inherit
       padding: 0 0 0.5rem
       color: $light
-      border-bottom: 1px solid rgba($mobile-input, 0.3)
+      border-bottom: 1px solid rgba($mobile-input, 1)
       &-group
         margin-bottom: 5.1rem
         &::placeholder
