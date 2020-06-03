@@ -927,7 +927,9 @@
   span.footer__invalid
    top: 50px
   .modal
-    overflow: scroll
+    &__dialog
+      overflow: scroll
+      height: 100vh
   .social 
     &__mail
       &:hover
@@ -1351,10 +1353,10 @@
     top: 45px
   span.control__invalid
     top: 50px
-  .modal
-    &__dialog
-      heigth: 100vh
-      overflow: auto
+  // .modal
+  //   &__dialog
+  //     overflow: scroll
+  //     height: 100vh
   .social 
     &__mail
       &:hover
