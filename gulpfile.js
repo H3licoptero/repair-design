@@ -87,6 +87,8 @@ function buildPHP(done) {
 function buildFonts(done) {
   src("./src/fonts/futura/**")
     .pipe(dest("dist/fonts/futura"));
+  src("./src/fonts/yesevaOne/**")
+    .pipe(dest('dist/fonts/yesevaOne'));
   done();
 }
 

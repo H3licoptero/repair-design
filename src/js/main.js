@@ -164,16 +164,16 @@ $(document).ready(function () {
      error.insertAfter($(element));
     },
     rules: {
-      footerName: {
+      userName: {
         required: true,
         minlength: 2,
         maxlength: 15,
       },
-      footerPhone: {
+      userPhone: {
         required: true,
         minlength: 16,
       },
-      footerQuestion: {
+      userQuestion: {
         required: true,
       },
       footerCheckbox: {
@@ -182,13 +182,13 @@ $(document).ready(function () {
     },
     // сообщения при ошибках
     messages: {
-      footerName: {
+      userName: {
         required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      footerPhone: "Заполните поле",
-      footerQuestion: {
+      userPhone: "Заполните поле",
+      userQuestion: {
         required: "Напишите свой вопрос",
       },
       footerCheckbox: {
@@ -198,7 +198,7 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send-3.php",
+        url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
@@ -223,13 +223,13 @@ $(document).ready(function () {
     },
     rules: {
       // правило для поля "введите имя"
-      controlName: {
+      userName: {
         required: true,
         minlength: 2,
         maxlength: 15,
       },
       // правило для телефона
-      controlPhone: {
+      userPhone: {
         required: true,
         minlength: 16,
       },
@@ -239,12 +239,12 @@ $(document).ready(function () {
     },
     // сообщения при ошибках
     messages: {
-      controlName: {
+      userName: {
         required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      controlPhone: "Заполните поле",
+      userPhone: "Заполните поле",
       controlCheckbox: {
         required: "Необходимо согласие пользователя",
       },
@@ -252,10 +252,11 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send-2.php",
+        url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
+          console.dir();
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
         },

@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet"> -->
   <link rel="shortcut icon" href="img/favicon/android-chrome-192x192.png" type="image/x-icon">
-  <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
   <link rel="stylesheet" href="style/swiper.min.css">
   <link rel="stylesheet" href="style/animate.css">
   <link rel="stylesheet" href="style/style.css">
@@ -270,14 +268,14 @@
           объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
         <!-- /.control-text -->
-        <form action="send-2.php" method="POST" class="form control__form">
+        <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group control__name">
             <label for="control-name" class="label form__label control__label">Имя</label>
-            <input type="text" class="input form__input control__input" name="controlName" id="control-name" placeholder="Как Вас зовут:">
+            <input type="text" class="input form__input control__input" name="userName" id="control-name" placeholder="Как Вас зовут:">
           </div>
           <div class="control__input-group control__phone">
             <label for="control-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input" name="controlPhone" id="control-phone"
+            <input type="tel" class="input form__input control__input" name="userPhone" id="control-phone"
               placeholder="Ваш номер телефона:">
           </div>
 
@@ -571,7 +569,8 @@
                  <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
                </div>
           </div>
-          <button type="submit" class="button button--primary modal__button request-button">Отправить заявку</button>
+          <button type="submit" class="button button--primary modal__button request-button">Отправить
+            заявку</button>
         </form>
       </div>
       <!-- /.modal__dialog -->
@@ -595,22 +594,22 @@
     <div class="container">
       <div class="footer__wrap">
         <h3 class="footer__title">Остались вопросы?</h3>
-        <form action="send-3.php" method="POST" class="form footer__form">
+        <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="footer-name" class="label form__label label--light footer__label">Имя</label>
-            <input type="text" class="input form__input footer__input input--light" name="footerName" id="footer-name"
+            <input type="text" class="input form__input footer__input input--light" name="userName" id="footer-name"
               placeholder="Как Вас зовут:">
           </div>
           <!-- /.input-group -->
           <div class="input-group footer__input-group">
             <label for="footer-phone" class="label form__label label--light footer__label">Телефон</label>
-            <input type="tel" class="input form__input footer__input input--light" name="footerPhone" id="footer-phone"
+            <input type="tel" class="input form__input footer__input input--light" name="userPhone" id="footer-phone"
               placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group -->
           <div class="input-group footer__input-group footer__input-group--full-width">
             <label for="footer-question" class="label form__label label--light footer__label">Вопрос</label>
-            <input type="text" class="input form__input footer__input input--light" name="footerQuestion" id="footer-question"
+            <input type="text" class="input form__input footer__input input--light" name="userQuestion" id="footer-question"
               placeholder="Я хочу спросить:">
           </div>
           <!-- /.input-group -->
