@@ -1259,6 +1259,9 @@ span.modal__invalid {
   .footer__invalid {
     color: #02d0f5; }
   .footer__map {
+    max-width: 66.07142857rem;
+    width: 100%;
+    height: 33.21428rem;
     min-height: 33.21428rem;
     margin-bottom: 4.64285rem; }
   .footer__phone {
@@ -1584,7 +1587,7 @@ span.footer__invalid {
     display: flex;
     max-width: 57.5rem;
     width: 100%;
-    min-height: 25.25rem;
+    height: 25.25rem;
     margin: auto;
     margin-bottom: 3.24285rem; }
   .policy__label--center {
@@ -1795,7 +1798,7 @@ span.footer__invalid {
     display: flex;
     max-width: 43.25rem;
     width: 100%;
-    min-height: 21.25rem;
+    height: 21.25rem;
     margin: auto;
     margin-bottom: 3.24285rem; }
   .policy__label--center {
@@ -2485,7 +2488,7 @@ span.footer__invalid {
       display: flex; }
     .footer__map {
       max-width: 28.33333rem;
-      min-height: 10.25rem;
+      height: 10.25rem;
       margin-bottom: 3.24285rem; }
     .footer__phone {
       font-size: 1.5rem;
