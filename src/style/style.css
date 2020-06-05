@@ -1385,6 +1385,8 @@ span.footer__invalid {
     font-size: 1.25rem; }
   .swiper__image {
     padding-left: 0; }
+  .control__container {
+    margin-top: -30rem; }
   .control__video {
     max-width: 57.66666rem; }
   .control__text {
@@ -1563,6 +1565,8 @@ span.footer__invalid {
     font-size: 1.5rem; }
   .card__design-image::before {
     background-color: transparent; }
+  .control__container {
+    margin-top: -31rem; }
   .control__input::-moz-placeholder {
     font-size: 1.5rem; }
   .control__input:-ms-input-placeholder {
@@ -1720,6 +1724,8 @@ span.footer__invalid {
   .swiper-slide__text {
     flex-basis: 45%;
     margin-bottom: 2.728571rem; }
+  .control__container {
+    margin-top: -26rem; }
   .control__video {
     max-width: 41.416666rem;
     min-height: 20.5rem;
@@ -2014,6 +2020,8 @@ span.footer__invalid {
     margin-top: 0.366rem; }
   .projects {
     background-image: none; }
+  .control__container {
+    margin-top: -24rem; }
   .control__video {
     max-width: 28.33333rem;
     min-height: 17.25rem; }
