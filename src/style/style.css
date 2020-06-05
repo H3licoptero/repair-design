@@ -755,8 +755,8 @@ img {
   color: #e3b873; }
 
 .container__projects {
-  margin-top: 11rem;
-  padding-bottom: 26rem; }
+  margin-top: 3rem;
+  padding-bottom: 17.6rem; }
 
 .swiper-container {
   max-width: 48.5rem;
@@ -850,9 +850,11 @@ img {
   -o-object-position: center;
   object-position: center; }
 
-.control__section-title {
-  margin-bottom: 2.214285rem;
+.control__container {
   margin-top: -29rem; }
+
+.control__section-title {
+  margin-bottom: 2.214285rem; }
 
 .control__video {
   position: relative;
@@ -2376,13 +2378,13 @@ span.footer__invalid {
     margin-top: 0.366rem; }
   .control__container {
     width: 95%;
-    margin: auto; }
+    margin: auto;
+    margin-top: -75.7rem; }
   .control__video {
     max-width: 28.33333rem;
     height: 17.25rem;
     margin-bottom: 2.33333rem; }
   .control__section-title {
-    margin-top: -75.7rem;
     margin-bottom: 3.3rem; }
   .control__text {
     width: 100%;
