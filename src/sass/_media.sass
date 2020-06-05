@@ -958,6 +958,7 @@
         box-shadow: none
   .button
     &--primary
+      padding: 1.4rem
       transition: none
       &:hover
         box-shadow: 0 5px 15px rgba($primary, 0.2)
@@ -965,6 +966,7 @@
         border: 1px solid $primary
     &--outline
       transition: none
+      padding: 1.4rem
       &:hover
         background-color: transparent
         box-shadow:  none
@@ -1010,6 +1012,8 @@
     font-size: 1rem
     color: $light
     outline-color: $light
+  .container
+    width: 91%
   .hero
     padding-top: 6.583333rem
     height: 39.66666rem
@@ -1020,13 +1024,9 @@
       max-width: 29.16666rem
     &__title
       font-size: 1.92rem
-      margin-bottom: 1.0833333rem
+      margin-bottom: 1rem
       padding-bottom: 0   
     &__content
-      // display: flex
-      // flex-direction: column
-      // justify-content: center
-      // width: 97%
       margin: 0
     &__text
       width: 97% 
@@ -1048,6 +1048,7 @@
     margin-bottom: 61px
   .section
     &-title
+      margin-bottom: 3.4rem
       &__heading
         font-size: 1.833333rem
         margin-bottom: 1.4rem
@@ -1069,16 +1070,16 @@
     &__text
       max-width: 270px
       width: 100%
-      margin-top: -11.9rem;
-      padding: 1.6rem 2.4rem
-      line-height: 169.8%; 
+      margin-top: -11.9rem
+      padding: 1.7rem 2.6rem 1.2rem
+      line-height: 169.8% 
     &__title
       font-size: 1.25rem
     &__item
       font-size: 1.083333rem
       line-height: 175.8%
     &__pricetag
-      bottom: -0.7rem
+      bottom: -1.7rem
       max-width: 15.83333rem
       width: 100%
       padding: 1rem 0rem
@@ -1215,7 +1216,7 @@
       width: 100%
       min-height: 25.916666rem
     &__label
-      margin-bottom: 1px
+      margin-bottom: 0
       font-size: 1.25rem
       color: rgba($light, 0.5)
       line-height: 138.72%

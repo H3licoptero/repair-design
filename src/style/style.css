@@ -2171,13 +2171,15 @@ span.footer__invalid {
       background-color: rgba(19, 19, 19, 0.5);
       box-shadow: none; }
   .button--primary {
+    padding: 1.4rem;
     transition: none; }
     .button--primary:hover {
       box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
       background-color: #e3b873;
       border: 1px solid #e3b873; }
   .button--outline {
-    transition: none; }
+    transition: none;
+    padding: 1.4rem; }
     .button--outline:hover {
       background-color: transparent;
       box-shadow: none; }
@@ -2210,6 +2212,8 @@ span.footer__invalid {
     font-size: 1rem;
     color: #ffffff;
     outline-color: #ffffff; }
+  .container {
+    width: 91%; }
   .hero {
     padding-top: 6.583333rem;
     height: 39.66666rem;
@@ -2219,7 +2223,7 @@ span.footer__invalid {
       max-width: 29.16666rem; }
     .hero__title {
       font-size: 1.92rem;
-      margin-bottom: 1.0833333rem;
+      margin-bottom: 1rem;
       padding-bottom: 0; }
     .hero__content {
       margin: 0; }
@@ -2240,12 +2244,14 @@ span.footer__invalid {
   .button-box {
     width: 100%;
     margin-bottom: 61px; }
-  .section-title__heading {
-    font-size: 1.833333rem;
-    margin-bottom: 1.4rem; }
-  .section-title__text {
-    max-width: 25.41666rem;
-    font-size: 1.166666rem; }
+  .section-title {
+    margin-bottom: 3.4rem; }
+    .section-title__heading {
+      font-size: 1.833333rem;
+      margin-bottom: 1.4rem; }
+    .section-title__text {
+      max-width: 25.41666rem;
+      font-size: 1.166666rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -2262,7 +2268,7 @@ span.footer__invalid {
       max-width: 270px;
       width: 100%;
       margin-top: -11.9rem;
-      padding: 1.6rem 2.4rem;
+      padding: 1.7rem 2.6rem 1.2rem;
       line-height: 169.8%; }
     .card__title {
       font-size: 1.25rem; }
@@ -2270,7 +2276,7 @@ span.footer__invalid {
       font-size: 1.083333rem;
       line-height: 175.8%; }
     .card__pricetag {
-      bottom: -0.7rem;
+      bottom: -1.7rem;
       max-width: 15.83333rem;
       width: 100%;
       padding: 1rem 0rem;
@@ -2394,7 +2400,7 @@ span.footer__invalid {
     width: 100%;
     min-height: 25.916666rem; }
   .control__label {
-    margin-bottom: 1px;
+    margin-bottom: 0;
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.5);
     line-height: 138.72%; }
