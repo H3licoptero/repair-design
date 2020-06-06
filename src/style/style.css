@@ -890,7 +890,7 @@ img {
   .control__text::before {
     content: '';
     display: block;
-    width: 3.928571rem;
+    width: 4.6rem;
     margin: auto;
     margin-bottom: 1.9rem;
     height: 0.142857rem;
@@ -1452,7 +1452,7 @@ span.footer__invalid {
     font-size: 1rem; }
   span.modal__invalid {
     position: absolute;
-    top: 45px;
+    top: 47px;
     left: 0;
     margin: 0;
     padding: 0; } }
@@ -1620,7 +1620,7 @@ span.footer__invalid {
     top: 35px; }
   span.modal__invalid {
     position: absolute;
-    top: 45px;
+    top: 47px;
     left: 0;
     margin: 0;
     padding: 0; }
@@ -1836,12 +1836,12 @@ span.footer__invalid {
     top: 35px; }
   span.modal__invalid {
     position: absolute;
-    top: 45px;
+    top: 47px;
     left: 0;
     margin: 0;
     padding: 0; }
   span.control__invalid {
-    top: 45px; }
+    top: 47px; }
   span.footer__invalid {
     top: 50px; }
   .social__mail:hover {
@@ -2141,7 +2141,7 @@ span.footer__invalid {
     font-size: 1rem; }
   span.modal__invalid {
     position: absolute;
-    top: 45px;
+    top: 47px;
     left: 0;
     margin: 0;
     padding: 0; }
@@ -2152,12 +2152,12 @@ span.footer__invalid {
   #policyCheckbox-error {
     top: 35px; }
   span.control__invalid {
-    top: 45px; }
+    top: 50px; }
   span.footer__invalid {
     top: 50px; }
   .modal__dialog {
     overflow: scroll;
-    height: 100vh; }
+    height: 86vh; }
   .social__mail:hover {
     box-shadow: none; }
   .social__instagram:hover {
@@ -2165,7 +2165,9 @@ span.footer__invalid {
   .alert__dialog {
     max-width: 30.166666rem;
     width: 100%;
-    background: #131313 url("../img/background-line.svg"); } }
+    height: 23vh;
+    background: #131313 url("../img/background-line.svg");
+    overflow: hidden; } }
 
 @media screen and (max-height: 610px) {
   .hero::after {
@@ -2387,7 +2389,7 @@ span.footer__invalid {
   .control__container {
     width: 95%;
     margin: auto;
-    margin-top: -75.7rem; }
+    margin-top: -72rem; }
   .control__video {
     max-width: 28.33333rem;
     height: 17.25rem;
@@ -2416,7 +2418,8 @@ span.footer__invalid {
     line-height: 138.72%; }
   .control__input {
     width: 100%;
-    border-bottom: 1px solid #363636;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.00001rem solid rgba(255, 255, 255, 0.5);
     line-height: 2.3rem;
     color: #ffffff; }
     .control__input::-moz-placeholder {
@@ -2442,7 +2445,7 @@ span.footer__invalid {
     color: #ffffff; }
     .control__policy-label {
       justify-content: start;
-      margin-bottom: 5.5rem;
+      margin-bottom: 5.3rem;
       margin-right: 0;
       font-size: 1.333333rem; }
   .control__box {
@@ -2463,7 +2466,7 @@ span.footer__invalid {
       width: 100%;
       padding: 0;
       margin: 0;
-      margin-top: -28rem;
+      margin-top: -13.1rem;
       margin-bottom: 3.714rem;
       background: none; }
     .footer__title {
@@ -2478,9 +2481,9 @@ span.footer__invalid {
       line-height: inherit;
       padding: 0 0 0.5rem;
       color: #ffffff;
-      border-bottom: 1px solid #363636; }
+      border-bottom: 0.00001rem solid rgba(255, 255, 255, 0.5); }
       .footer__input-group {
-        margin-bottom: 5.1rem; }
+        margin-bottom: 5rem; }
         .footer__input-group::-moz-placeholder {
           color: #ffffff; }
         .footer__input-group:-ms-input-placeholder {
@@ -2510,6 +2513,8 @@ span.footer__invalid {
       font-size: 1.5rem;
       color: #e3b873;
       text-decoration: none; }
+    .footer__menu {
+      padding: 0; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; }
@@ -2539,7 +2544,7 @@ span.footer__invalid {
   .thanks__text {
     max-width: 20.166666rem; }
   span.footer__invalid {
-    top: 47px; }
+    top: 50px; }
   #controlCheckbox-error {
     top: 35px;
     left: 0;
@@ -2561,4 +2566,8 @@ span.footer__invalid {
   .alert__dialog {
     max-width: 26.66666rem;
     width: 100%;
-    background: #131313 url("../img/background-line.svg"); } }
+    height: 16vh;
+    background: #131313 url("../img/background-line.svg");
+    overflow: hidden; }
+  .section {
+    padding: 18px 0; } }

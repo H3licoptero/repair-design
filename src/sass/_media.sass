@@ -139,7 +139,7 @@
     font-size: 1rem
   span.modal__invalid
     position: absolute
-    top: 45px
+    top: 47px
     left: 0
     margin: 0
     padding: 0
@@ -334,7 +334,7 @@
     top: 35px
   span.modal__invalid
     position: absolute
-    top: 45px
+    top: 47px
     left: 0
     margin: 0
     padding: 0
@@ -579,12 +579,12 @@
     top: 35px
   span.modal__invalid
     position: absolute
-    top: 45px
+    top: 47px
     left: 0
     margin: 0
     padding: 0
   span.control__invalid
-    top: 45px
+    top: 47px
   span.footer__invalid
    top: 50px
   .social 
@@ -920,7 +920,7 @@
     font-size: 1rem
   span.modal__invalid
     position: absolute
-    top: 45px
+    top: 47px
     left: 0
     margin: 0
     padding: 0
@@ -931,13 +931,13 @@
   #policyCheckbox-error
     top: 35px
   span.control__invalid
-    top: 45px
+    top: 50px
   span.footer__invalid
    top: 50px
   .modal
     &__dialog
       overflow: scroll
-      height: 100vh
+      height: 86vh
   .social 
     &__mail
       &:hover
@@ -949,7 +949,9 @@
     &__dialog
       max-width: 30.166666rem
       width: 100%
+      height: 23vh
       background: $dark url("../img/background-line.svg")
+      overflow: hidden  
 @media screen and ( max-height: 610px )
   .hero
     &::after
@@ -1200,7 +1202,7 @@
     &__container
       width: 95%
       margin: auto
-      margin-top: -75.7rem 
+      margin-top: -72rem 
     &__video
       max-width: 28.33333rem
       height: 17.25rem
@@ -1230,7 +1232,8 @@
       line-height: 138.72%
     &__input
       width: 100%  
-      border-bottom: 1px solid rgba($mobile-input, 1)
+      padding-bottom: 0.1rem
+      border-bottom: 0.00001rem solid rgba($light, 0.5)
       line-height: 2.3rem
       color: $light
       &::placeholder
@@ -1247,7 +1250,7 @@
       color: $light
       &-label
         justify-content: start
-        margin-bottom: 5.5rem
+        margin-bottom: 5.3rem
         margin-right: 0
         font-size: 1.333333rem
     &__box
@@ -1269,7 +1272,7 @@
       width: 100%
       padding: 0
       margin: 0
-      margin-top: -28rem
+      margin-top: -13.1rem
       margin-bottom: 3.714rem
       background: none
     &__title
@@ -1284,9 +1287,9 @@
       line-height: inherit
       padding: 0 0 0.5rem
       color: $light
-      border-bottom: 1px solid rgba($mobile-input, 1)
+      border-bottom: 0.00001rem solid rgba($light, 0.5)
       &-group
-        margin-bottom: 5.1rem
+        margin-bottom: 5rem
         &::placeholder
           color: $light
     &__form
@@ -1311,6 +1314,8 @@
       font-size: 1.5rem
       color: $primary
       text-decoration: none
+    &__menu
+      padding: 0
   .policy
     &__label
       &--center
@@ -1346,7 +1351,7 @@
     &__text
       max-width: 20.166666rem
   span.footer__invalid
-    top: 47px
+    top: 50px
   #controlCheckbox-error
     top: 35px
     left: 0
@@ -1361,10 +1366,6 @@
     top: 45px
   span.control__invalid
     top: 50px
-  // .modal
-  //   &__dialog
-  //     overflow: scroll
-  //     height: 100vh
   .social 
     &__mail
       &:hover
@@ -1376,5 +1377,9 @@
     &__dialog
       max-width: 26.66666rem
       width: 100%
+      height: 16vh
       background: $dark url("../img/background-line.svg")
+      overflow: hidden
+  .section
+    padding: 18px 0
   
