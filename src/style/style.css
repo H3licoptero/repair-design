@@ -1822,12 +1822,6 @@ span.footer__invalid {
     top: 35px;
     left: 0;
     font-size: 1rem; }
-  span.modal__invalid {
-    position: absolute;
-    top: 55px;
-    left: 0;
-    margin: 0;
-    padding: 0; }
   #footerCheckbox-error {
     top: 35px;
     left: 0;
@@ -1897,27 +1891,29 @@ span.footer__invalid {
     display: none; }
   .title {
     font-size: 1.92rem; }
-  .hero::after {
-    display: none; }
-  .hero__content {
-    max-width: 30rem;
-    width: 100%;
-    margin: auto; }
-  .hero__text {
-    margin-bottom: 2.28rem;
-    width: 98%;
-    max-width: 321px;
-    font-size: 1.5rem;
-    line-height: 135%; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__button {
-    display: block;
-    width: 100%;
-    max-width: 338px;
-    min-width: 22.86rem;
-    margin-bottom: 2.16rem;
-    font-size: 1.084rem; }
+  .hero {
+    height: auto; }
+    .hero::after {
+      display: none; }
+    .hero__content {
+      max-width: 30rem;
+      width: 100%;
+      margin: auto; }
+    .hero__text {
+      margin-bottom: 2.28rem;
+      width: 98%;
+      max-width: 321px;
+      font-size: 1.5rem;
+      line-height: 135%; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__button {
+      display: block;
+      width: 100%;
+      max-width: 338px;
+      min-width: 22.86rem;
+      margin-bottom: 2.16rem;
+      font-size: 1.084rem; }
   .card__title {
     font-size: 1.5rem; }
   .card__text {
@@ -2084,7 +2080,7 @@ span.footer__invalid {
       font-size: 1.5rem;
       line-height: inherit;
       padding: 0 0 0.5rem;
-      border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
       .footer__input-group {
         margin-bottom: 5.1rem; }
     .footer__form {
@@ -2413,7 +2409,7 @@ span.footer__invalid {
   .control__input {
     width: 100%;
     padding-bottom: 0.1rem;
-    border-bottom: 0.00001rem solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     line-height: 2.3rem;
     color: #ffffff; }
     .control__input::-moz-placeholder {
@@ -2475,7 +2471,7 @@ span.footer__invalid {
       line-height: inherit;
       padding: 0 0 0.5rem;
       color: #ffffff;
-      border-bottom: 0.00001rem solid rgba(255, 255, 255, 0.5); }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
       .footer__input-group {
         margin-bottom: 5rem; }
         .footer__input-group::-moz-placeholder {
@@ -2533,8 +2529,6 @@ span.footer__invalid {
     order: 1;
     font-size: 1.5rem;
     line-height: 141.6%; }
-  span.control__invalid {
-    top: 50px; }
   .thanks__text {
     max-width: 20.166666rem; }
   span.footer__invalid {
@@ -2564,4 +2558,6 @@ span.footer__invalid {
     background: #131313 url("../img/background-line.svg");
     overflow: hidden; }
   .section {
-    padding: 18px 0; } }
+    padding: 18px 0; }
+  .modal__input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
