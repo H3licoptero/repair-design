@@ -79,8 +79,8 @@ $(document).ready(function () {
   let prev = $(".swiper-button-prev");
   let bullets = $(".swiper-pagination");
 
-  next.css("left", prev.width() + 20 + bullets.width());
-  bullets.css("left", prev.width() + 30);
+  next.css("left", prev.width() + 13 + bullets.width());
+  bullets.css("left", prev.width() + 25);
   bullets.css("top", bullets.height() - 40);
 
   new WOW().init();
