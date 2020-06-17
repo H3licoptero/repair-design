@@ -64,6 +64,7 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     // Navigation arrows
+    spaceBetween: 150,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
