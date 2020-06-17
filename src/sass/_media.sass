@@ -690,6 +690,7 @@
   .row
     flex-direction: column
     align-items: center
+    margin-bottom: 0
   .col
     &-40
       max-width: 33.33333rem
@@ -700,7 +701,8 @@
       width: 100%
   .types
     &__wrapper
-      margin-bottom: 30rem
+      margin-bottom: 0
+      padding: 0 0
     &__card
       margin-bottom: 6.6583rem    
     &-text
@@ -708,6 +710,11 @@
       width: 100%
   .design
     background-image: none
+    &__container
+      margin-top: 0
+      padding-bottom: 9.8rem
+    &__heading
+      color: $light
     &__section
       &-title
       margin-bottom: 3.25rem
@@ -719,6 +726,7 @@
       margin: auto
       margin-top: 1.916666rem
       font-size: 1.4rem
+      color: $light
   .swiper
     &-container
       margin-bottom: 2.002rem
@@ -794,13 +802,14 @@
     background-image: none
   .control
     &__container
-      margin-top: -24rem
+      margin-top: -73.1rem
     &__video
       max-width: 28.33333rem
       min-height: 17.25rem
     &__text
       font-size: 1.16666rem
       width: 28.333333rem
+      color: $light
     &__form
       display: flex
       flex-direction: column
@@ -810,12 +819,15 @@
       margin-bottom: 3px
       font-size: 1.25rem
       padding: 0
+      color: rgba($light, 0.5)
     &__input
       width: 100%
       line-height: 2.3rem
-      border-bottom: 1px solid rgba($mobile-input, 0.3)
+      border-bottom: 1px solid rgba($light, 0.4)
+      color: $light
       &::placeholder
         font-size: 1.5rem
+        color: $light
     &__name
       margin-right: 0
       margin-bottom: 2.97rem
@@ -833,6 +845,8 @@
     &-play
       width: 4.08333rem
       height: 4.08333rem
+  .projects
+    height: 129.4rem
   .footer
     background-image: none
     &__wrap
@@ -1049,9 +1063,6 @@
       &__heading
         font-size: 1.833333rem
         margin-bottom: 1.4rem
-      // &__text
-      //   max-width: 25.41666rem
-      //   font-size: 1.166666rem
   .row
     flex-direction: column
     align-items: center
@@ -1091,8 +1102,7 @@
     background-image: none
     &__container
       margin-top: 0
-      padding-top: 4.33333rem
-      padding-bottom: 6.33333rem
+      padding-top: 4.33333rem 
     &__heading  
       color: $light
     &__section-title
@@ -1175,8 +1185,6 @@
     &-title
       &__text
         margin-top: 2.1rem
-        // max-width: 25.41666rem
-        // font-size: 1.166666rem
         line-height: 158.48%
       &__heading
         &--primary
