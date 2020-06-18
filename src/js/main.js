@@ -290,6 +290,7 @@ $(document).ready(function () {
     });
   });
 
+  //map afterload
   let map = document.querySelector("#map-container");
   let optionsMap = {
     once: true,
