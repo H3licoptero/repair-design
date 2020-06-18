@@ -289,5 +289,34 @@ $(document).ready(function () {
       },
     });
   });
+
+  let map = document.querySelector("#map-container");
+  let optionsMap = {
+    once: true,
+    passive: true,
+    capture: true
+  };
+
+  map.addEventListener("click", startLazyMap, optionsMap);
+  map.addEventListener("mouseover", startLazyMap, optionsMap);
+  map.addEventListener("touchstart", startLazyMap, optionsMap);
+  map.addEventListener("touchmove", startLazyMap, optionsMap);
+  
+  let mapLoaded = false;
+  function startLazyMap() {
+    if(!mapLoaded) {
+      let mapBlock = document.createElement('script');
+      mapLoaded = true;
+      mapBlock.setAttribute(
+        "src",
+        "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af167f028d83f4acef27b025933e5caf688fc2aa9b1001621578885b4c233fb4c&amp;lang=ru_RU&amp;scroll=false"
+      );
+      mapBlock.setAttribute('data-skip-moving', true);
+      mapBlock.setAttribute('async', "");
+      map.append(mapBlock);
+      console.log("YMAP LOADED");
+    }
+  }
 });
 
+  

@@ -1261,11 +1261,6 @@ span.modal__invalid {
     background-color: #131313; }
   .footer__invalid {
     color: #02d0f5; }
-  .footer__map {
-    max-width: 66.07142857rem;
-    width: 100%;
-    height: 33.21428rem;
-    margin-bottom: 4.64285rem; }
   .footer__phone {
     display: inline-block;
     font-size: 1.4285714rem;
@@ -1317,6 +1312,14 @@ span.modal__invalid {
 .footer__map {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(100%); }
+
+.map.footer__map {
+  max-width: 66.07142857rem;
+  width: 100%;
+  height: 33.21428rem;
+  margin-bottom: 4.64285rem;
+  background-image: url("../img/map.jpg");
+  cursor: pointer; }
 
 span.footer__invalid {
   position: absolute;
@@ -1423,9 +1426,12 @@ span.footer__invalid {
     font-size: 1.5rem; }
   .footer__button {
     font-size: 1.25rem; }
-  .footer__map {
+  .map.footer__map {
     height: 33.21428rem;
-    width: 100%; }
+    width: 100%;
+    background-image: url("../img/map.jpg");
+    background-position: center center;
+    cursor: pointer; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; }
@@ -1589,13 +1595,16 @@ span.footer__invalid {
     font-size: 1.5rem; }
   .footer__button {
     font-size: 1.25rem; }
-  .footer__map {
+  .map.footer__map {
     display: flex;
     max-width: 57.5rem;
     width: 100%;
     height: 33.21428rem;
     margin: auto;
-    margin-bottom: 3.24285rem; }
+    margin-bottom: 3.24285rem;
+    background-image: url("../img/map.jpg");
+    background-position: center center;
+    cursor: pointer; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; }
@@ -1803,13 +1812,16 @@ span.footer__invalid {
     width: 100%;
     max-width: 16.66666rem;
     font-size: 1.25rem; }
-  .footer__map {
+  .map.footer__map {
     display: flex;
     max-width: 43.25rem;
     width: 100%;
     height: 25.25rem;
     margin: auto;
-    margin-bottom: 3.24285rem; }
+    margin-bottom: 3.24285rem;
+    background-image: url("../img/map.jpg");
+    background-position: center center;
+    cursor: pointer; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; }
@@ -2113,13 +2125,16 @@ span.footer__invalid {
     .footer__button {
       width: 100%;
       font-size: 1.25rem; }
-    .footer__map {
-      display: flex;
-      max-width: 28.33333rem;
-      width: 100%;
-      height: 21.25rem;
-      margin: auto;
-      margin-bottom: 3.24285rem; }
+  .map.footer-map {
+    display: flex;
+    max-width: 28.33333rem;
+    width: 100%;
+    height: 21.25rem;
+    margin: auto;
+    margin-bottom: 3.24285rem;
+    background-image: url("../img/map.jpg");
+    background-position: center center;
+    cursor: pointer; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; }
@@ -2517,9 +2532,6 @@ span.footer__invalid {
       margin-bottom: 0.233333rem; }
     .footer__info {
       display: flex; }
-    .footer__map {
-      max-width: 28.33333rem;
-      margin-bottom: 3.24285rem; }
     .footer__phone {
       font-size: 1.5rem;
       letter-spacing: -0.029rem;
@@ -2527,6 +2539,12 @@ span.footer__invalid {
       text-decoration: none; }
     .footer__menu {
       padding: 0; }
+  .map.footer-map {
+    max-width: 28.33333rem;
+    margin-bottom: 3.24285rem;
+    background-image: url("../img/map.jpg");
+    background-position: center center;
+    cursor: pointer; }
   .policy__label--center {
     justify-content: start;
     font-size: 1.33333rem; }
