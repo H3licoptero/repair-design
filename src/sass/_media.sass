@@ -594,10 +594,6 @@
     &__instagram
       &:hover
         box-shadow: none
-  .modal
-    &__dialog
-      height: 62vh
-      overflow: scroll
 @media screen and ( max-width: 576px )
   .button
     &__top
@@ -663,7 +659,6 @@
   .title
     font-size: 1.92rem
   .hero
-    height: auto
     &::after
       display: none
     &__content
@@ -780,8 +775,6 @@
   .button
     &-prev
       margin-left: 50px 
-    &__top
-      bottom: 65px
   .slider
     &-image
       max-width: 28.33333rem
@@ -955,7 +948,7 @@
   .modal
     &__dialog
       overflow: scroll
-      height: 75vh
+      height: 95% 
   .social 
     &__mail
       &:hover
@@ -970,12 +963,22 @@
       height: 85px
       background: $dark url("../img/background-line.svg")
       overflow: hidden  
+  .footer
+    &__menu
+      display: none
 @media screen and ( max-height: 610px )
   .hero
     &::after
       display: none
     &__scroll-down
       display: none
+@media screen and ( max-height: 414px )   
+  .hero
+    min-height: 140vh
+  .modal
+    &__dialog
+      height: 95%
+      overflow: scroll
 @media screen and ( max-width: 375px )
   .button
     &__top
@@ -1402,7 +1405,8 @@
     padding: 1px 0
   .modal
     &__dialog
-      height: 60vh
+      height: 95%
+      max-height: 56vh
       overflow: scroll
     &__input
       border-bottom: 1px solid rgba($light, 0.3)
