@@ -2181,7 +2181,8 @@ span.footer__invalid {
     top: 50px; }
   .modal__dialog {
     overflow: scroll;
-    height: 95%; }
+    height: 95%;
+    max-height: 60vh; }
   .social__mail:hover {
     box-shadow: none; }
   .social__instagram:hover {
