@@ -1704,17 +1704,19 @@ span.footer__invalid {
     margin-bottom: 6.6583rem; }
   .card__design-image::before {
     background-color: transparent; }
-  .hero__title {
-    font-size: 3.34rem; }
-  .hero__text {
-    font-size: 1.84rem; }
-  .hero__button {
-    font-size: 1.084rem;
-    line-height: 1.071428rem; }
-  .hero__scroll-down:hover {
-    color: #ffffff; }
-  .hero__scroll-down:hover::after {
-    border: 2px solid #e3b873; }
+  .hero {
+    min-height: 100vh; }
+    .hero__title {
+      font-size: 3.34rem; }
+    .hero__text {
+      font-size: 1.84rem; }
+    .hero__button {
+      font-size: 1.084rem;
+      line-height: 1.071428rem; }
+    .hero__scroll-down:hover {
+      color: #ffffff; }
+    .hero__scroll-down:hover::after {
+      border: 2px solid #e3b873; }
   .section-title {
     margin-bottom: 2.58333rem; }
     .section-title__heading {
@@ -1854,7 +1856,10 @@ span.footer__invalid {
   .social__mail:hover {
     box-shadow: none; }
   .social__instagram:hover {
-    box-shadow: none; } }
+    box-shadow: none; }
+  .modal__dialog {
+    height: 62vh;
+    overflow: scroll; } }
 
 @media screen and (max-width: 576px) {
   .button__top {
@@ -2183,7 +2188,7 @@ span.footer__invalid {
     top: 50px; }
   .modal__dialog {
     overflow: scroll;
-    height: 86vh; }
+    height: 75vh; }
   .social__mail:hover {
     box-shadow: none; }
   .social__instagram:hover {
@@ -2600,5 +2605,8 @@ span.footer__invalid {
     overflow: hidden; }
   .section {
     padding: 1px 0; }
+  .modal__dialog {
+    height: 60vh;
+    overflow: scroll; }
   .modal__input {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }

@@ -435,6 +435,7 @@
         &::before
          background-color: transparent
   .hero
+    min-height: 100vh
     &__title
       font-size: 3.34rem
     &__text
@@ -593,6 +594,10 @@
     &__instagram
       &:hover
         box-shadow: none
+  .modal
+    &__dialog
+      height: 62vh
+      overflow: scroll
 @media screen and ( max-width: 576px )
   .button
     &__top
@@ -950,7 +955,7 @@
   .modal
     &__dialog
       overflow: scroll
-      height: 86vh
+      height: 75vh
   .social 
     &__mail
       &:hover
@@ -1396,5 +1401,8 @@
   .section
     padding: 1px 0
   .modal
+    &__dialog
+      height: 60vh
+      overflow: scroll
     &__input
       border-bottom: 1px solid rgba($light, 0.3)
