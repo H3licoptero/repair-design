@@ -2182,7 +2182,7 @@ span.footer__invalid {
   .modal__dialog {
     overflow: scroll;
     height: 95%;
-    max-height: 60vh; }
+    max-height: 440px; }
   .social__mail:hover {
     box-shadow: none; }
   .social__instagram:hover {
@@ -2610,7 +2610,7 @@ span.footer__invalid {
     padding: 1px 0; }
   .modal__dialog {
     height: 95%;
-    max-height: 56vh;
+    max-height: 430px;
     overflow: scroll; }
   .modal__input {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
