@@ -34,6 +34,8 @@
       width: 100%
       font-size: 1.084rem  
       line-height: 1.071428rem
+    &__scroll-down
+      font-size: 1rem
   .design
     &__section
       &-title
@@ -223,6 +225,9 @@
   .container
     &__projects
       max-width: 660px
+  // add projects height
+  .projects
+    height: 166.4rem
   .col
     &-40
       width: 80%
@@ -277,15 +282,45 @@
         &::before
          background-color: transparent
   .control
+    // add container__form, label, name, phone
     &__container
-      margin-top: -31rem
+      margin-top: -86.5rem
+    &__form
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 28.333333rem
+    &__label
+      margin-bottom: 3px
+      font-size: 1.25rem
+      color: rgba($light, 0.5)
+    &__name
+      margin-right: 0
+      margin-bottom: 2.97rem
+    &__phone
+      margin-right: 0
+      margin-bottom: 2.97rem
+    // in input add all to placeholder
     &__input
-       &::placeholder
+      width: 100%
+      padding: 0
+      font-size: 1.5rem
+      line-height: 2rem
+      border-bottom: 1px solid $light
+      color: $light
+      // add color in placeholder
+      &::placeholder
         font-size: 1.5rem
+        color: $light
+    // add color in text change width
     &__text
+      max-width: 40.5rem
       font-size: 1.666666rem
+      color: $light
+    // add button max-width
     &__button
       font-size: 1.25rem
+      max-width: 100%
   .footer
     &__form
       max-width: 30.142rem
@@ -461,6 +496,8 @@
         max-width: 32.416666rem
         width: 100%
         font-size: 1.5rem
+  .projects
+    height: 155.4rem
   .container
     &__projects
       max-width: 45.9166666rem
@@ -472,7 +509,7 @@
         margin-bottom: 2.728571rem
   .control
     &__container
-      margin-top: -26rem
+      margin-top: -76rem
     &__video
       max-width: 41.416666rem
       min-height: 20.5rem
@@ -487,15 +524,21 @@
     &__label
       margin-bottom: 3px
       font-size: 1.25rem
+      color: rgba($light, 0.5)
     &__text
-      max-width: 43.5rem
+      max-width: 40.5rem
       font-size: 1.666666rem
+      color: $light
     &__input
       width: 100%
-      line-height: 2rem
       padding: 0
+      font-size: 1.5rem
+      line-height: 2rem
+      border-bottom: 1px solid $light
+      color: $light
       &::placeholder
         font-size: 1.5rem
+        color: $light
     &__name
       margin-right: 0
       margin-bottom: 2.97rem
@@ -532,6 +575,7 @@
       font-size: 1.5rem
       line-height: inherit
       padding: 0 0 0.2rem
+      border-bottom: 1px solid $light
       &-group
         margin-bottom: 5.1rem
     &__form
@@ -541,8 +585,7 @@
     &__policy
       margin-bottom: 5.65714rem
     &__button
-      width: 100%
-      max-width: 16.66666rem
+      max-width: 100%
       font-size: 1.25rem
   .map.footer__map
     display: flex
@@ -826,10 +869,11 @@
       font-size: 1.25rem
       padding: 0
       color: rgba($light, 0.5)
+    // change border-bottom color in input 
     &__input
       width: 100%
       line-height: 2.3rem
-      border-bottom: 1px solid rgba($light, 0.4)
+      border-bottom: 1px solid $light
       color: $light
       &::placeholder
         font-size: 1.5rem
@@ -872,7 +916,7 @@
       font-size: 1.5rem
       line-height: inherit
       padding: 0 0 0.5rem
-      border-bottom: 1px solid rgba($light, 0.3)
+      border-bottom: 1px solid $light
       &-group
         margin-bottom: 5.1rem
     &__form
@@ -884,7 +928,7 @@
     &__button
       width: 100%
       font-size: 1.25rem
-  .map.footer-map
+  .map.footer__map
     display: flex
     max-width: 28.33333rem
     width: 100%
@@ -1254,7 +1298,7 @@
     &__input
       width: 100%  
       padding-bottom: 0.1rem
-      border-bottom: 1px solid rgba($light, 0.4)
+      border-bottom: 1px solid $light
       line-height: 2.3rem
       color: $light
       &::placeholder
@@ -1308,7 +1352,7 @@
       line-height: inherit
       padding: 0 0 0.5rem
       color: $light
-      border-bottom: 1px solid rgba($light, 0.4)
+      border-bottom: 1px solid $light
       &-group
         margin-bottom: 5rem
         &::placeholder

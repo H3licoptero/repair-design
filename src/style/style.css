@@ -678,7 +678,7 @@ img {
     min-width: 17.6rem;
     min-height: 6.92rem;
     font-family: "Yeseva One", cursive;
-    font-size: 12px;
+    font-size: 1.166666rem;
     font-weight: normal;
     background-color: #131313;
     text-transform: uppercase;
@@ -975,7 +975,7 @@ img {
   width: 100%; }
 
 .control__invalid {
-  color: #02d0f5; }
+  color: #ff0404; }
 
 .video-play {
   position: relative;
@@ -1162,7 +1162,7 @@ span.control__invalid {
     max-width: 15.214287rem;
     outline-color: #e3b873; }
   .modal__invalid {
-    color: #02d0f5; }
+    color: #ff0404; }
   .modal__alert {
     opacity: 0;
     visibility: hidden; }
@@ -1206,8 +1206,9 @@ span.modal__invalid {
 
 .footer {
   position: relative;
-  background: #131313 url("../img/footer-bg2.jpg") no-repeat center/cover;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  background: url("../img/footer-bg2.jpg") no-repeat center/cover, linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  background-color: #131313; }
   .footer__wrap {
     max-width: 63.071428rem;
     margin: auto;
@@ -1260,7 +1261,7 @@ span.modal__invalid {
     padding: 3.43rem 0;
     background-color: #131313; }
   .footer__invalid {
-    color: #02d0f5; }
+    color: #ff0404; }
   .footer__phone {
     display: inline-block;
     font-size: 1.4285714rem;
@@ -1364,6 +1365,8 @@ span.footer__invalid {
     width: 100%;
     font-size: 1.084rem;
     line-height: 1.071428rem; }
+  .hero__scroll-down {
+    font-size: 1rem; }
   .design__section-title {
     margin-bottom: 3.25rem; }
   .design__text {
@@ -1526,6 +1529,8 @@ span.footer__invalid {
     border: 2px solid #e3b873; }
   .container__projects {
     max-width: 660px; }
+  .projects {
+    height: 166.4rem; }
   .col-40 {
     width: 80%;
     margin: auto; }
@@ -1572,19 +1577,48 @@ span.footer__invalid {
   .card__design-image::before {
     background-color: transparent; }
   .control__container {
-    margin-top: -31rem; }
-  .control__input::-moz-placeholder {
-    font-size: 1.5rem; }
-  .control__input:-ms-input-placeholder {
-    font-size: 1.5rem; }
-  .control__input::-ms-input-placeholder {
-    font-size: 1.5rem; }
-  .control__input::placeholder {
-    font-size: 1.5rem; }
+    margin-top: -86.5rem; }
+  .control__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 28.333333rem; }
+  .control__label {
+    margin-bottom: 3px;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5); }
+  .control__name {
+    margin-right: 0;
+    margin-bottom: 2.97rem; }
+  .control__phone {
+    margin-right: 0;
+    margin-bottom: 2.97rem; }
+  .control__input {
+    width: 100%;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff; }
+    .control__input::-moz-placeholder {
+      font-size: 1.5rem;
+      color: #ffffff; }
+    .control__input:-ms-input-placeholder {
+      font-size: 1.5rem;
+      color: #ffffff; }
+    .control__input::-ms-input-placeholder {
+      font-size: 1.5rem;
+      color: #ffffff; }
+    .control__input::placeholder {
+      font-size: 1.5rem;
+      color: #ffffff; }
   .control__text {
-    font-size: 1.666666rem; }
+    max-width: 40.5rem;
+    font-size: 1.666666rem;
+    color: #ffffff; }
   .control__button {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    max-width: 100%; }
   .footer__form {
     max-width: 30.142rem; }
   .footer__title {
@@ -1729,6 +1763,8 @@ span.footer__invalid {
       max-width: 32.416666rem;
       width: 100%;
       font-size: 1.5rem; }
+  .projects {
+    height: 155.4rem; }
   .container__projects {
     max-width: 45.9166666rem;
     width: 100%; }
@@ -1736,7 +1772,7 @@ span.footer__invalid {
     flex-basis: 45%;
     margin-bottom: 2.728571rem; }
   .control__container {
-    margin-top: -26rem; }
+    margin-top: -76rem; }
   .control__video {
     max-width: 41.416666rem;
     min-height: 20.5rem;
@@ -1752,22 +1788,31 @@ span.footer__invalid {
     max-width: 28.333333rem; }
   .control__label {
     margin-bottom: 3px;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5); }
   .control__text {
-    max-width: 43.5rem;
-    font-size: 1.666666rem; }
+    max-width: 40.5rem;
+    font-size: 1.666666rem;
+    color: #ffffff; }
   .control__input {
     width: 100%;
+    padding: 0;
+    font-size: 1.5rem;
     line-height: 2rem;
-    padding: 0; }
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff; }
     .control__input::-moz-placeholder {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      color: #ffffff; }
     .control__input:-ms-input-placeholder {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      color: #ffffff; }
     .control__input::-ms-input-placeholder {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      color: #ffffff; }
     .control__input::placeholder {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      color: #ffffff; }
   .control__name {
     margin-right: 0;
     margin-bottom: 2.97rem; }
@@ -1801,7 +1846,8 @@ span.footer__invalid {
   .footer__input {
     font-size: 1.5rem;
     line-height: inherit;
-    padding: 0 0 0.2rem; }
+    padding: 0 0 0.2rem;
+    border-bottom: 1px solid #ffffff; }
     .footer__input-group {
       margin-bottom: 5.1rem; }
   .footer__form {
@@ -1811,8 +1857,7 @@ span.footer__invalid {
   .footer__policy {
     margin-bottom: 5.65714rem; }
   .footer__button {
-    width: 100%;
-    max-width: 16.66666rem;
+    max-width: 100%;
     font-size: 1.25rem; }
   .map.footer__map {
     display: flex;
@@ -2060,7 +2105,7 @@ span.footer__invalid {
   .control__input {
     width: 100%;
     line-height: 2.3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid #ffffff;
     color: #ffffff; }
     .control__input::-moz-placeholder {
       font-size: 1.5rem;
@@ -2111,7 +2156,7 @@ span.footer__invalid {
       font-size: 1.5rem;
       line-height: inherit;
       padding: 0 0 0.5rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+      border-bottom: 1px solid #ffffff; }
       .footer__input-group {
         margin-bottom: 5.1rem; }
     .footer__form {
@@ -2123,7 +2168,7 @@ span.footer__invalid {
     .footer__button {
       width: 100%;
       font-size: 1.25rem; }
-  .map.footer-map {
+  .map.footer__map {
     display: flex;
     max-width: 28.33333rem;
     width: 100%;
@@ -2454,7 +2499,7 @@ span.footer__invalid {
   .control__input {
     width: 100%;
     padding-bottom: 0.1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid #ffffff;
     line-height: 2.3rem;
     color: #ffffff; }
     .control__input::-moz-placeholder {
@@ -2516,7 +2561,7 @@ span.footer__invalid {
       line-height: inherit;
       padding: 0 0 0.5rem;
       color: #ffffff;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+      border-bottom: 1px solid #ffffff; }
       .footer__input-group {
         margin-bottom: 5rem; }
         .footer__input-group::-moz-placeholder {
