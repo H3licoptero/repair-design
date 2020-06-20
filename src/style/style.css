@@ -1531,7 +1531,7 @@ span.footer__invalid {
   .container__projects {
     max-width: 660px; }
   .projects {
-    height: 169.4rem; }
+    height: 172.4rem; }
   .col-40 {
     width: 80%;
     margin: auto; }
@@ -1578,7 +1578,7 @@ span.footer__invalid {
   .card__design-image::before {
     background-color: transparent; }
   .control__container {
-    margin-top: -90.5rem; }
+    margin-top: -92.5rem; }
   .control__form {
     display: flex;
     flex-direction: column;
@@ -1629,7 +1629,7 @@ span.footer__invalid {
     margin-top: 0.9rem; }
     .control__policy-label {
       justify-content: start;
-      margin-bottom: 3.3rem;
+      margin-bottom: 5.3rem;
       margin-right: 0;
       font-size: 1.333333rem; }
   .control__button {
@@ -1782,7 +1782,7 @@ span.footer__invalid {
       width: 100%;
       font-size: 1.5rem; }
   .projects {
-    height: 160.4rem; }
+    height: 158.4rem; }
   .container__projects {
     max-width: 45.9166666rem;
     width: 100%; }
@@ -1790,7 +1790,7 @@ span.footer__invalid {
     flex-basis: 45%;
     margin-bottom: 2.728571rem; }
   .control__container {
-    margin-top: -83rem; }
+    margin-top: -82rem; }
   .control__video {
     max-width: 41.416666rem;
     min-height: 20.5rem;
@@ -1836,11 +1836,12 @@ span.footer__invalid {
     margin-bottom: 2.97rem; }
   .control__phone {
     margin-right: 0;
-    margin-bottom: 2.97rem; }
+    margin-bottom: 0; }
   .control__policy {
     margin-top: 0.9rem; }
     .control__policy-label {
       justify-content: start;
+      margin-bottom: 5.3rem;
       font-size: 1.333333rem; }
   .control__button {
     font-size: 1.25rem;
@@ -2102,7 +2103,7 @@ span.footer__invalid {
   .projects {
     background-image: none; }
   .control__container {
-    margin-top: -80.1rem; }
+    margin-top: -79.1rem; }
   .control__video {
     max-width: 28.33333rem;
     min-height: 17.25rem; }
@@ -2142,7 +2143,7 @@ span.footer__invalid {
     margin-bottom: 2.97rem; }
   .control__phone {
     margin-right: 0;
-    margin-bottom: 2.97rem; }
+    margin-bottom: 0; }
   .control__policy {
     margin-top: 0.9rem; }
     .control__policy-label {
@@ -2154,7 +2155,7 @@ span.footer__invalid {
     width: 4.08333rem;
     height: 4.08333rem; }
   .projects {
-    height: 135.4rem; }
+    height: 133.7rem; }
   .footer {
     background-image: none; }
     .footer__wrap {
