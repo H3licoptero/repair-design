@@ -680,6 +680,7 @@ img {
     font-family: "Yeseva One", cursive;
     font-size: 1.166666rem;
     font-weight: normal;
+    line-height: 138.6%;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
@@ -1530,7 +1531,7 @@ span.footer__invalid {
   .container__projects {
     max-width: 660px; }
   .projects {
-    height: 166.4rem; }
+    height: 169.4rem; }
   .col-40 {
     width: 80%;
     margin: auto; }
@@ -1577,7 +1578,7 @@ span.footer__invalid {
   .card__design-image::before {
     background-color: transparent; }
   .control__container {
-    margin-top: -86.5rem; }
+    margin-top: -90.5rem; }
   .control__form {
     display: flex;
     flex-direction: column;
@@ -1616,7 +1617,23 @@ span.footer__invalid {
     max-width: 40.5rem;
     font-size: 1.666666rem;
     color: #ffffff; }
+  .control__phone {
+    margin-right: 0;
+    margin-bottom: 0; }
+  .control__box {
+    order: 1;
+    width: 100%;
+    max-width: 28.3333rem; }
+  .control__policy {
+    color: #ffffff;
+    margin-top: 0.9rem; }
+    .control__policy-label {
+      justify-content: start;
+      margin-bottom: 3.3rem;
+      margin-right: 0;
+      font-size: 1.333333rem; }
   .control__button {
+    order: 1;
     font-size: 1.25rem;
     max-width: 100%; }
   .footer__form {
@@ -1660,7 +1677,8 @@ span.footer__invalid {
   #policyCheckbox-error {
     top: 35px; }
   #controlCheckbox-error {
-    top: 35px; }
+    top: 37px;
+    left: 0; }
   span.modal__invalid {
     position: absolute;
     top: 47px;
@@ -1668,7 +1686,7 @@ span.footer__invalid {
     margin: 0;
     padding: 0; }
   span.control__invalid {
-    top: 40px; }
+    top: 48px; }
   span.footer__invalid {
     top: 50px; }
   .social-box {
@@ -1764,7 +1782,7 @@ span.footer__invalid {
       width: 100%;
       font-size: 1.5rem; }
   .projects {
-    height: 155.4rem; }
+    height: 160.4rem; }
   .container__projects {
     max-width: 45.9166666rem;
     width: 100%; }
@@ -1772,7 +1790,7 @@ span.footer__invalid {
     flex-basis: 45%;
     margin-bottom: 2.728571rem; }
   .control__container {
-    margin-top: -76rem; }
+    margin-top: -83rem; }
   .control__video {
     max-width: 41.416666rem;
     min-height: 20.5rem;
@@ -2084,7 +2102,7 @@ span.footer__invalid {
   .projects {
     background-image: none; }
   .control__container {
-    margin-top: -73.1rem; }
+    margin-top: -80.1rem; }
   .control__video {
     max-width: 28.33333rem;
     min-height: 17.25rem; }
@@ -2136,7 +2154,7 @@ span.footer__invalid {
     width: 4.08333rem;
     height: 4.08333rem; }
   .projects {
-    height: 129.4rem; }
+    height: 135.4rem; }
   .footer {
     background-image: none; }
     .footer__wrap {
