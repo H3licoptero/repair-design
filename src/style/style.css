@@ -2274,7 +2274,10 @@ span.footer__invalid {
     min-height: 140vh; }
   .modal__dialog {
     height: 95%;
-    overflow: scroll; } }
+    overflow: scroll; }
+  .alert__dialog {
+    height: 85px;
+    overflow: hidden; } }
 
 @media screen and (max-width: 375px) {
   .button__top {
@@ -2667,6 +2670,10 @@ span.footer__invalid {
     box-shadow: none; }
   .social__instagram:hover {
     box-shadow: none; }
+  .modal__dialog {
+    height: 95%;
+    max-height: 430px;
+    overflow: scroll; }
   .alert__dialog {
     max-width: 26.66666rem;
     width: 100%;
@@ -2675,9 +2682,5 @@ span.footer__invalid {
     overflow: hidden; }
   .section {
     padding: 1px 0; }
-  .modal__dialog {
-    height: 95%;
-    max-height: 430px;
-    overflow: scroll; }
-  .modal__input {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
+    .section__input {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
