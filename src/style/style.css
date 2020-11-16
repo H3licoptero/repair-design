@@ -997,10 +997,14 @@ span.control__invalid {
   font-size: 1rem; }
 
 .types__wrapper {
-  min-height: 100rem; }
+  min-height: 100rem;
+  padding-bottom: 100rem; }
 
 .types__section-title {
   margin-bottom: 2.22rem; }
+
+.types__take-size {
+  display: flex; }
 
 .section-title__heading {
   margin-bottom: 0.93rem; }
@@ -1051,6 +1055,54 @@ span.control__invalid {
   color: #ffffff;
   padding: 1.1rem 0;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+
+.take-size__wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin-right: 64px;
+  background-image: url("../../img/request/bg-request.png"), url("../../img/request/circle-group.svg");
+  background-repeat: no-repeat;
+  background-position: left center, bottom center; }
+
+.take-size__list {
+  list-style-type: none;
+  font-family: "Futura Demi";
+  font-size: 18px;
+  line-height: 21px; }
+
+.take-size__item:first-child {
+  margin-bottom: 69px; }
+
+.take-size__item {
+  margin-bottom: 118px;
+  max-width: 364px; }
+
+.take-size__form {
+  margin-top: 55px; }
+
+.take-size__dialog {
+  margin-bottom: 38px; }
+
+.take-size__discount {
+  display: flex; }
+
+.take-size__discount-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background-color: #e3b873;
+  border-radius: 50%; }
+
+.take-size__discount-text {
+  max-width: 318px;
+  width: 100%;
+  font-family: "Futura Demi";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #e3b873; }
 
 .text {
   max-width: 61.75rem;

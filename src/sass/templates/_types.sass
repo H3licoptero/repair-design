@@ -1,13 +1,14 @@
 .types
   &__wrapper
     min-height: 100rem
+    padding-bottom: 100rem
   &__section-title
     margin-bottom: 2.22rem
+  &__take-size  
+    display: flex
 .section-title    
   &__heading
     margin-bottom: 0.93rem
-    // font-size: 1.45rem
-    // line-height: 28px;
 .card
   &__image
     width: 100%  
@@ -51,6 +52,44 @@
     color: $light
     padding: 1.1rem 0
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
-// sup
-//   font-size: 0.7rem
-//   top: -7px
+.take-size
+  &__wrapper
+    max-width: 800px
+    width: 100%
+    margin-right: 64px
+    background-image: url('../../img/request/bg-request.png'), url('../../img/request/circle-group.svg')
+    background-repeat: no-repeat
+    // background-size: cover
+    background-position: left center, bottom center
+  &__list
+    list-style-type: none
+    font-family: "Futura Demi"
+    font-size: 18px
+    line-height: 21px
+  &__item:first-child
+    margin-bottom: 69px
+  &__item
+    margin-bottom: 118px
+    max-width: 364px
+  &__form
+    margin-top: 55px
+  &__dialog
+    margin-bottom: 38px
+  &__discount
+    display: flex
+  &__discount-image
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 72px
+    height: 72px
+    background-color: $primary
+    border-radius: 50%
+  &__discount-text
+    max-width: 318px
+    width: 100%
+    font-family: "Futura Demi"
+    font-size: 20px
+    font-weight: 500
+    line-height: 25px
+    color: $primary
