@@ -1,15 +1,15 @@
 @media screen and ( max-width: 1920px )
   .select
-    &__item a:hover, &__item a:hover::after 
+    &__link:hover, &__link:hover::after 
+      width: 100%
       color: $primary
       cursor: pointer
-      width: 100%
       transition: width 0.3s ease
-    &__item a:after
+    &__link::after
       content: ''
       display: flex
       width: 0
-      height: 1.5px
+      height: 1px
       background-color: $primary
       transition: all 0.3s ease
 @media screen and ( max-width: 1660px )

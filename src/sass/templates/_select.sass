@@ -5,6 +5,7 @@
     background-image: url('../../img/select/select-bg.jpg')
     background-repeat: no-repeat
     background-size: 100%
+    padding: 0
     z-index: 0
   &__select::before
     content: ''
@@ -30,8 +31,6 @@
     text-transform: uppercase
     color: $primary
   &__list
-    display: flex
-    flex-direction: column
     padding-left: 0
     font-family: "Futura", sans-serif
     font-size: 20px
@@ -41,19 +40,22 @@
     list-style-type: none
   &__item
     margin-bottom: 14px
+    clear: left
+    float: left
   &__item::last-child
     margin-bottom: 0
-  &__item a 
+  &__link
     color: $light
     text-decoration: none
   &__styles
     margin-right: 77px
+    margin-bottom: 88px
   &__works
     position: absolute
     display: flex
     max-width: 750px
     width: 100%
-    top: -110px
+    top: -65px
     left: 600px
   &__photo-first
     margin-bottom: 39px 
