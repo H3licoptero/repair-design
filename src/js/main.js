@@ -1,30 +1,3 @@
-/*
-document.addEventListener("DOMContentLoaded", function(event) {
-  "use strict";
-  const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('[data-toggle="modal"]');  
-  const switchModal = () => {
-    modal.classList.toggle("modal--visible");
-  };
-  
-  modalBtn.forEach((elem) => {
-    elem.addEventListener('click', switchModal);
-  });
-
-  modal.addEventListener('click', (event) => {
-    let target = event.target;
-    if(target.matches('.modal--visible') || target.matches('.modal__close')) {
-       modal.classList.toggle("modal--visible");
-    }
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if(event.keyCode === 27 && modal.matches('.modal--visible')) {
-      modal.classList.toggle("modal--visible");
-    }
-  });
-});
-*/
 
 $(document).ready(function () {
   "use strict";
@@ -73,7 +46,16 @@ $(document).ready(function () {
     });
 
     $(".hero__scroll-down").click(function () {
-      $("html, body").animate({ scrollTop: $("#projects").height() + 150}, 1000);
+      $("html, body").animate({ scrollTop: $("#projects").top});
+      return false;
+    });
+
+    let $page = $("html, body");
+    $('a[href="#main"], a[href="#projects"], a[href="#info"]').click(function () {
+      $page.animate(
+        {scrollTop: $($.attr(this, "href")).offset().top},
+        1000
+      );
       return false;
     });
   });
@@ -82,6 +64,7 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     // Navigation arrows
+    spaceBetween: 150,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -96,17 +79,23 @@ $(document).ready(function () {
   let prev = $(".swiper-button-prev");
   let bullets = $(".swiper-pagination");
 
-  next.css("left", prev.width() + 20 + bullets.width());
-  bullets.css("left", prev.width() + 30);
+  next.css("left", prev.width() + 13 + bullets.width());
+  bullets.css("left", prev.width() + 25);
   bullets.css("top", bullets.height() - 40);
 
   new WOW().init();
-
+ 
   // валидация формы
   // modal form
   $(".modal__form").validate({
     errorClass: "modal__invalid",
     errorElement: "span",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") === "checkbox") {
+        return element.next("label").append(error);
+      }
+      error.insertAfter($(element));
+    },
     // onfocusout: true,
     rules: {
       // правило для поля "введите имя"
@@ -125,6 +114,9 @@ $(document).ready(function () {
         required: true,
         email: true,
       },
+      policyCheckbox: {
+        required: true,
+      },
     },
     // сообщения при ошибках
     messages: {
@@ -138,6 +130,9 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email",
       },
+      policyCheckbox: {
+        required: "Необходимо согласие пользователя",
+      },
     },
     submitHandler: function (form) {
       $.ajax({
@@ -149,6 +144,11 @@ $(document).ready(function () {
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
           modal.removeClass("modal--visible");
+          ym(64422688, "reachGoal", "request");
+          return true;
+        },
+        error: function (response) {
+          console.log("Ошибка отправки.");
         },
       });
     },
@@ -158,41 +158,56 @@ $(document).ready(function () {
   $(".footer__form").validate({
     errorClass: "footer__invalid",
     errorElement: "span",
+    errorPlacement: function (error, element) {
+    if (element.attr("type") === "checkbox") {
+        return element.next('label').append(error);
+    }
+     error.insertAfter($(element));
+    },
     rules: {
-      footerName: {
+      userName: {
         required: true,
         minlength: 2,
         maxlength: 15,
       },
-      footerPhone: {
+      userPhone: {
         required: true,
         minlength: 16,
       },
-      footerQuestion: {
+      userQuestion: {
+        required: true,
+      },
+      footerCheckbox: {
         required: true,
       },
     },
     // сообщения при ошибках
     messages: {
-      footerName: {
+      userName: {
         required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      footerPhone: "Заполните поле",
-      footerQuestion: {
+      userPhone: "Заполните поле",
+      userQuestion: {
         required: "Напишите свой вопрос",
       },
+      footerCheckbox: {
+        required: "Необходимо согласие пользователя",
+      }
     },
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send-3.php",
+        url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
+        },
+        error: function (response) {
+          console.log("Ошибка отправки.");
         },
       });
     },
@@ -201,37 +216,53 @@ $(document).ready(function () {
   $(".control__form").validate({
     errorClass: "control__invalid",
     errorElement: "span",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") === "checkbox") {
+        return element.next("label").append(error);
+      }
+      error.insertAfter($(element));
+    },
     rules: {
       // правило для поля "введите имя"
-      controlName: {
+      userName: {
         required: true,
         minlength: 2,
         maxlength: 15,
       },
       // правило для телефона
-      controlPhone: {
+      userPhone: {
         required: true,
         minlength: 16,
+      },
+      controlCheckbox: {
+        required: true,
       },
     },
     // сообщения при ошибках
     messages: {
-      controlName: {
+      userName: {
         required: "Заполните поле",
         minlength: "Имя должно содержать не менее 2-х символов",
         maxlength: "Имя должно содержать не более 15-ти символов",
       },
-      controlPhone: "Заполните поле",
+      userPhone: "Заполните поле",
+      controlCheckbox: {
+        required: "Необходимо согласие пользователя",
+      },
     },
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "send-2.php",
+        url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log("Сработало!" + response);
+          console.dir();
           alert.toggleClass("alert--visible");
           $(form)[0].reset();
+        },
+        error: function (response) {
+          console.log("Ошибка отправки.");
         },
       });
     },
@@ -242,69 +273,51 @@ $(document).ready(function () {
     placeholder: "Ваш номер телефона:",
   });
 
-  // map
-  // Функция ymaps.ready() будет вызвана, когда
-  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-//  ymaps.ready(function () {
-//    var myMap = new ymaps.Map(
-//        "map",
-//        {
-//          center: [55.751574, 37.573856],
-//          zoom: 9,
-//        },
-//        {
-//          searchControlProvider: "yandex#search",
-//        }
-//      ),
-//      // Создаём макет содержимого.
-//      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-//        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-//      ),
-//      myPlacemark = new ymaps.Placemark(
-//        myMap.getCenter(),
-//        {
-//          hintContent: "Собственный значок метки",
-//          balloonContent: "Это красивая метка",
-//        },
-//        {
-//          // Опции.
-//          // Необходимо указать данный тип макета.
-//          iconLayout: "default#image",
-//          // Своё изображение иконки метки.
-//          iconImageHref: "img/myIcon.gif",
-//          // Размеры метки.
-//          iconImageSize: [30, 42],
-//          // Смещение левого верхнего угла иконки относительно
-//          // её "ножки" (точки привязки).
-//          iconImageOffset: [-5, -38],
-//        }
-//      ),
-//      myPlacemarkWithContent = new ymaps.Placemark(
-//        [55.672368, 37.582757],
-//        {
-//          hintContent: "Наш офис",
-//          balloonContent: "Вход со стороны проспекта",
-//          iconContent: "",
-//        },
-//        {
-//          // Опции.
-//          // Необходимо указать данный тип макета.
-//          iconLayout: "default#imageWithContent",
-//          // Своё изображение иконки метки.
-//          iconImageHref: "img/pin.png",
-//          // Размеры метки.
-//          iconImageSize: [48, 48],
-//          // Смещение левого верхнего угла иконки относительно
-//          // её "ножки" (точки привязки).
-//          iconImageOffset: [-24, -24],
-//          // Смещение слоя с содержимым относительно слоя с картинкой.
-//          iconContentOffset: [15, 15],
-//          // Макет содержимого.
-//          iconContentLayout: MyIconContentLayout,
-//        }
-//      );
+  // youtube video  
+  let player;
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 
-//    myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
-//    myMap.behaviors.disable('scrollZoom');
-//  });
+  $(".video-play").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player", {
+      height: "360",
+      width: "100%",
+      videoId: "jO_8f9r5s9U",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  //map afterload
+  let map = document.querySelector("#map-container");
+  let optionsMap = {
+    once: true,
+    passive: true,
+    capture: true
+  };
+
+  map.addEventListener("click", startLazyMap, optionsMap);
+  map.addEventListener("mouseover", startLazyMap, optionsMap);
+  map.addEventListener("touchstart", startLazyMap, optionsMap);
+  map.addEventListener("touchmove", startLazyMap, optionsMap);
+  
+  let mapLoaded = false;
+  function startLazyMap() {
+    if(!mapLoaded) {
+      let mapBlock = document.createElement('script');
+      mapLoaded = true;
+      mapBlock.setAttribute(
+        "src",
+        "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af167f028d83f4acef27b025933e5caf688fc2aa9b1001621578885b4c233fb4c&amp;lang=ru_RU&amp;scroll=false"
+      );
+      mapBlock.setAttribute('data-skip-moving', true);
+      mapBlock.setAttribute('async', "");
+      map.append(mapBlock);
+      console.log("YMAP LOADED");
+    }
+  }
 });
+
+  

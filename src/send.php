@@ -3,12 +3,7 @@
   $userName = $_POST["userName"];
   $userEmail = $_POST["userEmail"];
   $userPhone = $_POST["userPhone"];
- 
-  // Import PHPMailer classes into the global namespace
-// These must be at the top of your script, not inside a function
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
-// use PHPMailer\PHPMailer\Exception;
+  $userQuestion = $_POST["userQuestion"];
 
 // Load Composer's autoloader
 require 'PHPmailer/Exception.php';
@@ -33,10 +28,11 @@ try {
     $mail->setFrom('furaNeraGrande@gmail.com', 'Виталий');
     $mail->addAddress('h3licoptero@yandex.ru');     // Add a recipient
 
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body = 'Имя пользователя:' . $userName . ' Его телефон: ' . $userPhone . ' Его почта: ' . $userEmail;
+  // Content
+  $mail->isHTML(true);                                  // Set email format to HTML
+  $mail->Subject = 'Новая заявка с сайта';
+  $mail->Body = 'Имя пользователя:' . $userName . ' Его телефон: ' . $userPhone . ' Его почта: ' . $userEmail . 
+  ' Его вопрос: ' . $userQuestion;
 
   if ($mail->send()) {
     echo "Ok!";

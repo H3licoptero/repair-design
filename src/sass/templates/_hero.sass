@@ -23,6 +23,8 @@
     width: 100%
     height: 3.46rem
     background-color: $dark
+  &__title
+    line-height: 53px
   &__content
     position: relative
     max-width: 47.85rem
@@ -31,19 +33,22 @@
     font-family: "Futura Book", sans-serif
     font-weight: normal
     font-size: 1.58rem
-    max-width: 500px  
-    line-height: 131%
+    max-width: 35.71428rem  
+    line-height: 2.142857rem
     margin: 0
-    margin-bottom: 3.1rem
+    // margin-bottom: 3.1rem
+    margin-top: 0.948571rem
+    margin-bottom: 3.2rem
   &__button
-    width: 207px
-    margin-right: 20px  
-    padding: 17px 24px
+    max-width: 14.78571rem
+    width: 100%
+    margin-right: 18px  
+    padding: 1.21428rem 1.714285rem
     font-family: "Futura Demi", sans-serif
     font-weight: normal
     font-style: italic
     font-size: 0.93rem
-    line-height: 15px
+    line-height: 1.071428rem
   &__instagram
     position: absolute
     left: 0
@@ -60,14 +65,16 @@
     min-width: 17.6rem  
     min-height: 6.92rem
     font-family: "Yeseva One", cursive
-    font-size: 12px
+    font-size: 0.858rem
     font-weight: normal
+    font-style: normal
+    line-height: 135.6%
     background-color: $dark
     text-transform: uppercase
     text-decoration: none
     color: $light
     outline-color: $primary
-    transition: color 0.2s 
+    // transition: color 0.2s 
     z-index: 2
     &::after
       content: ''
@@ -76,7 +83,7 @@
       width: 30px
       border: 2px solid $primary
       border-radius: 50%
-      margin-left: 12px
+      margin-left: 16px
       transition: border 0.2s
     &:hover
       color: $primary
@@ -107,7 +114,7 @@
       content: ''
       width: 50px
       height: 1px
-      margin-left: 8px
+      margin-left: 14px
       background-color: $primary
     &:hover::after
       background-color: $light
@@ -122,6 +129,7 @@
   line-height: 1.4
   &--primary
     color: $primary
+    letter-spacing: -0.02rem
 
 .count
   &-button

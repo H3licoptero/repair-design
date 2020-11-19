@@ -41,10 +41,13 @@
   font-size: 1.285714rem
   line-height: 1.78571428rem
   padding: 0.1rem 0 0.2rem
+  opacity: 1
   &--light
-    // color: $light
+    color: $light
     &::placeholder
       color: $light
+    &::-moz-placeholder
+      opacity: 1
 .policy
   &__checkbox
     opacity: 0

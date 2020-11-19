@@ -1,13 +1,14 @@
 .types
   &__wrapper
     min-height: 100rem
+    padding-bottom: 17.28571rem
   &__section-title
     margin-bottom: 2.22rem
+  &__take-size  
+    display: flex
 .section-title    
   &__heading
     margin-bottom: 0.93rem
-    // font-size: 1.45rem
-    // line-height: 28px;
 .card
   &__image
     width: 100%  
@@ -15,7 +16,7 @@
     position: relative
     max-width: 23.58rem
     margin: 0 auto
-    margin-top: -9.3rem
+    margin-top: -9rem
     padding: 1.8rem 2.19rem
     background-color: $light
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
@@ -27,17 +28,17 @@
     font-size: 1.29rem
   &__list
     margin: 0
-    margin-bottom: 2.85rem
+    margin-bottom: 2.2rem
     padding: 0 0 0 1rem
     font-family: "Futura Book", sans-serif
     font-weight: normal
     font-size: 1.08rem
     color: $secondary
-    line-height: 1.79rem
+    line-height: 1.8rem
   &__pricetag
     position: absolute
     left: 0
-    bottom: -1.5rem
+    bottom: -2rem
     max-width: 228px
     width: 100%
     font-family: "Yeseva One", sans-serif
@@ -51,6 +52,73 @@
     color: $light
     padding: 1.1rem 0
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
-// sup
-//   font-size: 0.7rem
-//   top: -7px
+.take-size
+  &__wrapper
+    // display: flex
+    position: relative
+    max-width: 864px
+    width: 100%
+    height: 783px
+    background-image: url('../../img/request/bg-request.png'), url('../../img/request/circle-group.svg')
+    background-repeat: no-repeat
+    background-position: 190% 10%, 10% 50%
+  &__list
+    position: absolute
+    top: 120px
+    list-style-type: none
+    font-family: "Futura Demi"
+    font-size: 18px
+    line-height: 21px
+    overflow: hidden
+  &__item:first-child
+    margin-bottom: 69px
+  &__item:nth-child(1)
+    margin-left: 350px
+  &__item:nth-child(2)
+    margin-left: 430px
+  &__item:nth-child(3)
+    margin-left: 450px
+  &__item:nth-child(4)
+    margin-left: 385px
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 118px
+    max-width: 415px
+  &__item:last-child
+    margin-bottom: 0
+  &__span
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 13px
+    max-width: 41px
+    width: 100%
+    height: 41px
+    background-color: $primary
+    color: $light
+    font-family: "Yeseva One"
+    border-radius: 50%
+  &__form
+    margin-top: 135px
+    margin-left: 188px
+  &__dialog
+    margin-bottom: 38px
+  &__discount
+    display: flex
+  &__discount-image
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 72px
+    height: 72px
+    background-color: $primary
+    border-radius: 50%
+  &__discount-text
+    max-width: 318px
+    width: 100%
+    font-family: "Futura Demi"
+    font-size: 20px
+    font-weight: 500
+    line-height: 25px
+    color: $primary
