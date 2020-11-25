@@ -25,8 +25,8 @@
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "animate.css": "^4.1.0",
-    "browser-sync": "^2.26.7",
+    "animate.css": "^4.1.1",
+    "browser-sync": "^2.26.13",
     "gulp-htmlmin": "^5.0.1",
     "gulp-tinypng-compress": "^1.2.5"
   }
